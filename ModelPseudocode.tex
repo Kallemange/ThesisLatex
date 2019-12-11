@@ -1,0 +1,197 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\graphicspath{{images/}{../images/}}
+\usepackage{CJK} 
+\usepackage{subfiles}
+\usepackage{amsmath}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{caption,subcaption}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage[]{algorithm2e}
+\begin{document}
+\paragraph{Notation}
+\begin{itemize}
+\item The notation e(*) is used equivalent to $10^{(*)}$.
+\item The notation $f(\theta;\chi)$ means that $f$ is a function of $\theta$, parametrized by $\chi$.
+\item The notation $\hat{\beta}$ indicates an estimate of a true value $\beta$.
+\item The symbol $\nabla f(x)$ indicates the gradient of a function $f$ evaluated at point $x$. 
+\end{itemize}
+\paragraph{Constants}
+\begin{itemize}
+\item c = 299792458 [m/s]. The speed of light
+\item $\omega_e$ = 7.2921151467e-5 [rad/s]. The earth's rotation around it's own axis.
+\begin{comment}
+\item 	F = -4.442807633e-10. Satellite clock bias constant (unknown)
+\item	$\mu$ = 3.986005e14
+\end{comment}
+\end{itemize}
+
+\paragraph{Estimates}
+The following are estimates in the model:
+\begin{itemize}
+\item $p_{rec}$: Receiver position in [m] (ECEF), vector $1\times 3$.
+\item $\Delta t_{rec}$: Receiver clock bias [s], scalar value.
+\item $p_{sat}$: Satellite position [m] at time of transmission (ECEF), vector $1\times 3$.
+\item $\tau$: Time of flight [s] for GNSS-signal, scalar value.
+\end{itemize}
+\paragraph{Calculated or other values}
+\begin{itemize}
+\item $y$: Pseudorange observation [m], scalar value.
+\item $\Delta t_{sv}$: Satellite clock bias [s], scalar value.
+\item $t$: Observation time, seconds of week in GPS-time [s], scalar value.
+\item $t_{tr}$: Time of transmission [s], scalar value.
+\item $\gamma$: Earth's rotation [rad] during signal time of flight, scalar value.
+\item $\xi$: Ephemeris parameters, transmitted by each GNSS-satellite individually.
+\item $\epsilon$: Unmodeled error source.
+\end{itemize}
+To indicate a vector, bold font is used, e.g. \textbf{p}$_{sat}$=[p$_{sat}^1$ ... p$_{sat}^n$]$^T$ is a $n\times3$ matrix of satellite positions, where a superscript is used to indicate an index. 
+\section{Satellite position}
+
+\paragraph{Satellite position}
+Satellite positions are calculated primarily using the transmitted information in the ephemeris data as described in chapter REFERENCE. For a single satellite position at $t$, the satellite position is calculated using only the observation time as an argument:
+\begin{equation}\label{eq:p_sat}
+ p_{sat}(t; \xi).
+\end{equation}
+\paragraph{Time of flight}
+The time of flight is the propagation time of a signal between two arbitrary points $p_1$ and $p_2$. This is will be of relevance as the satellite position at t$_tr$ differs from that at $t$. It is calculated as
+\begin{equation}\label{eq:tof}
+\tau=\frac{1}{c}||p_1-p_2||
+\end{equation}
+where $||\cdot||$ indicate the Euclidean norm.
+
+\paragraph{Time of transmission}
+Time of transmission for satellite signal is then calculated as 
+\begin{equation}
+t_{tr}=t-\tau.
+\end{equation}
+\paragraph{Earth's rotation}
+The angle of rotation for a point on earth during $\tau$ seconds is given by 
+\begin{equation}\label{eq:gamma}
+\gamma=\tau\cdot\omega_e
+\end{equation} 
+\paragraph{Rotated satellite position}
+Equations (\ref{eq:p_sat}-\ref{eq:gamma}) allows for calculating the position of a satellite at $t_{tr}$ as well as correcting for that the coordinate system at $t$ has rotated. The satellite position is calculated at $t_{tr}$ and then rotated, resulting in the position $p'_{sat}(t_{tr};\gamma)$ in ECEF-coordinates is given by applying a rotation matrix to the position $p_{sat}(t_{tr})$.
+\begin{equation}\label{eq:coord_rotation}
+p'_{sat}(t_{tr})=\begin{bmatrix} \cos(\gamma) &\sin(\gamma) &0\\  -\sin(\gamma) &\cos(\gamma)& 0\\ 0& 0 &1
+\end{bmatrix}\left[p_{sat}(t_{tr})\right]^T
+\end{equation}
+\paragraph{Satellite clock bias}
+Due to the satellite clock drift being of magnitude less than SMALL NUMBER, the satellite clock bias is calculated at nominal time $t$ using the information in $\xi$ and considered a constant for a single observation.
+\begin{equation}
+\Delta t_{sv}(t;\xi)
+\end{equation}
+
+\section{Observation model}
+A single observation $y$ is modelled as 
+\begin{align}
+y&=h(p'_{sat}(t_{tr}), p_{rec}, \Delta t_{rec}(t))+\nu
+\end{align}
+where $p'_{sat}$ is given by equation (\ref{eq:coord_rotation}) and $\Delta t_{rec}(t)$ is the receiver clock bias,$\nu$ is an error vector expressed as
+\begin{align*}
+\nu=-\Delta t_{sv}+\epsilon
+\end{align*}
+and $h$ is expressed as
+\begin{align*}
+h(p'_{sat}(t_{tr}),p_{rec}, \Delta t_{rec}(t))=||p'_{sat}(t_{tr})-p_{rec}(t)||+c\cdot\Delta t_{rec}(t)
+\end{align*}
+where $p_{rec}(t)$ is the receiver position at $t$. Thus the full model of an expected observation given satellite position and receiver states is given by
+\begin{align}\label{eq:obs_model}
+\hat{y}=||p'_{sat}(t_{tr})-p_{rec}(t)||+c\cdot(\Delta t_{rec}(t)-\Delta t_{sv})+\epsilon
+\end{align}
+
+\section{Estimate model}
+The actual implementation is an iterative process where estimates are updated until convergence. For the sake of presenting the governing model, any variable should be interpreted as the current estimate.
+\subsection{State estimate}
+The purpose of the equations presented above is to reach a solution for the receiver states $p_{rec}$ and $\Delta t_{rec}$ where $\theta=\left[p_{rec}, \Delta t_{rec}\right]^T$ is introduced for brevity. For a vector of observations $\bf y$, the corresponding set of expected observations ${\bf h}(\theta)$ the solution is the estimate $\hat{\theta}$ such that the error
+\begin{equation}
+||\textbf{y-h}({\bf p}'_{sat},\theta)||
+\end{equation} 
+between observations and expected observations are minimized
+\begin{align}\label{eq:theta_hat}
+\hat{\bf \theta}=\operatorname*{argmin}_{\bf \theta}\left(||{\bf y-h}({\bf \theta})||^2\right)
+\end{align}
+The observation model equation (\ref{eq:obs_model}) can be linearised, which for a satellite $i$ becomes 
+\begin{align}
+\frac{d}{d \theta}h(\theta)&=\frac{\partial h(\theta)}{\partial x}+\frac{\partial h(\theta)}{\partial y}+ \frac{\partial h(\theta)}{\partial z}+\frac{\partial h(\theta)}{\partial \Delta t} \nonumber \\
+						   &=-\frac{p^i_x-p_x}{||\bf p^i-p||}-\frac{p^i_y-p_y}{||\bf p^i-p||}-\frac{p^i_z-p_z}{||\bf p^i-p||}+c \nonumber \\
+						   &:=\nabla h^i(\theta)\label{eq:nabla_h}
+\end{align}
+All the gradients described by (\ref{eq:nabla_h}) are collected in a $n\times 4$ matrix H:
+\begin{align}\label{eq:H}
+H(\theta)=\begin{bmatrix}
+\nabla h^1((p^{(1)})'_{sat};\theta) \\
+\vdots \\
+\nabla h^n((p^{(n)})'_{sat};\theta)
+\end{bmatrix}.
+\end{align}
+The result of (\ref{eq:H}) leads to the least square solution of (\ref{eq:theta_hat}) being described by:
+\begin{align}
+\hat{\theta}=(H^T\cdot H)^{-1}H^T{\bf y}
+\end{align}
+The calculations to obtain (\ref{eq:theta_hat}) is in the order:
+\begin{enumerate}
+\item Calculate all $\Delta {\bf t}_{sv}$ for the satellites at time of reception $t$ and adjust the observations ${\bf y}'= \bf{y} -\Delta {\bf t}_{sv}$. This step is not repeated.
+\end{enumerate}
+Each iteration is calculated using the current estimates
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item Adjust the observation for the receiver clock bias ${\bf y}''={\bf y}'-\Delta {\bf t}_{rec}$.
+For each satellite individually:
+\item Calculate signal time of flight $\tau=\frac{\bf y''}{c}$ .
+\item Calculate the satellite positions $p^{(i)}_{sat}(t-\tau^{(i)};\xi)$.
+\item Calculate the rotation angle $\gamma^{(i)}$.
+\item Adjust the satellite position as in (\ref{eq:coord_rotation}) to obtain $(p^{(i)})'_{sat}(t_{tr})$.
+\item Calculate $\hat{\theta}$ from ${\bf p}'_{sat}(t_{tr})$, $\bf y''$ and $\theta$ as in equation . 
+\end{enumerate}
+This is continued until convergence for steps 2-7, indicating that the variables ${\bf y}''$, $\boldsymbol \tau$, ${\bf p}_{sat}$, $\boldsymbol \gamma$, $p_{rec}$ and $\Delta t_{rec}$ all are interdependent and estimated together to minimize the cost-function.
+\section{Estimate pseudo-code}
+All the estimated values are dependent on each other and any calculation of one will be performed using the current estimate of the others as input. For the first observation, the initial values of the receiver are set to 0. In the code, a subscript is changed to \_ and a superscript is indexed by \texttt{(i)}. The rotation matrix in (\ref{eq:coord_rotation}) is represented by \texttt{R}. The names of the variables have been changed to Latin letters accordingly: 
+\begin{itemize} 
+\item $\Delta t$: \texttt{dt}
+\item $\tau$: \texttt{tau}
+\item $\gamma$: \texttt{gamma }
+\item $\xi$: \texttt{eph}
+\end{itemize}
+The pseudo-code is presented below \\
+\noindent\makebox[\linewidth]{\rule{0.8\paperwidth}{0.4pt}}
+\textit{\noindent 1. Calculate satellite clock bias at observation time for each satellite}\\
+\texttt{for j in sat:\\
+\indent dt\_sv(j)=estimate\_satellite\_clock\_bias(t, eph(j))\\
+end
+}\\
+\textit{2. Adjust the observations for dt\_sv}\\
+\texttt{for j in sat:\\
+\indent y(j)=y(j)-dt\_sv(j)\\
+end
+}\\
+\textit{3. Iterate until convergence: calculate receiver states}\\
+\texttt{dp=100, db=100\\
+while dp, db > 0.1\\}
+\textit{\indent 3.1. Calculate signal time of flight}\\
+\indent \texttt{for j in y:}\\
+\texttt{ 
+\indent\indent y(j)=y(j)-b\\
+\indent\indent tau(j)=y(j)/c \\
+\indent end}\\
+\textit{\indent 3.2. Calculate the satellite position, rotation and rotated position}\\
+\indent \texttt{for j in eph:\\
+\indent\indent p\_sat(j)=get\_satellite\_position(eph(j), t-tau(j))\\
+\indent\indent gamma(j)=omega\_e*tau(j)\\
+\indent\indent p\_sat(j)=R(gamma(j))*p\_sat(j)\\
+\indent end\\}
+\textit{\indent 3.3. Estimate receiver states}\\
+\texttt{
+\indent p\_, b\_ =estimate\_position(p\_sat, y, p, b)\\
+\indent dp=p-p\_\\
+\indent db=b-b\_\\
+\indent p=p\_\\
+\indent b=b\_\\
+\indent end\\
+end\\
+}
+\noindent\makebox[\linewidth]{\rule{0.8\paperwidth}{0.4pt}}
+\end{document}

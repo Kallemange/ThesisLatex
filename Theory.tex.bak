@@ -1,0 +1,23 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{float}
+\usepackage{verbatim}
+
+
+\title{Course Lab 1}
+\author{Karl Lundin karllund@kth.se}
+
+
+\begin{document}
+\maketitle
+\section{Chapter1}
+\input{Chap1/introduction.tex}
+
+
+\section{Chapter 2}
+\input{Chap2/background.tex}
+
+\input{Chap3}
+\end{document}
+

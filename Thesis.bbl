@@ -1,0 +1,846 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{soop1994handbook}{book}{}
+      \name{author}{1}{}{%
+        {{hash=38e76db907f1cce382ed67a6217765a5}{%
+           family={Soop},
+           familyi={S\bibinitperiod},
+           given={Erik\bibnamedelima Mattias},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science \& Business Media}%
+      }
+      \strng{namehash}{38e76db907f1cce382ed67a6217765a5}
+      \strng{fullhash}{38e76db907f1cce382ed67a6217765a5}
+      \strng{bibnamehash}{38e76db907f1cce382ed67a6217765a5}
+      \strng{authorbibnamehash}{38e76db907f1cce382ed67a6217765a5}
+      \strng{authornamehash}{38e76db907f1cce382ed67a6217765a5}
+      \strng{authorfullhash}{38e76db907f1cce382ed67a6217765a5}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Handbook of geostationary orbits}
+      \field{volume}{3}
+      \field{year}{1994}
+    \endentry
+    \entry{Jeffrey}{book}{}
+      \name{author}{1}{}{%
+        {{hash=dd5dc57799305939dd00c74e32470753}{%
+           family={Jeffrey},
+           familyi={J\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {NovAtel Inc}%
+      }
+      \strng{namehash}{dd5dc57799305939dd00c74e32470753}
+      \strng{fullhash}{dd5dc57799305939dd00c74e32470753}
+      \strng{bibnamehash}{dd5dc57799305939dd00c74e32470753}
+      \strng{authorbibnamehash}{dd5dc57799305939dd00c74e32470753}
+      \strng{authornamehash}{dd5dc57799305939dd00c74e32470753}
+      \strng{authorfullhash}{dd5dc57799305939dd00c74e32470753}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Introduction to GNSSGPS, GLONASS, Galileo and other Global Navigation Satellite Systems}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \keyw{trusted}
+    \endentry
+    \entry{posAccuracy}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6fc0cb1437d4d35df6350b5e61091bdd}{%
+           family={Hegarty},
+           familyi={H\bibinitperiod},
+           given={C.\bibnamedelimi J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0f75b76a044e8b013de1424601178592}{%
+           family={Chatre},
+           familyi={C\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{523386125e879fa68daa1fbf64809039}
+      \strng{fullhash}{523386125e879fa68daa1fbf64809039}
+      \strng{bibnamehash}{523386125e879fa68daa1fbf64809039}
+      \strng{authorbibnamehash}{523386125e879fa68daa1fbf64809039}
+      \strng{authornamehash}{523386125e879fa68daa1fbf64809039}
+      \strng{authorfullhash}{523386125e879fa68daa1fbf64809039}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the IEEE}
+      \field{month}{12}
+      \field{number}{12}
+      \field{title}{Evolution of the Global Navigation SatelliteSystem (GNSS)}
+      \field{volume}{96}
+      \field{year}{2008}
+      \field{pages}{1902\bibrangedash 1917}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1109/JPROC.2008.2006090
+      \endverb
+    \endentry
+    \entry{garcianoglobal}{article}{}
+      \name{author}{3}{}{%
+        {{hash=f7fb4ea6377c1d874a53a9975819922f}{%
+           family={Garciano},
+           familyi={G\bibinitperiod},
+           given={Leroy\bibnamedelima O},
+           giveni={L\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+        {{hash=f7cfe145f3c4f95e8e47089b8178eea5}{%
+           family={Anderson},
+           familyi={A\bibinitperiod},
+           given={Ricky},
+           giveni={R\bibinitperiod}}}%
+        {{hash=4636223b783c5f2b5df7464a3ce23e2e}{%
+           family={Reese},
+           familyi={R\bibinitperiod},
+           given={Jan\bibnamedelima Henrik},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{93637f5e50ec6515caf073c3fa21ffc3}
+      \strng{fullhash}{93637f5e50ec6515caf073c3fa21ffc3}
+      \strng{bibnamehash}{93637f5e50ec6515caf073c3fa21ffc3}
+      \strng{authorbibnamehash}{93637f5e50ec6515caf073c3fa21ffc3}
+      \strng{authornamehash}{93637f5e50ec6515caf073c3fa21ffc3}
+      \strng{authorfullhash}{93637f5e50ec6515caf073c3fa21ffc3}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Navigation Satellite Systems (GNSS) technologies for Off-Highway Agricultural Vehicles: The Benefits of using State-of-Art Mobile Hydraulics Technology}
+    \endentry
+    \entry{Patrik2019}{article}{}
+      \name{author}{7}{}{%
+        {{hash=6d3d7a19f1bf011128f5e27f1a956762}{%
+           family={Patrik},
+           familyi={P\bibinitperiod},
+           given={Aurello},
+           giveni={A\bibinitperiod}}}%
+        {{hash=edf355ba15f199f729c3a66b53aff5a9}{%
+           family={Utama},
+           familyi={U\bibinitperiod},
+           given={Gaudi},
+           giveni={G\bibinitperiod}}}%
+        {{hash=af507e64d8e3d1b55787f9efac24937d}{%
+           family={Gunawan},
+           familyi={G\bibinitperiod},
+           given={Alexander\bibnamedelimb Agung\bibnamedelima Santoso},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=11a3a5c9d0ac07535e36ca8f8ab6e990}{%
+           family={Chowanda},
+           familyi={C\bibinitperiod},
+           given={Andry},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b297b7cada33f1c4bcffd635b57aff7e}{%
+           family={Suroso},
+           familyi={S\bibinitperiod},
+           given={Jarot\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=ae4885a885c5015f952ca174c35f66f6}{%
+           family={Shofiyanti},
+           familyi={S\bibinitperiod},
+           given={Rizatus},
+           giveni={R\bibinitperiod}}}%
+        {{hash=036eb0d36f3f511d638929f6006b5aad}{%
+           family={Budiharto},
+           familyi={B\bibinitperiod},
+           given={Widodo},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{d06fdc73dc223a9c820ad5aa9fd44bdb}
+      \strng{fullhash}{255f108a05f699f350bce08aa4320165}
+      \strng{bibnamehash}{d06fdc73dc223a9c820ad5aa9fd44bdb}
+      \strng{authorbibnamehash}{d06fdc73dc223a9c820ad5aa9fd44bdb}
+      \strng{authornamehash}{d06fdc73dc223a9c820ad5aa9fd44bdb}
+      \strng{authorfullhash}{255f108a05f699f350bce08aa4320165}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2196-1115}
+      \field{journaltitle}{Journal of Big Data}
+      \field{month}{6}
+      \field{number}{1}
+      \field{title}{GNSS-based navigation systems of autonomous drone for delivering items}
+      \field{volume}{6}
+      \field{year}{2019}
+      \field{pages}{53}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s40537-019-0214-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s40537-019-0214-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s40537-019-0214-3
+      \endverb
+    \endentry
+    \entry{BLUE}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=c8fdd55388190a28eaf7696d1254822a}{%
+           family={{Yang}},
+           familyi={Y\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=131093b32cfc248eb878910414e84f69}{%
+           family={{Zhao}},
+           familyi={Z\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c15fbb129f48a3d5effbbcb2495e701e}{%
+           family={{Liu}},
+           familyi={L\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=dc3210695143b154355f4daa6bf03005}{%
+           family={{Lim}},
+           familyi={L\bibinitperiod},
+           given={H.\bibnamedelimi B.},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=49c1e10a791f7e954df3f14d4194a911}{%
+           family={{Frazzoli}},
+           familyi={F\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=958cbc78b89d05defdd80aa58e19ce71}{%
+           family={{Rus}},
+           familyi={R\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{c6d6dcb872a2e91035a61845ab22f76e}
+      \strng{fullhash}{0e988b2cf93a24327bd70f37425a8809}
+      \strng{bibnamehash}{c6d6dcb872a2e91035a61845ab22f76e}
+      \strng{authorbibnamehash}{c6d6dcb872a2e91035a61845ab22f76e}
+      \strng{authornamehash}{c6d6dcb872a2e91035a61845ab22f76e}
+      \strng{authorfullhash}{0e988b2cf93a24327bd70f37425a8809}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2012 IEEE 75th Vehicular Technology Conference (VTC Spring)}
+      \field{month}{5}
+      \field{title}{A GPS Pseudorange Based Cooperative Vehicular Distance Measurement Technique}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1109/VETECS.2012.6240332
+      \endverb
+      \keyw{collision avoidance;distance measurement;Global Positioning System;least mean squares methods;radionavigation;road safety;cooperative vehicular distance measurement technique;vehicular localization;cooperative vehicle safety applications;GPS pseudorange measurement;weighted least squares method;double difference pseudorange;dedicated short range communications;pseudorange information;Global Positioning System;Satellites;Receivers;Satellite broadcasting;Vehicles;Accuracy;Noise}
+    \endentry
+    \entry{posAccuracyEnvironment}{article}{}
+      \name{author}{5}{}{%
+        {{hash=c15fbb129f48a3d5effbbcb2495e701e}{%
+           family={{Liu}},
+           familyi={L\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=dc3210695143b154355f4daa6bf03005}{%
+           family={{Lim}},
+           familyi={L\bibinitperiod},
+           given={H.\bibnamedelimi B.},
+           giveni={H\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=49c1e10a791f7e954df3f14d4194a911}{%
+           family={{Frazzoli}},
+           familyi={F\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=f83b912d3669cab1a269b34dddb1eb1d}{%
+           family={{Ji}},
+           familyi={J\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bcebaf3515c777201633de1654868888}{%
+           family={{Lee}},
+           familyi={L\bibinitperiod},
+           given={V.\bibnamedelimi C.\bibnamedelimi S.},
+           giveni={V\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{30878f5398be56e0881d6da8df4a0dd6}
+      \strng{fullhash}{1a2c3ff645d07e6187c865443c0ae00b}
+      \strng{bibnamehash}{30878f5398be56e0881d6da8df4a0dd6}
+      \strng{authorbibnamehash}{30878f5398be56e0881d6da8df4a0dd6}
+      \strng{authornamehash}{30878f5398be56e0881d6da8df4a0dd6}
+      \strng{authorfullhash}{1a2c3ff645d07e6187c865443c0ae00b}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Vehicular Technology}
+      \field{month}{7}
+      \field{number}{6}
+      \field{title}{Improving Positioning Accuracy Using GPS Pseudorange Measurements for Cooperative Vehicular Localization}
+      \field{volume}{63}
+      \field{year}{2014}
+      \field{pages}{2544\bibrangedash 2556}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1109/TVT.2013.2296071
+      \endverb
+      \keyw{cooperative communication;distance measurement;Global Positioning System;intelligent transportation systems;interference suppression;least mean squares methods;vehicular ad hoc networks;positioning accuracy improvement;GPS pseudorange measurement;cooperative vehicular localization;intelligent transportation system;cutting edge communication technology;ranging technique;weighted least squares double difference;weighted least squares method;carrier-to-noise ratio;CNR;noise mitigation;WLS-DD;intervehicle distance detection;distributed location estimate algorithm;DLEA;vehicle positioning accuracy;positioning correction;data fitting model;Global Positioning System;Satellites;Satellite broadcasting;Vehicles;Receivers;Noise;Accuracy;Global positioning system (GPS);ranging technique;cooperative localization;vehicular networks;Cooperative localization;global positioning system (GPS);ranging technique;vehicular networks}
+    \endentry
+    \entry{farrell1999global}{book}{}
+      \name{author}{2}{}{%
+        {{hash=5d4f6f5b107536f9948fb16aced0cd38}{%
+           family={Farrell},
+           familyi={F\bibinitperiod},
+           given={Jay},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7666ecc20808c36720f5d8c5661b189a}{%
+           family={Barth},
+           familyi={B\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Mcgraw-hill New York, NY, USA:}%
+      }
+      \strng{namehash}{9bfc2072a97d94b7186c483a99b705ce}
+      \strng{fullhash}{9bfc2072a97d94b7186c483a99b705ce}
+      \strng{bibnamehash}{9bfc2072a97d94b7186c483a99b705ce}
+      \strng{authorbibnamehash}{9bfc2072a97d94b7186c483a99b705ce}
+      \strng{authornamehash}{9bfc2072a97d94b7186c483a99b705ce}
+      \strng{authorfullhash}{9bfc2072a97d94b7186c483a99b705ce}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The global positioning system and inertial navigation}
+      \field{volume}{61}
+      \field{year}{1999}
+    \endentry
+    \entry{monteiro2005accuracy}{article}{}
+      \name{author}{3}{}{%
+        {{hash=887eebdaa6f272e153faa6a8b7a65173}{%
+           family={Monteiro},
+           familyi={M\bibinitperiod},
+           given={Luis\bibnamedelima Sardinha},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=25f60eaae5828d9b7a229350d80fdef6}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Terry},
+           giveni={T\bibinitperiod}}}%
+        {{hash=51385b818521333ad4ff2087e4bbf340}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{bb8695c6abf4f19a1b293e575898db05}
+      \strng{fullhash}{bb8695c6abf4f19a1b293e575898db05}
+      \strng{bibnamehash}{bb8695c6abf4f19a1b293e575898db05}
+      \strng{authorbibnamehash}{bb8695c6abf4f19a1b293e575898db05}
+      \strng{authornamehash}{bb8695c6abf4f19a1b293e575898db05}
+      \strng{authorfullhash}{bb8695c6abf4f19a1b293e575898db05}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Navigation}
+      \field{number}{2}
+      \field{title}{What is the accuracy of DGPS?}
+      \field{volume}{58}
+      \field{year}{2005}
+      \field{pages}{207\bibrangedash 225}
+      \range{pages}{19}
+    \endentry
+    \entry{feng2008gps}{article}{}
+      \name{author}{2}{}{%
+        {{hash=b2ebe9943d265897678447c1fa1a4ad1}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Yanming},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ff39f152ac114b0ee2a8657a71ab1df5}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jinling},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b15081107d45c67b32e55641ac51a09}
+      \strng{fullhash}{6b15081107d45c67b32e55641ac51a09}
+      \strng{bibnamehash}{6b15081107d45c67b32e55641ac51a09}
+      \strng{authorbibnamehash}{6b15081107d45c67b32e55641ac51a09}
+      \strng{authornamehash}{6b15081107d45c67b32e55641ac51a09}
+      \strng{authorfullhash}{6b15081107d45c67b32e55641ac51a09}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Global Positioning Systems}
+      \field{number}{1}
+      \field{title}{GPS RTK performance characteristics and analysis}
+      \field{volume}{7}
+      \field{year}{2008}
+      \field{pages}{1\bibrangedash 8}
+      \range{pages}{8}
+    \endentry
+    \entry{6748618}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=28769d44c9803611a3942c9e6e6f0683}{%
+           family={{Nie Jianhui}},
+           familyi={N\bibinitperiod}}}%
+        {{hash=1b02772a564a3a401f6b7f8c5c960bfe}{%
+           family={{Qi Jianzhong}},
+           familyi={Q\bibinitperiod}}}%
+        {{hash=084a5a4ca7001b3de6f9cff059c7da9f}{%
+           family={{Song Peng}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{31c103aab08c44881338f599ef267f91}
+      \strng{fullhash}{31c103aab08c44881338f599ef267f91}
+      \strng{bibnamehash}{31c103aab08c44881338f599ef267f91}
+      \strng{authorbibnamehash}{31c103aab08c44881338f599ef267f91}
+      \strng{authornamehash}{31c103aab08c44881338f599ef267f91}
+      \strng{authorfullhash}{31c103aab08c44881338f599ef267f91}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Cyberspace Technology (CCT 2013)}
+      \field{month}{11}
+      \field{title}{Research of GNSS real-time pseudorange differential positioning technology}
+      \field{year}{2013}
+      \field{pages}{370\bibrangedash 375}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1049/cp.2013.2156
+      \endverb
+      \keyw{pseudorange difference;RTCM SC-104;positioning accuracy}
+    \endentry
+    \entry{IonoNoise}{article}{}
+      \name{author}{1}{}{%
+        {{hash=3e19ace7c5c8c022ee05edbec1dab994}{%
+           family={{Klobuchar}},
+           familyi={K\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3e19ace7c5c8c022ee05edbec1dab994}
+      \strng{fullhash}{3e19ace7c5c8c022ee05edbec1dab994}
+      \strng{bibnamehash}{3e19ace7c5c8c022ee05edbec1dab994}
+      \strng{authorbibnamehash}{3e19ace7c5c8c022ee05edbec1dab994}
+      \strng{authornamehash}{3e19ace7c5c8c022ee05edbec1dab994}
+      \strng{authorfullhash}{3e19ace7c5c8c022ee05edbec1dab994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2371-9877}
+      \field{journaltitle}{IEEE Transactions on Aerospace and Electronic Systems}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{Ionospheric Time-Delay Algorithm for Single-Frequency GPS Users}
+      \field{volume}{AES-23}
+      \field{year}{1987}
+      \field{pages}{325\bibrangedash 331}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/TAES.1987.310829
+      \endverb
+      \keyw{Global Positioning System;Satellite broadcasting;Delay effects;Frequency;Ionosphere;Error correction;Algorithm design and analysis;Geophysics computing;Military computing;Earth}
+    \endentry
+    \entry{williams2017tropospheric}{article}{}
+      \name{author}{2}{}{%
+        {{hash=49401f6e027a3d8f84b8deafcf106fed}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={SDP},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0912e608b906919d771487f6cc60779a}{%
+           family={Nievinski},
+           familyi={N\bibinitperiod},
+           given={FG},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{37c904dd1aba1967d0cf28f7bffe0370}
+      \strng{fullhash}{37c904dd1aba1967d0cf28f7bffe0370}
+      \strng{bibnamehash}{37c904dd1aba1967d0cf28f7bffe0370}
+      \strng{authorbibnamehash}{37c904dd1aba1967d0cf28f7bffe0370}
+      \strng{authornamehash}{37c904dd1aba1967d0cf28f7bffe0370}
+      \strng{authorfullhash}{37c904dd1aba1967d0cf28f7bffe0370}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Geophysical Research: Solid Earth}
+      \field{number}{3}
+      \field{title}{Tropospheric delays in ground-based GNSS multipath reflectometry—Experimental evidence from coastal sites}
+      \field{volume}{122}
+      \field{year}{2017}
+      \field{pages}{2310\bibrangedash 2327}
+      \range{pages}{18}
+    \endentry
+    \entry{Karaim2018Chapter4G}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=e99cbfcbdae049499670b14b7037100e}{%
+           family={Karaim},
+           familyi={K\bibinitperiod},
+           given={Malek},
+           giveni={M\bibinitperiod}}}%
+        {{hash=eeebf0aecadc94dc73ed605f8f9eba4d}{%
+           family={Elsheikh},
+           familyi={E\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=df19854ea078a59ce2a431dff0987886}{%
+           family={Noureldin},
+           familyi={N\bibinitperiod},
+           given={Aboelmagd},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{84008a291ba674d77045d23d94822f05}
+      \strng{fullhash}{84008a291ba674d77045d23d94822f05}
+      \strng{bibnamehash}{84008a291ba674d77045d23d94822f05}
+      \strng{authorbibnamehash}{84008a291ba674d77045d23d94822f05}
+      \strng{authornamehash}{84008a291ba674d77045d23d94822f05}
+      \strng{authorfullhash}{84008a291ba674d77045d23d94822f05}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Chapter 4 GNSS Error Sources}
+      \field{year}{2018}
+    \endentry
+    \entry{satPos}{article}{}
+      \name{author}{2}{}{%
+        {{hash=efa33cd4196e002b74536fa3c3d17e42}{%
+           family={Tusat},
+           familyi={T\bibinitperiod},
+           given={Ekrem},
+           giveni={E\bibinitperiod}}}%
+        {{hash=86170d97075997828bf410280a92bd11}{%
+           family={Ozyuksel},
+           familyi={O\bibinitperiod},
+           given={Fethi},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{bff429b5f5e5c58ad36253667bc9f079}
+      \strng{fullhash}{bff429b5f5e5c58ad36253667bc9f079}
+      \strng{bibnamehash}{bff429b5f5e5c58ad36253667bc9f079}
+      \strng{authorbibnamehash}{bff429b5f5e5c58ad36253667bc9f079}
+      \strng{authornamehash}{bff429b5f5e5c58ad36253667bc9f079}
+      \strng{authorfullhash}{bff429b5f5e5c58ad36253667bc9f079}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Engineering and Geosciences}
+      \field{month}{02}
+      \field{title}{COMPARISON OF GPS SATELLITE COORDINATES COMPUTED FROM BROADCAST AND IGS FINAL EPHEMERIDES}
+      \field{year}{2018}
+      \field{pages}{12\bibrangedash 19}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.26833/ijeg.337806
+      \endverb
+    \endentry
+    \entry{dunn2012global}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=01a1d8f4e4a44c63763bce71e25306b2}{%
+           family={Dunn},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima J},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=30ef25c1c8817268572cf45162e1575b}{%
+           family={DISL},
+           familyi={D\bibinitperiod},
+           given={DAF},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {March}%
+      }
+      \strng{namehash}{933659ce9318a4f91675170e572991db}
+      \strng{fullhash}{933659ce9318a4f91675170e572991db}
+      \strng{bibnamehash}{933659ce9318a4f91675170e572991db}
+      \strng{authorbibnamehash}{933659ce9318a4f91675170e572991db}
+      \strng{authornamehash}{933659ce9318a4f91675170e572991db}
+      \strng{authorfullhash}{933659ce9318a4f91675170e572991db}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Global Positioning System Directorate Systems Engineering \& Integration Interface Specification IS-GPS-200}
+      \field{year}{2012}
+    \endentry
+    \entry{Brunner1999}{article}{}
+      \name{author}{3}{}{%
+        {{hash=efa2da6e2eb3c8bde7fab5487a03ffd2}{%
+           family={Brunner},
+           familyi={B\bibinitperiod},
+           given={F.\bibnamedelimi K.},
+           giveni={F\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=64a50b4a415065c964daf5b6706c3bc0}{%
+           family={Hartinger},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=511727ba3ccc4536d8dfdebc3cdb200a}{%
+           family={Troyer},
+           familyi={T\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd0c30685c7d547f6149747b56d71cec}
+      \strng{fullhash}{fd0c30685c7d547f6149747b56d71cec}
+      \strng{bibnamehash}{fd0c30685c7d547f6149747b56d71cec}
+      \strng{authorbibnamehash}{fd0c30685c7d547f6149747b56d71cec}
+      \strng{authornamehash}{fd0c30685c7d547f6149747b56d71cec}
+      \strng{authorfullhash}{fd0c30685c7d547f6149747b56d71cec}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The SIGMA-$\Delta$ model has been developed for stochastic modelling of global positioning system (GPS) signal diffraction errors in high precision GPS surveys. The basic information used in the SIGMA-$\Delta$ model is the measured carrier-to-noise power-density ratio (C/N0). Using the C/N0 data and a template technique, the proper variances are derived for all phase observations. Thus the quality of the measured phase is automatically assessed and if phase observations are suspected to be contaminated by diffraction effects they are weighted down in the least-squares adjustment. The ability of the SIGMA-$\Delta$ model to reduce signal diffraction effects is demonstrated on two static GPS surveys as well as on a kinematic high-precision GPS railway survey. In cases of severe signal diffraction the accuracy of the GPS positions is improved by more than 50{\%} compared to standard GPS processing techniques.}
+      \field{issn}{1432-1394}
+      \field{journaltitle}{Journal of Geodesy}
+      \field{month}{6}
+      \field{number}{5}
+      \field{title}{GPS signal diffraction modelling: the stochastic SIGMA-$\delta$ model}
+      \field{volume}{73}
+      \field{year}{1999}
+      \field{pages}{259\bibrangedash 267}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/s001900050242
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s001900050242
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s001900050242
+      \endverb
+    \endentry
+    \entry{blewitt1997basics}{article}{}
+      \name{author}{1}{}{%
+        {{hash=59fe8f45f7385da262576af03fafa310}{%
+           family={Blewitt},
+           familyi={B\bibinitperiod},
+           given={Geoffrey},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nordic Geodetic Commission Sweden}%
+      }
+      \strng{namehash}{59fe8f45f7385da262576af03fafa310}
+      \strng{fullhash}{59fe8f45f7385da262576af03fafa310}
+      \strng{bibnamehash}{59fe8f45f7385da262576af03fafa310}
+      \strng{authorbibnamehash}{59fe8f45f7385da262576af03fafa310}
+      \strng{authornamehash}{59fe8f45f7385da262576af03fafa310}
+      \strng{authorfullhash}{59fe8f45f7385da262576af03fafa310}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geodetic applications of GPS}
+      \field{title}{Basics of the GPS technique: observation equations}
+      \field{year}{1997}
+      \field{pages}{10\bibrangedash 54}
+      \range{pages}{45}
+    \endentry
+    \entry{tahsin2015analysis}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=31792b82773e5cd050f3b42e3364f019}{%
+           family={Tahsin},
+           familyi={T\bibinitperiod},
+           given={Mahdia},
+           giveni={M\bibinitperiod}}}%
+        {{hash=69a8a45711c964c23c54cb3bc274652c}{%
+           family={Sultana},
+           familyi={S\bibinitperiod},
+           given={Sunjida},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6e9ad6410825e1f093bc7e25a2521f9b}{%
+           family={Reza},
+           familyi={R\bibinitperiod},
+           given={Tasmia},
+           giveni={T\bibinitperiod}}}%
+        {{hash=eb35ce2866eee23069edb2f92e833fe2}{%
+           family={Hossam-E-Haider},
+           familyi={H\bibinithyphendelim E\bibinithyphendelim H\bibinitperiod},
+           given={Md},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{1b78a31b9e6a8f06209d74b44f6ac600}
+      \strng{fullhash}{3639e8e6edd4c08deb2807a70f56b375}
+      \strng{bibnamehash}{1b78a31b9e6a8f06209d74b44f6ac600}
+      \strng{authorbibnamehash}{1b78a31b9e6a8f06209d74b44f6ac600}
+      \strng{authornamehash}{1b78a31b9e6a8f06209d74b44f6ac600}
+      \strng{authorfullhash}{3639e8e6edd4c08deb2807a70f56b375}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2015 International Conference on Electrical Engineering and Information Communication Technology (ICEEICT)}
+      \field{title}{Analysis of DOP and its preciseness in GNSS position estimation}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+    \endentry
+    \entry{tatarnikov2014approaching}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5ade456f891688f77a5af102e07d3dc3}{%
+           family={Tatarnikov},
+           familyi={T\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d104838d010c072b9de95f571cf97f12}{%
+           family={Astakhov},
+           familyi={A\bibinitperiod},
+           given={Andrey},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Institute of Navigation}%
+      }
+      \strng{namehash}{a680d678091a53b10db253472b3bf18b}
+      \strng{fullhash}{a680d678091a53b10db253472b3bf18b}
+      \strng{bibnamehash}{a680d678091a53b10db253472b3bf18b}
+      \strng{authorbibnamehash}{a680d678091a53b10db253472b3bf18b}
+      \strng{authornamehash}{a680d678091a53b10db253472b3bf18b}
+      \strng{authorfullhash}{a680d678091a53b10db253472b3bf18b}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proc. ION ITM}
+      \field{title}{Approaching millimeter accuracy of GNSS positioning in real time with large impedance ground plane antennas}
+      \field{year}{2014}
+      \field{pages}{844\bibrangedash 848}
+      \range{pages}{5}
+    \endentry
+    \entry{langley1999dilution}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=f017e75b126d881cd4840c19d0b57899}{%
+           family={Langley},
+           familyi={L\bibinitperiod},
+           given={Richard\bibnamedelima B},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{4b1642ee12fb0d2b52f8377da18c1821}
+      \strng{fullhash}{4b1642ee12fb0d2b52f8377da18c1821}
+      \strng{bibnamehash}{4b1642ee12fb0d2b52f8377da18c1821}
+      \strng{authorbibnamehash}{4b1642ee12fb0d2b52f8377da18c1821}
+      \strng{authornamehash}{4b1642ee12fb0d2b52f8377da18c1821}
+      \strng{authorfullhash}{4b1642ee12fb0d2b52f8377da18c1821}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{GPS world}
+      \field{number}{5}
+      \field{title}{Dilution of precision}
+      \field{volume}{10}
+      \field{year}{1999}
+      \field{pages}{52\bibrangedash 59}
+      \range{pages}{8}
+    \endentry
+    \entry{GDOPbelow6}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=b3f7869526d5d9c4ae3ea0cac07ac86a}{%
+           family={{Azami}},
+           familyi={A\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=9db016f0a8d0e917c05508821e92fa36}{%
+           family={{Azarbad}},
+           familyi={A\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=46deb6437d360ffe71031de5c57fcc8b}{%
+           family={{Sanei}},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{ac41a960d1b77b4cef38806e892bb2cb}
+      \strng{fullhash}{ac41a960d1b77b4cef38806e892bb2cb}
+      \strng{bibnamehash}{ac41a960d1b77b4cef38806e892bb2cb}
+      \strng{authorbibnamehash}{ac41a960d1b77b4cef38806e892bb2cb}
+      \strng{authornamehash}{ac41a960d1b77b4cef38806e892bb2cb}
+      \strng{authorfullhash}{ac41a960d1b77b4cef38806e892bb2cb}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2013 3rd Joint Conference of AI Robotics and 5th RoboCup Iran Open International Symposium}
+      \field{issn}{null}
+      \field{month}{4}
+      \field{title}{New applied methods for optimum GPS satellite selection}
+      \field{year}{2013}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/RIOS.2013.6595308
+      \endverb
+      \keyw{backpropagation;Global Positioning System;neural nets;telecommunication computing;optimum GPS satellite selection;geometric dilution-of-precision;Global Positioning System;inverse matrix;navigator processor;time-consuming task;basic back propagation neural network;BPNN;GPS GDOP classification;resilient back propagation;RBP;naive Bayes classifier;Fisher linear discriminant;k-nearest neighbor;KNN;Global Positioning System;Satellites;Artificial neural networks;Neurons;Accuracy;Classification algorithms;Training;GPS GDOP;resilient back propagation;naive Bayes classifier;Fisher's linear discriminant;k-nearest neighbor}
+    \endentry
+    \entry{moser1996linear}{book}{}
+      \name{author}{1}{}{%
+        {{hash=52ffe189c434939cf8ce1483c75d8e92}{%
+           family={Moser},
+           familyi={M\bibinitperiod},
+           given={William\bibnamedelima R},
+           giveni={W\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{52ffe189c434939cf8ce1483c75d8e92}
+      \strng{fullhash}{52ffe189c434939cf8ce1483c75d8e92}
+      \strng{bibnamehash}{52ffe189c434939cf8ce1483c75d8e92}
+      \strng{authorbibnamehash}{52ffe189c434939cf8ce1483c75d8e92}
+      \strng{authornamehash}{52ffe189c434939cf8ce1483c75d8e92}
+      \strng{authorfullhash}{52ffe189c434939cf8ce1483c75d8e92}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Linear models: A mean model approach}
+      \field{year}{1996}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

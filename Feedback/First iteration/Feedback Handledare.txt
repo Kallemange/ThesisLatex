@@ -1,0 +1,36 @@
+Läs igenom all text noggrant. Kolla stavning, grammatik, och meningsuppbyggnad.
+Be eventuellt en vän läsa igenom och hitta fel.
+Några exempel som jag hittade i "Introduction":
+
+OK: it's => it is (talspråk),
+
+OK: cellphones includes => cellphones include, results shows => results show (plural)
+
+OK: Citatet med länk i fotnot finns ej att hitta på hemsidan. Ta bort eller skriv om.
+
+OK: Det är blandad amerikansk (utilize, minimize) och brittisk stavning (behaviours, analyse)
+
+OK: "The objective of this paper is to investigate the relative positioning estimate based [on] two different methods and compare them." (saknar ord)
+
+OK: "where for a two different baselines" (ta bort "a")
+
+OK: "The estimate error is presented" => The estimated error is presented
+
+OK: Testa att köra din text igenom rättstavnings- och grammatikprogram.
+Det finns en gratisversion av grammarly som hittar enkla fel som plural, avsaknad av ord, etc.
+Dubbelkolla tydligheten. Detta är särskilt viktigt i abstract/introduktion och sammanfattning, då detta är de delar som flest oinsatta kommer att läsa.
+Skriv med meningar som är enkla att läsa/förstå, och som inte är tvetydiga.
+Ett tips är att låta en vän som inte vet vad du gjort läsa igenom och återberätta.
+Några exemplel från Introduction:
+
+OK: "Techniques have been developed in relation to this to further increase the accuracy."
+(Här är det lätt att missförstå, är det du som har utvecklat dessa teorier? Här är ett bra ställe att ge referenser eller skriva någort kort om vad de är).
+
+OK: En blanding av många tydliga ord med väldefinerad betydelse (mean, above) med otydliga ord som kan betyda lite vad som helst (expected, in magnitude of, slightly)
+"The results shows that for (i), the mean error can be expected to be in the magnitude of slightly above 5 m"
+kan skrivas kortare och tydligare som
+"The mean relative position error using method (i) is larger than 5 m."
+Eller ännu bättre, skriv exakta värdet!
+
+Kolla igenom all layout så att det ser publicerbart ut. Se t.ex. sida 43.
+Jag återkommer när jag hunnit kolla på innehållet.

@@ -1,0 +1,20 @@
+\begin{document}
+
+\chapter{Conclusions and further work}
+
+\section{Results of simulations}
+The results of the simulations presented in section \ref{simDataError} indicate that the implemented model works as expected as the error in position estimate grows equal to the noise in the input. It also verifies that the use of a DD-approach is meaningful when comparing the RMSE-values of an increasing signal bias, as illustrated in section \ref{RMSEsection}. As the error of the DD-method is seemingly unchanged by the bias compared to the relative position of the global estimates, where it grows with increasing bias.
+
+\section{Precision of the estimates}\label{discussionPrecision}
+The results that have been achieved point towards a slight improvement of an implementation of the DD-method, as compared to that of two individual position estimates. The large variance that was obtained in section \ref{histogramDD} and \ref{RMSEsection} is however unsatisfactory with the ambition to reach below meter accuracy of the estimator. The answer to the question posed at the start of this project posed in section \ref{sectionObjective}, seem to be that the noise level may very well be too large to reach the desired precision. The best results are still obtained from the solution directly sampled from the estimate of the onboard solution, as shown in figures (\ref{fig:DDandInternalN}-\ref{fig:DDandInternalE}). Part of the superior performance of the onboard estimate is presumably due to that its estimate is filtered, which can attenuate much of the high-frequency noise and perform outlier rejection. The big difference in of the noise levels between the two receivers indicated both by the onboard estimate presented in section \ref{onBoardSolution} as well as the implemented least squares estimate in \ref{leastSquareEstimator} is assumed to be an effect of greater noise levels for the receiver placed closer to the forested area. If this assumption is true, the noise levels appear to vary much stronger based on the surroundings than was initially assumed at the beginning of this project. 
+\section{DOP values}
+The results of the DOP-value calculations in section \ref{sectionDOP} indicate that a good geometry of satellites was available for all observations with the exception of a few observations. This comes as no surprise as the receivers had access to observations from more than 10 satellites from all epochs. The DOP-value is an important complement to keep track of in order to avoid situations of very poor geometry but may be of limited use to estimate actual errors as it doesn't contain information on the actual noise levels in observations.
+\section{Further work}
+Two suggestion for further work with regards to the high noise levels discussed in \ref{discussionPrecision} are:
+\begin{enumerate}
+\item Implement a filtering process and outlier rejection for the raw observation data.
+\item Verify this assumption of noise local noise differences by making observations at a more open place than that used for this project.
+\end{enumerate} 
+The method should also be implemented for real-time use, as the post-processing made only serves a theoretical purpose at the moment. Hopefully, the code which has produced these results can be used as a base for further development of a more useful implementation.
+
+\end{document}

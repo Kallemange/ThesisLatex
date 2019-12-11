@@ -1,0 +1,67 @@
+\documentclass{Template/kthlatex-0.2rc4/kththesis/kththesis}
+\usepackage[utf8]{inputenc}
+\usepackage[english, swedish]{babel}
+\usepackage{graphicx}
+\graphicspath{{images/}{../images/}}
+\usepackage{CJK} 
+\usepackage{subfiles}
+\usepackage{amsmath}
+\usepackage{blindtext}
+\usepackage{hyperref}
+\usepackage{caption, subcaption}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{algorithmic}
+\usepackage{csquotes} % Recommended by biblatex
+\setcounter{secnumdepth}{3}
+\setlength{\parskip}{0.5em}
+\setlength\parindent{0pt}
+%\usepackage[style=numeric,sorting=none,backend=biber]{biblatex}
+\usepackage[backend=biber, sorting=none]{biblatex}
+\addbibresource{references.bib} % The file containing our references, in BibTeX format
+%\bibliography{references}{}
+
+\title{Relative Localization using Satellite positioning}
+\alttitle{Global och relativ GNSS-positionering}
+\author{Karl Lundin}
+\email{karllund@kth.se}
+\supervisor{Håkan Carlsson, Linnea Persson}
+\examiner{Joakim Jaldén}
+\programme{Master in Systems, Robotics and Control}
+\school{School of Electrical Engineering and Computer Science}
+\date{\today}
+
+% Uncomment the next line to include cover generated at https://intra.kth.se/kth-cover?l=en
+% \kthcover{kth-cover.pdf}
+
+
+\begin{document}
+
+% Frontmatter includes the titlepage, abstracts and table-of-contents
+\frontmatter
+
+\titlepage
+
+\subfile{Abstract/abstract}
+\tableofcontents
+\mainmatter
+ 
+\subfile{Introduction/introduction}
+ 
+\subfile{Background/background}
+
+\subfile{Method/method}
+
+\subfile{Results/results}
+
+\subfile{Discussion/discussion}
+
+%\chapter{Something Extra}
+%\printbibliography
+\appendix
+\subfile{Appendix/appendix}
+\appendix
+\subfile{Appendix/appendixB}
+
+\end{document}

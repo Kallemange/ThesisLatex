@@ -1,0 +1,11 @@
+
+\section{Linear Kalman Filter}
+What is the difference between a 'control' ut, a 'measurement' zt and the
+state xt? Give examples of each?\\
+The control $u_t$ is the input to the system, usually defined by e.g. the user such as the desired speed of a vehicle, the measurement $z_t$ is the output of the system, the measured or measurable quantities such as the speed of the vehicle and $x_t$ are the states of the system, which can be the same as the $z_t$ or as in the temperature example the temperatures of the rooms and the outdoors.
+The change in the magnitude of the belief uncertainty depends on the $A_t\Sigma_{t-1}A_t^T$ term, if it is small the term may decrease otherwise it may increase.
+\section{Extended Kalman Filter}
+\subsection{•}
+How does the extended Kalman filter relate to the Kalman filter?\\
+The EKF includes possible non-linearities in its model applying a linearisation for the innovation.
+

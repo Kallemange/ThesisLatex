@@ -1,0 +1,41 @@
+Att läsa en exjobbsrapport på 50+ sidor tar en del tid. Det finns saker som du kan jobba på textmässigt under tiden (se mitt förra mejl).
+Efter att du rättat språkliga fel är det också lättare för oss att snabbt läsa/kommentera texten, så skicka in en rättad version så fort du är klar med det. 
+
+Hinner rätta kanske 5 sidor per dag så kommer nog ta tills någon gång nästa vecka.
+Tills dess, jobba på övriga kommentarer vi gett dig.
+
+Jag har hittills bara hunnit kolla på början, några kommentarer från kapitel 1-3 (utöver grammatik och ordval):
+
+OK: Förkortningar som du bara nämner en gång i texten behöver inte stå i nomenclature (t.ex. glonass).
+Skriv ned de viktiga förkortningarna som du skriver flera gånger i texten (DD = Double difference är en vanlig som saknas).
+
+Previous research:
+OK: Beskriv kortfattat vad "double difference technique" är, du nämner den flera gånger men läsaren vet inte vad detta är ännu.
+OK: Två bra artiklar är citerade, men är dessa de enda/bästa/första? Vilka andra artiklar om dubbeldifferens har du läst och vad har de för resultat?
+Lägg in artiklarna som referenser i slutet av rapporten och referera till [nr] istället för att skriva item 1, osv.
+Jag saknar beskrivning av DGPS och RTK.
+Dessa system har funnits länge (~30 år) och är en mogen teknik som starkt påminner om det vi gör med relativa positioneringen.
+Skriv om detta och på vilka sätt det du gör skiljer sig från RTK.
+Detta kan på ett snyggt sätt skrivas samman med "previous research".
+
+Om du vill kan du lägga in ett stycke för "Notation" där du skriver om vad bold font, etc. betyder.
+OK: För att underlätta för den som läser, gör samanfattning av felkällorna i tabell-format (sida 9).
+
+
+Just nu är det på vissa ställen väldigt mycket information, så det är bra att tänka på att hålla dig till det som är viktigt för att läsaren ska förstå vad det är du vill ha sagt.
+
+OK:Som exempel: i kapitel "background" står det i ett och samma stycke:
+Allmän rymdhistoria
+Applikationer för GNSS
+Applikationer för relativ positionering
+ Hur GNSS-mottagare räknar ut position från avstånd till satelliter
+Satellitbanor för TV-och radiosändare
+Satellitbanor för GNSS, omloppstid och avstånd
+Avståndet till jorden varierar (vilka är "they"?)
+Avståndsvariationen är försumbar för GNSS
+Skillnad mellan almanac och ephemeris, hemsidor där man kan ladda ner satellitdata
+Definition av pseudorange
+Hur funkar data acquisition
+Alla dessa delar är okej att ha med i bakgrunden, men de behandlar olika ämnen/aspekter så det blir svårt att följa det du vill ha sagt.
+För att göra texten mer logiskt sammanhängande, dela in i stycken och tänk på vad du vill förmedla med varje stycke.
+Detta gäller även resten av rapporten.

@@ -1,0 +1,44 @@
+Processen att färdigställa rapporten kommer sannolikt att ta ett par iterationer, och det finns risk att man lägger till saker som man senare tar bort. 
+Vidare brukar man börja med att sätta strukturen på rapporten först (vad som ska vara med och inte, samt i vilken ordning) för att senare gå in på detaljer som språk. 
+Jag tycker det är en bra första utkast till struktur på rapporten, men den behöver förfinas.
+
+OK: Introduktionen är nu utspritt i tre kapitel och du skulle kunna slå ihop dem. Kap 1 introduktion är snarlik kap 3 background. Slå ihop dessa och fokusera på:
+
+OK: varför är generell positionering intressant
+varför är relativ positionering viktigt, och i vilka kontexter. 
+Vilka aspekter av generell positionering är mindre och mer viktigt vid relativ positionering.
+Presentera i ord de två metoder du kommer att analysera, 
+varför är just dessa två metoder intressanta? Har de använts förut? I vilka kontexter?
+Presentera kort och i ord den jämförelse du gör i rapporten och beskriv varför den är relevant.
+När du presenterar hur GNSS systemen fungerar, gör det utifrån aspekterna som senare tas upp i modellen. 
+Tex klockfel, varför behöver man modellera det?
+När du har denna struktur på introduktionen kommer nuvarande sektionerna "problem", "objective", 
+"delimitation" och "previous research" naturligt in i texten. 
+I nuvarande form är dessa koncept utspridda på flera ställen. 
+Du har de flesta bitarna för introduktionen skrivet, 
+det handlar mer om att omordna och sätta en logisk följd på det.
+
+OK: Kap 2 tycker jag kan skippas och infogas i texten. Tex NED är förklarat där samt i avsnitt 3.2.1.
+
+Vad gäller modellen är presentationen av den utspridd på flera ställen. Ekvationerna 3.1, 3.2, 3.4, 3.11, 3.13, 3.15, är snarlika. 
+Börja med att presentera observations modellen under ett separat avsnitt där den motiveras och du definierar termer och komponenter i den. 
+Här motiverar du också modellen utifrån introduktionen du skrev. I nuläget är det utspritt i flera sektioner och definitionerna kommer flera gånger, 
+tex delta t_rec definieras i avsnitt 3.1, 3.3.2, 3.4.
+
+När du har beskrivit modellen utförligt, är det dags att presentera lösningsmetoderna, som då refererar till beskrivningen till modellen. 
+De två bör ha två separata avsnitt. Det är bra att du presenterar algoritmerna som pseudokod, och man kan med fördel använda latex paket för att snygga till presentationen 
+https://en.wikibooks.org/wiki/LaTeX/Algorithms
+
+Jag tycker du kan fokusera på dessa punkter först, för det kommer sätta kontexten för hur resultaten presenteras.
+
+Några generella punkter:
+Definiera kvantiteter en gång och var sedan konsistent med dess benämning, tex när du skriver om LLA skriver du om "angular arguments" för att senare prata om lambda och phi.
+Tänk igenom rubrikerna till avsnitten. Nu heter avsnitt 3.3.2 "Solving the pseudorange equations" men avsnittet beskriver ingen lösningsmetod utan listar definitioner av kvantiteter.
+Ordet "estimate" betyder estimat och är vanligtvis ett tal. Ordet "estimation" betyder processen för hur man kommer framtill en estimator, 
+en funktionen vars input är data och output är estimat. Du behöver ändra genomgående i texten med avseende på denna distinktion. 
+Tex Avsnitt 3.6 "Estimate pseduo-code" borde heta "Estimator pseudo-code".
+Figurerna är för små, och man har svårt att läsa texten i dem. 
+Om du har en figure caption ska du inte ha figur titel.
+Försök att komma på eller hitta på andra ställen två bra namn på metoderna, tex skulle första metoden kunna heta "Post-Difference" och andra "Pre-Difference" 
+och i texten förklara under vilka benämningar de annars används för, så som "double difference".
+Som sagt, mycket av innehållet finns redan, det handlar om att presentera det i en logisk ordning.
