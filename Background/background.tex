@@ -20,7 +20,7 @@ This section explains the theory behind:
 \begin{itemize}
 \item Important coordinate frames for representation and their relationship.
 \item How observations are made, modelled and the observation error sources.
-\item How satellite positions are calculated
+\item How satellite positions are calculated.
 \item How a global position estimate and differenced relative estimates are calculated.
 \item How satellite geometry influences the estimate.
 \end{itemize}
@@ -36,53 +36,61 @@ This may also lead to revolutions in many industries such as farming when tracto
 In some applications, only the relative position between two units is of importance, e.g. for a ship docking or when landing on a platform. For this situation, the necessary precision may be much higher, meaning that the position error must be very small. Through the use of more advanced techniques than standalone positioning, relative position accuracy on a cm level or below has been proven achievable \cite{gao2004performance}. 
 \end{comment}
 \section{Navigation frames and Earth representation}
-In order to navigate in a 3D-world, a set of three vectors need to be defined. There exist global frames which may be used for positioning anywhere, as well as local frames which are defined with directions and origin at an arbitrary point. There are several representation frames for a point in a GNSS application, among those a few notable ones are the Longitude-Latitude-Altitude (LLA), Earth-Centered-Earth-Fixed (ECEF) and North-East-Down representations (NED). All systems presented follow the rotation of the earth. It is also implied that the standard is based on the WGS84 system as it is the basis for GPS.\\
+In order to navigate in a 3D-world, a set of three vectors need to be defined. There exist global frames, which may be used for positioning anywhere, as well as local frames which are defined with directions and origin at an arbitrary point. There are several coordinate frames for a point in a GNSS application, among those the notable ones are the Longitude-Latitude-Altitude (LLA), Earth-Centered-Earth-Fixed (ECEF) and North-East-Down representations (NED). All systems presented follow the rotation of the earth. It is also implied that the standard is based on the WGS84 system as it is the basis for GPS.\\
 \textbf{LLA:}
-The LLA-system is a spherical system, using the angular arguments degrees West of the Greenwich meridian, denoted $\lambda$ and North of the equator, denoted $\phi$, as well as a straight coordinate height over the surface of the earth. The altitude argument relies on a reference to the model of the earth applied, where 0 altitude implies being on the surface. \\
+The LLA-system is a spherical system, using the angular arguments degrees West of the Greenwich meridian, denoted $\lambda$ and North of the equator, denoted $\phi$, as well as a straight coordinate height over the surface of the earth. The altitude argument relies on a reference to the model of the earth that is used, where 0 altitude implies being on the surface. \\
 \textbf{ECEF:} The ECEF system is a Cartesian system, where the x and y-axes go through the equator with the x-axis pointing through the 0-meridian and the z-axis straight north.\\
-\textbf{NED:} A NED-coordinate system is defined locally at an arbitrary point such that the axes point respectively straight in the North, East and down direction, where down implies towards the center of the earth.\\
+\textbf{NED:} A NED-coordinate system is defined locally at an arbitrary point such that the axes point respectively straight in the north, east and down direction, where down implies towards the center of the earth.\\
 \textbf{Elevation Azimuth:}
 The Elevation-Azimuth system is a spherical system defined locally. The radius can also be introduced to turn it into a 3D system. Elevation implies the degrees above the horizon and Azimuth the degrees clockwise from the north direction. This works well for an origin at a low altitude as the zero degrees defined by the horizon will be perpendicular to the radial direction of the earth, but for a higher altitude the angle to the horizon will become negative and this frame may lose its utility.
 
 \subsection{Coordinate frame transformation}
-The different coordinate systems representations are illustrated in figure \ref{fig:CF}. The transformation between a point $B$ in an ECEF frame to a local NED-frame around a point $A$ is given by the matrix 
-\begin{equation*}
+The different coordinate systems representations are illustrated in figure \ref{fig:CF}. The transformation between a point $B$ in an ECEF frame to a local NED-frame around a point $A$ is given as a combination of two rotation matrices. First a rotation around the longitude $R_1(\lambda)$, followed by a rotation of the latitude $R_2(\phi)$. These rotation matrices are given by:
+\begin{equation}
+R_1(\lambda)=\begin{bmatrix}
+-\sin \lambda & 0 & \cos \lambda \\
+0  & 1 & 0 \\
+-\cos \lambda &0 & -\sin \lambda
+\end{bmatrix}
+\end{equation}
+and
+\begin{equation}\label{eq:rot_matrix}
+R_2(\phi)=\begin{bmatrix}
+\cos \phi & \sin \phi &0\\
+-\sin \phi & \cos \phi & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+\end{equation}
+and finally the rotation matrix $R=R_1\cdot R_2$ gives the coordinate transformation
+\begin{equation}
 \begin{bmatrix} n\\ e\\ d \end{bmatrix}=
 \begin{bmatrix}
--\sin \phi cos \lambda & -\sin \phi \sin \lambda & \cos \phi \\
--\sin \lambda &\cos \lambda &0 \\
-\cos \phi \cos \lambda & \cos \phi \sin \lambda & \sin \phi
+-\sin \lambda \cos \phi & -\sin \lambda \sin \phi & \cos \lambda \\
+-\sin \phi &\cos \phi &0 \\
+\cos \lambda \cos \phi & -\cos \lambda \sin \phi & \sin \lambda
 \end{bmatrix}
 \begin{bmatrix}
 \Delta x \\ \Delta y \\ \Delta z
 \end{bmatrix}
-\end{equation*}
-where $n,e,d$ represents the position in the local frame, $\lambda$ and $\phi$ the longitude and latitude angles of the point of transformation and $\Delta x, \Delta y,\Delta z$ the difference between points $A$ and $B$ in ECEF-coordinates.
+\end{equation}
+where $n,e,d$ represents the position in the local frame, $\lambda$ and $\phi$ the longitude and latitude angles of the point of transformation and $\Delta x, \Delta y,\Delta z$ the difference between points $A$ and $B$ in ECEF-coordinates. The rotation matrix $R_2$ also coincides with the rotation of the earth. A property of a rotation matrix $M$ is that for any rotation $\zeta$ around a single axis, the inverse rotation is equivalent to its transpose, such that $M(-\zeta)=[M(\zeta)]^T$.
+
 \begin{figure}[!h]
 \centering
 \includegraphics[width=0.8\textwidth]{Background/allCS}
 \caption{\label{fig:CF} Commonly used coordinate frames for GNSS navigation and their correlation is shown. Global frames: ECEF, defined by directions x,y,z. LLA, defined by angles $\lambda, \phi$ and height $h$. Local frames around a point {\color{blue} \bf A} where the plane in red is tangential to the surface: NED, defined by the directions {\color{red} N,E,D}, and Elevation Azimuth for a point {\color{blue} \bf B} with regards to point {\color{blue} \bf A} given by $\alpha$ degrees clockwise from north and $\epsilon$ degrees above the horizon.}
 \end{figure}
 
-A special case of the rotation matrix which is that of the earth's rotation around its own axis should be mentioned. As this rotation coincides with the ECEF z-axis, it is a planar rotation which using basic algebra can be proven to be
-\begin{equation}
-\begin{bmatrix}\label{eq:rot_matrix}
-\cos \lambda &\sin \lambda & 0 \\ 
--\sin \lambda & \cos \lambda & 0\\
-0 & 0 & 1
-\end{bmatrix}
-\end{equation}
-for a clockwise rotation $\lambda$. A property of the rotation matrix is that for any matrix $M(\lambda)$ defined by (\ref{eq:rot_matrix}), the inverse rotation is equivalent to its transpose $M(-\lambda)=[M(\lambda)]^T$.
 
 
 \section{The pseudorange signal and error terms}\label{signalAndError}
-The primary source of data for positioning is called the pseudorange and is based on calculating a time difference between transmission and reception which can be translated to a range through the speed of light. The specific method for measurement acquisition is based on sampling a sequence of the pseudorandom code sent out by a satellite, which is then compared for similarity to a longer sequence by the receiver. This gives the receiver information on when the signal was broadcast, while the time of reception is based on the receiver clock. Since in this project, the pseudorange will be sampled directly in the form of a distance from the receiver, the discussion on observation acquisition will not be explained further, more information on the specifics of how the signal is sampled can be found in \cite{Jeffrey}. 
+The primary source of data for GNSS positioning is called the pseudorange and is based on calculating a time difference between transmission and reception which can be translated to a range through the speed of light. The specific method for measurement acquisition is based on sampling a sequence of the pseudorandom code sent out by a satellite, which is then compared for similarity to a longer sequence by the receiver. This gives the receiver information about when the signal was broadcast, while the time of reception is based on the receiver clock. Since in this project, the pseudorange will be sampled directly in the form of a distance from the receiver, the discussion on observation acquisition will not be explained further, more information on the specifics of how the signal is sampled can be found in \cite{Jeffrey}. 
 \subsection{Components of the pseudorange} \label{pseudorangeComponents}
-The pseudorange signal is measured as a time difference between time of transmission and reception. Both clocks times are assumed imperfect and containing an offset from the true time, which will impact the measurement. The measurement is considered a sum of three parts: the time difference between the true times of transmission and reception, the time difference between the respective clock offsets, and an error term \cite{6748618}. The model for these clock offsets are discussed further in section \ref{clockErrors}. The measured time of propagation, $T_{prop}$ is then expressed as
+The pseudorange signal is measured as a time difference between time of transmission and reception. Both clock times are assumed imperfect and containing an offset from the true time, which will impact the measurement. The measurement is considered a sum of three parts: the time difference between the true times of transmission and reception, the time difference between the respective clock offsets, and an error term \cite{6748618}. The model for these clock offsets are discussed further in section \ref{clockErrors}. The measured time of propagation, $T_{prop}$ is then expressed as
 \begin{equation}\label{t_prop}
 T_{prop}=(t_{rec}-t_{tr})+(\Delta t_{rec}-\Delta t_{sat})+\nu.
 \end{equation}
-where $t_{rec}$ and $t_{tr}$ are the true times of reception and transmission, $\Delta t_{sat}$ and $\Delta t_{rec}$ the transmitter and receivers respective offset from the true time in seconds and $\nu$ and error term, discussed further in section \ref{errorSources}. The propagation time for the signal is, with previously mentioned orbit, at around 6$\sim$7 ms and is the sought after component of the signal since it tells the distance to the sender. The measurement is transformed to a distance through multiplying with the speed of light $c$, and an observation can instead be expressed as a function of the actual distance and clock difference as
+where $t_{rec}$ and $t_{tr}$ are the true times of reception and transmission, $\Delta t_{sat}$ and $\Delta t_{rec}$ the transmitter and receivers respective offset from the true time in seconds and $\nu$ and error term, discussed further in section \ref{errorSources}. The propagation time for the signal is, with previously mentioned orbit, at around 6-7 ms and is the sought after component of the signal since it tells the distance to the sender. The measurement is transformed to a distance by multiplying with the speed of light $c$, and an observation can instead be expressed as a function of the actual distance and clock difference as
 \begin{equation} \label{ObsRange}
 y=||{\bf p}^{sat}-{\bf p}_{rec}||+c\Delta t+c\nu
 \end{equation}
@@ -103,14 +111,14 @@ The argument $\boldsymbol \theta=[{\bf p}_{rec},\Delta t_{rec}]$ has been introd
 \subsection{Pseudorange error terms}
 The different components of the error term $\nu$, mentioned in section \ref{pseudorangeComponents} are explained and given an expected range in this section. A summary of the noise sources can be found in table \ref{tableNoise}.
 \subsubsection{Clock errors}\label{clockErrors}
-The clocks in satellites are very precise, but as many of them have been active for a long time, the error can still amount to large values due to error build up over a long time. This error is called a bias and originates in the clock time advancing slightly different from an ideal clock, called a drift. This drift can be modeled as a random walk behavior and means that the error tends to build up slowly over time. The bias in receivers can often be much larger with a much higher drift. However between two consecutive samples, the difference is small, e.g.: an average drift of +1 second/day translates to $\sim10\mu s/s$. The clock biases give rise to a positioning error in two parts where the first part is the range error included in eq. (\ref{ObsRange}). These biases should be taken into account since a clock error of 1 ms can result in a positioning error of thousands of kilometers as 1 ms of clock bias equals to $c\cdot 0.001s\approx3\cdot 10^5$ m. 
+The clocks in satellites are very precise, but as many of them have been active for a long time, the error can still amount to large values due to error build up over a long time. This error is called a bias and originates in the clock time advancing slightly different from an ideal clock, called a drift. This drift can be modeled as a random walk behavior and means that the error tends to build up slowly over time. The bias in receivers can often be much larger with a much higher drift. However between two consecutive samples, the difference is small, e.g: an average drift of +1 second/day translates to $\sim10\mu s/s$. The clock biases give rise to a positioning error in two parts where the first part is the range error included in eq. (\ref{ObsRange}). These biases should be taken into account since a clock error of 1 ms can result in a positioning error of thousands of kilometers as 1 ms of clock bias equals to $c\cdot 0.001s\approx3\cdot 10^5$ m. 
 \par
 The second part of the clock bias positioning error stems from that the satellite position is determined with time as an argument, parametrized by a set of equations from the ephemeris data, explained more below. The receiver bias constitutes the largest part as an error in the receiver clock will lead to an error in the satellite position. The GNSS satellites travel at a speed of around 4000 m/s which means that a receiver clock error of $\Delta t_{rec}=0.01$ s can result in an error in the satellite position of around 40 m. Both the satellite and receiver clock errors will be compensated for, explained in section \ref{chap:ephPositioning} and \ref{stateEst}. The remaining error in the satellite clock after correction is in the range of 2.5 m \cite{Jeffrey}.
 
 \subsubsection{Other error sources}\label{errorSources}
 The third part of the signal, the noise terms $\nu$, is composed of several parts. This can be split up into a common noise and non common noise, where a common noise implies that it is equal for two simultaneous observations separate in space. If the common noise is expressed it will be denoted $\eta$. Otherwise, it will be included in the unmodelled noise sources, denoted $\epsilon$.
 \par
-The common noises include the Ionospheric and Tropospheric atmospheric noise, which can range up to 100 m \cite{IonoNoise} and 25 m \cite{williams2017tropospheric} respectively, but mostly are in the range of abut 5 m and 0.5 m respectively \cite{Jeffrey}. There are models for how to compensate for these effects, presented e.g. in \cite{Karaim2018Chapter4G} but they are not modeled in this project. Another common noise is the error in calculated position of the transmitting satellite, discussed further in section \ref{chap:ephPositioning}. The satellite position calculation is correct to in average 1 m in any direction \cite{satPos}. 
+The common noises include the Ionospheric and Tropospheric atmospheric noise, which can range up to 100 m \cite{IonoNoise} and 25 m \cite{williams2017tropospheric} respectively, but mostly are in the range of about 5 m and 0.5 m respectively \cite{Jeffrey}. There are models for how to compensate for these effects, presented e.g. in \cite{Karaim2018Chapter4G} but they are not modeled in this project. Another common noise is the error in calculated position of the transmitting satellite, discussed further in section \ref{chap:ephPositioning}. The satellite position calculation is correct to in average 1 m in any direction \cite{satPos}.
 \par 
 The unmodelled noise sources include multipath effects which is when signals are reflected of other objects, as well as receiver noise. These noise sources can be expected to be in the range of 1 and 0.3 m respectively \cite{Jeffrey}, but examples of multipath has been observed up to 100 m \cite{Karaim2018Chapter4G}.  
 
@@ -132,8 +140,8 @@ The unmodelled noise sources include multipath effects which is when signals are
 %\section{GNSS positioning} \label{ch:gnssPos}
 %In this section, the method for determining the position of the satellites as well as some methods for obtaining a navigation solution through the information transmitted by the satellites are presented.
 \section{Satellite positioning using ephemeris data}\label{chap:ephPositioning}
-In order to determine a receiver's global position using satellites, the satellite's position should be known. The satellite positions at a given time are accessible online in real-time, e.g. from \url{gnssplanning.com} 
-or can be calculated directly. The calculations are based on two parts: Almanac and ephemeris data. Almanac data is a predefined base orbit of lower accuracy which is updated on an approximately daily basis which is readily available online, e.g. on \url{https://www.navcen.uscg.gov/}
+In order to determine a receiver's global position using satellites, the satellite's position should be known. The satellite positions at a given time are accessible online in real-time\footnote{ E.g. from \url{gnssplanning.com} }
+or can be calculated directly. The calculations can be done using either almanac or ephemeris data. Almanac data is a predefined base orbit of lower accuracy which is updated on an approximately daily basis which is readily available online\footnote{E.g. from \url{https://www.navcen.uscg.gov/}}
 as well as satellites transmitting it directly. Precise positioning applications will rely on ephemeris data, which contains the parameters to calculate a more precise position of the satellite. This is transmitted by the individual satellite at a frequency of a few times per minute.
 \par
 The  data contained in the ephemeris message is based on the set of Keplerian equations which describes an orbit in space. 
@@ -141,15 +149,45 @@ The  data contained in the ephemeris message is based on the set of Keplerian eq
 Each message will contain information of 20 parameters: two reference times, three clock correction factors, six Keplerian parameters and nine perturbation parameters. 
 \par
 The clock correction factors are specific to each satellite and are the primary form of clock correction, used to correct for the $\Delta t_{sv}$ term in (\ref{t_prop}). The equation to calculate the satellite clock bias, the precise algorithm for calculating the position and description of the Keplerian equations can be found in \cite{dunn2012global}. An example of the parameters in an ephemeris message used for this project is shown in figure \ref{fig:ephData}. The satellite position is then calculated using the corresponding ephemeris data with time as an argument and will be given in an ECEF frame.
-\begin{figure}[!h]
-\includegraphics[scale=1]{Background/eph_values.jpg}
+\begin{table}
+\begin{center}
+\begin{tabular}{|c|r|} \hline
+    \bf{ satID} & \bf{2} \\ \hline
+    iode & 110 \\
+    iodc & 110 \\
+    week & 2078 \\
+     toe & 309600 \\
+     toc & 309600 \\
+     ttr & 304836 \\
+       A & 2.6559e+07 \\
+       e & 0.0193 \\
+      i0 & 0.9569 \\
+    OMG0 & 0.3503 \\
+     omg & -1.7032  \\
+      M0 & -2.1420 \\
+    deln & 4.7070e-09  \\
+    OMGd & -7.9675e-09\\
+    idot & 4.0109e-10  \\
+     crc & 288.5625 \\
+     crs & 19.5938 \\
+     cuc & 1.2275e-06 \\
+     cus & 4.3046e-06  \\
+     cic & 2.7195e-07 \\
+     cis & 1.2293e-07 \\
+    toes & 309600  \\
+      f0 & -3.4128e-04 \\
+      f1 & -7.7307e-12 \\
+      f2 & 0  \\ \hline
+\end{tabular}
 \caption{\label{fig:ephData} An example of a sample of the parameters contained in a single ephemeris message sampled on November 7, 2019.}
-\end{figure}
+\end{center}
+\end{table}
+
 \par 
 It is relevant to note that the time applied in the GPS-system is zeroed at Midnight January 6, 1980, and expressed in the format number of weeks and time of the week in seconds, using midnight Sunday-Monday as reference.
 
 \section{Global positioning model and estimates}
-As each measurement is only given in one dimension, signals from several transmitters need to be taken into account in order to estimate the receiver's position. To estimate a position in 3D as well as the receiver clock bias a minimum of 4 transmitting satellites is needed. Utilizing the pseudorange measurements in combination with knowledge of the satellite's position at the time of transmission, a position estimate can be calculated. The receiver and satellite position are $3\times 1$-vectors $[x, y, z]$ conveniently expressed in an ECEF frame, as that is how satellite positions are given in calculations presented in section \ref{chap:ephPositioning}. To solve this with regards to the currently unknown $\boldsymbol \theta$, an iterative linearized solver can be implemented, presented below. For clarity, the values which are estimated and those calculated are as follows:
+To estimate a position in 3D as well as the receiver clock bias a minimum of 4 transmitting satellites is needed. Utilizing the pseudorange measurements in combination with knowledge of the satellite's position at the time of transmission, a position estimate can be calculated. The receiver and satellite position are $3\times 1$-vectors $[x, y, z]$ conveniently expressed in an ECEF frame, as that is how satellite positions are given in calculations presented in section \ref{chap:ephPositioning}. To solve this with regards to the currently unknown $\boldsymbol \theta$, an iterative linearized solver can be implemented, presented below. For clarity, the values that are estimated and those calculated are as follows:
 
 \paragraph{Estimates} The following are estimates in the model:
 \begin{itemize}
@@ -170,7 +208,7 @@ These values are either given or directly calculated given values.
 \item $\xi$: Ephemeris parameters, transmitted by each GNSS-satellite individually.
 \item $\epsilon$: Unmodeled error source.
 \end{itemize}
-Any set of values or estimates will be ordered as a column vector, e.g. \textbf{y}=[y$^1$ ... y$^n$]$^T$ is a $n\times1$ vector of pseudorange observation, where a superscript is used as an index to indicate corresponding satellite and observation. 
+Any set of values or estimates will be ordered as a column vector, e.g. \\ \textbf{y}=[y$^1$ ... y$^n$]$^T$ is a $n\times1$ vector of pseudorange observations, where a superscript is used as an index to indicate corresponding satellite and observation. 
 
 \paragraph{Satellite position}
 Satellite positions are calculated using the transmitted information in the ephemeris data as described in chapter \ref{chap:ephPositioning}. For a satellite, the position is calculated using only $t$ as an argument, and parametrized by the ephemeris values in $\xi$:
@@ -229,9 +267,9 @@ For a set of n observations ${\bf y}$ and the corresponding satellite positions 
 		  \Delta t_{sv}^1 \\ \vdots \\ \Delta t_{sv}^n
 		  \end{bmatrix}+ \begin{bmatrix}
 		  \epsilon_1 \\ \vdots \\ \epsilon_n
-		  \end{bmatrix}
+		  \end{bmatrix} \label{eq:setOfObs}
 \end{align}
-The satellite clock errors $\Delta {\bf t}_{sv}$ will be subtracted from the equations using the equation in \cite{dunn2012global} to get
+The satellite clock errors $\Delta {\bf t}_{sv}$ will be subtracted from (\ref{eq:setOfObs}) using the equation in \cite{dunn2012global} to get
 \begin{align}
 {\bf y}^*&=h({\bf p}^{sat},{\boldsymbol \theta})+ {\boldsymbol \epsilon}\\
 		  &=\begin{bmatrix} 
@@ -242,8 +280,7 @@ The satellite clock errors $\Delta {\bf t}_{sv}$ will be subtracted from the equ
 		  \epsilon_1 \\ \vdots \\ \epsilon_n
 		  \end{bmatrix} \label{linearised}
 \end{align}
-
-The equations are solved for the estimate $\hat{\boldsymbol \theta}$ such that the error
+These equations are solved for the estimate $\hat{\boldsymbol \theta}$ such that the error
 \begin{equation}
 ||\textbf{y}^*-h(P^{sat},{\boldsymbol \theta})||^2
 \end{equation} 
@@ -258,7 +295,7 @@ The system of equations is solved using the gradient of the equations. The gradi
 						&=-\frac{p^{(i)}_x-p_x}{||\bf p^{(i)}-p||}-\frac{p^{(i)}_y-p_y}{||\bf p^{(i)}-p||}-\frac{p^{(i)}_z-p_z}{||\bf p^{(i)}-p||}+c \nonumber \\
 						:&=\nabla h^{(i)}({\bf p}^{(i)},{\boldsymbol \theta})\label{eq:nablaH}
 \end{align}
-All the gradients described by (\ref{eq:nablaH}) are collected in a $n\times 4$ matrix H:
+All the gradients in (\ref{eq:nablaH}) are collected in a $n\times 4$ matrix H:
 \begin{align}\label{eq:H}
 H(P^{sat},{\boldsymbol \theta})=\begin{bmatrix}
 \nabla h^1({\bf p}^{1};{\boldsymbol \theta}) \\
@@ -266,7 +303,7 @@ H(P^{sat},{\boldsymbol \theta})=\begin{bmatrix}
 \nabla h^n({\bf p}^{n};{\boldsymbol \theta})
 \end{bmatrix}.
 \end{align}
-The result of (\ref{eq:H}) leads to the least square solution of (\ref{eq:thetaHat}) being described by:
+The result of (\ref{eq:H}) leads to the least square solution of (\ref{eq:thetaHat}) being expressed as:
 \begin{align}\label{eq:LS}
 \hat{{\boldsymbol \theta}}=(H^T\cdot H)^{-1}H^T{\bf y}^*,
 \end{align}
@@ -278,38 +315,43 @@ as described in \ref{ch:LS}. Equation \ref{eq:LS} is a step in a Gauss-Newton it
 {\boldsymbol \theta}^{(j)}-(H^T({\boldsymbol \theta}^{(j)})H({\boldsymbol \theta}^{(j)})^{-1}H^T({\boldsymbol \theta}^{(j)})({\bf y}- h\left[P^{sat, (j)},{\boldsymbol \theta}^{(j)}\right])
 \end{align*}
 where the superscript $(j)$ indicates an iteration number.\\
+
 \subsection{Weighted estimator}\label{globalWEstimator}
 If there is knowledge of the uncertainty in the observations, the minimizing function in \ref{eq:thetaHat} can be described by
 \begin{align}\label{eq:theta_hatW}
 \hat{{\boldsymbol \theta}}=\operatorname*{argmin}_{\bf \theta}\left(||{\bf y}-h(P^{sat},{\boldsymbol \theta})||^2_W\right).
 \end{align}
-where $||X||^2_W=X^TWX$ and $W$ is a matrix of weights, here it will always be assumed diagonal and non-negative. The so-called Best Linear Unbiased Estimator (BLUE) solution to equation (\ref{eq:LS}) will then be expressed as 
+where $||X||^2_W=X^TWX$ and $W$ is a matrix of weights. The observations are not considered equal, instead observations which are more accurate are assigned a higher weight which leads to a larger impact on the estimate. In \cite{Brunner1999}, the signal-to-noise-ratio (SNR), which is closely related to the CNR and is recorded by the receivers is used as an estimate of the magnitude of the noise. It is assumed that the observations are uncorrelated, which means that the weight matrix can be described as a diagonal matrix $W=\text{diag}\left(w_1,\dots, w_n\right)$  for $n$ observations. A weight $w_i$, corresponding to observation $y^{(i)}$ and its corresponding registered SNR$^{(i)}$ value in dBHz are calculated as
+\begin{equation}\label{SNRWeights}
+w_i=10^{-0.1\cdot SNR^{(i)}}.
+\end{equation}
+Equation (\ref{eq:LS}) will then be expressed using a so called Best Linear Unbiased Estimator (BLUE), given by
 \begin{align}\label{eq:WLS}
-\hat{{\boldsymbol \theta}}_{BLUE}=(H^T W H)^{-1}H^T W{\bf y}
+\hat{{\boldsymbol \theta}}_{BLUE}=(H^T W H)^{-1}H^T W{\bf y},
 \end{align}
 As described in \ref{ch:WLS}.\\
-In \cite{Brunner1999}, the signal-to-noise-ratio (SNR) value, which is closely related to the CNR and is recorded by the receivers is used as an estimate of the magnitude of the noise, such that the weight matrix will be described as a diagonal matrix $W=\text{diag}\left(w_1,\dots, w_n\right)$ 
-for $n$ observations. A weight $w_i$, corresponding to observation $y^{(i)}$ and its corresponding registered SNR$^{(i)}$ value in dBHz are calculated as
-\begin{equation}\label{SNRWeights}
-w_i=10^{-0.1\cdot SNR^{(i)}}
-\end{equation}
+
 \subsection{Iterative steps of estimator}\label{iterativeModel}
-The calculations to obtain (\ref{eq:thetaHat}) is in the order:
+An epoch will be used to describe a set of observations made at the same instance and will be denoted by $[k]$.The final estimate, meaning the last iteration of the state estimates, will be denoted ${\boldsymbol \theta}[k]$. For the first epoch, $k=1$ The initial estimate of the receiver states ${\boldsymbol \theta}_0[1]$ is set to zero, i.e. ${\bf p}^{(0)}_{rec}[1]=[0, 0, 0]$ and $\Delta t^{(0)}_{rec}[1]=0$. For the subsequent epochs, $k>1$, the final estimate of the previous epoch is used as initial estimate, i.e. ${\boldsymbol \theta}_0[k+1]={\boldsymbol \theta}[k]$.
+The calculations to obtain (\ref{eq:thetaHat}) are in the order:
 \begin{enumerate}
+\setcounter{enumi}{-1}
 \item Calculate all $\Delta {\bf t}_{sv}$ for the satellites at time of reception $t$ and adjust the observations ${\bf y}^*= {\bf y} -\Delta {\bf t}_{sv}$. This step is not repeated.
 \end{enumerate}
-An epoch will be used to describe a set of observations made at the same instance and will be denoted by $[k]$.The final estimate, meaning the last iteration of the state estimates, will be denoted ${\boldsymbol \theta}[k]$. For the first epoch, $k=1$ The initial estimate of the receiver states ${\boldsymbol \theta}_0[1]$ is set to zero, i.e. ${\bf p}^{(0)}_{rec}[1]=[0, 0, 0]$ and $\Delta t^{(0)}_{rec}[1]=0$. For the subsequent epochs, $k>1$, the final estimate of the previous epoch is used as initial estimate, i.e. ${\boldsymbol \theta}_0[k+1]={\boldsymbol \theta}[k]$.
 \begin{enumerate}
-\setcounter{enumi}{1}
-\item Adjust the observation for the receiver clock bias ${\bf y}^{**}={\bf y}*-c\Delta {\bf t}_{rec}$.\\
+\item Adjust the observation for the receiver clock bias ${\bf y}^{**}={\bf y}^*-c\Delta {\bf t}_{rec}$.
+\end{enumerate}
 For each satellite individually:
-\item Calculate signal time of flight $\tau^{(i)}=\frac{(\bf y^{(i)})**}{c}$ .
+\begin{enumerate}
+\addtolength{\itemindent}{1cm}
+\setcounter{enumi}{1}
+\item Calculate signal time of flight $\tau^{(i)}=\frac{(\bf y^{(i)})^{**}}{c}$ .
 \item Calculate the satellite positions ${\bf p}^{(i)}(t_{rec}-\tau^{(i)};\xi)$.
 \item Calculate the rotation angle $\gamma^{(i)}$.
 \item Adjust the satellite position as in (\ref{eq:coord_rotation}) to obtain $({\bf p}^{(i)})'(t_{tr})$.
 \item Calculate $\hat{{\boldsymbol \theta}}$ from ${\bf p}'(t_{tr})$, $\bf y^{**}$ and $\boldsymbol \theta$ as in equation (\ref{eq:LS}) or (\ref{eq:WLS}). 
 \end{enumerate}
-This is continued until convergence for steps 2-7, where the convergence threshold has been set to $10^{-3}$ m, indicating that
+This is continued until convergence in the position estimate for steps 2-7, where the convergence threshold has been set to $10^{-3}$ m, indicating that
 \begin{itemize}
 \item The variables ${\bf y}^{**}$, $\boldsymbol \tau$, ${\bf p}_{rec}$ and $\Delta t_{rec}$ all are interdependent.
 \item ${\bf p}^{sat}$, is dependant only on $\Delta t_{rec}$ and $\boldsymbol \tau$. 
@@ -317,14 +359,15 @@ This is continued until convergence for steps 2-7, where the convergence thresho
 \item $t$ is dependant only on $t_{rec}$ and $\Delta t_{rec}$.
 \end{itemize}
 
-\section{Estimator pseudo-code}
+\section{Global position estimator pseudo-code}
 For the first epoch, the initial values of the receiver ${\boldsymbol \theta}_0[1]$ are set to 0. For any succeeding epoch $k>1$, the initial estimate of the states ${\boldsymbol \theta}_0[k]$ will use the final estimate of the previous epoch ${\boldsymbol \theta}[k-1]$. 
 \par 
 To calculate the receiver states during one epoch, all the estimated values are dependent on each other and any calculation will use the values calculated in the previous iteration of the others as input. In the code, the last iteration is denoted with a hat symbol, e.g. ${\bf \hat{p}}_{rec}$ and superscript is indexed by \texttt{(i)}. 
 \par
-The function "estimate\_satellite\_clock\_bias" is that from equation (\ref{estDtSV}). "get\_satellite\_position" comes from equation (\ref{eq:p_sat}). The rotation matrix in (\ref{eq:coord_rotation}) is represented by \texttt{R} and the "estimate\_position" function is the least squares solution to (\ref{eq:LS}). 
+The function "estimate\_satellite\_clock\_bias" is that from equation (\ref{estDtSV}).\\ "get\_satellite\_position" comes from equation (\ref{eq:p_sat}). The rotation matrix in (\ref{eq:coord_rotation}) is represented by \texttt{R} and the "estimate\_position" function is the least squares solution to (\ref{eq:LS}). 
 \par
-In the following pseudo-code, the set of satellite positions $P_{sat}$ is a $n\times 3$ matrix, for a set of $n$ satellites where an index j relates to the corresponding satellite position ${\bf p}^{(j)}$. It is assumed that the set $\Xi=\{\xi^{(1)},\dots, \xi^{(n)}\}$ contains only the ephemeris data of the active satellites in each epoch.
+In the pseudo-code in algorithm \ref{tab:pseudoCode}, the set of satellite positions $P_{sat}$ is a $n\times 3$ matrix, for a set of $n$ satellites where an index j relates to the corresponding satellite position ${\bf p}^{(j)}$. It is assumed that the set $\Xi=\{\xi^{(1)},\dots, \xi^{(n)}\}$ contains only the ephemeris data of the active satellites in each epoch.
+\begin{algorithm}
 \begin{algorithmic}
 \STATE{1.Calculate satellite clock bias at observation time for each satellite}
 \FOR{all j in $\Xi$}
@@ -336,7 +379,7 @@ In the following pseudo-code, the set of satellite positions $P_{sat}$ is a $n\t
 \ENDFOR
 \STATE{$\Delta p \gets 100$ \\ $\Delta b \gets 100$}
 \STATE{3.Iterate until convergence: calculate receiver states}
-\WHILE{( $|\Delta p|\cup |\Delta b|$)>0.1}
+\WHILE{( $|\Delta p|$ or $|\Delta b|$)>0.1}
 \STATE{3.1 Calculate signal time of flight}
 \FOR{all j in {\bf y}}
 \STATE{{\bf y}(j) $\gets$ {\bf y}(j)-$c\Delta t_{rec}$}
@@ -356,19 +399,20 @@ In the following pseudo-code, the set of satellite positions $P_{sat}$ is a $n\t
 \STATE{$\Delta t_{rec} \gets \Delta \hat{t}_{rec}$}
 \ENDWHILE
 \end{algorithmic}
-As it is a linearised system, the values of {\bf y},$\boldsymbol \tau$, ${\bf p}^{sat}$, $\boldsymbol \gamma$, ${\bf p}_{rec}$ and $\Delta t_{rec}$ will be updated per each iteration. This implies that for each iteration the position and receiver clock bias are estimated, and in turn the satellite position is adjusted for the updated clock bias value. This is repeated until convergence is reached.
-
+\caption{\label{tab:pseudoCode} Global position estimator pseudocode}
+\end{algorithm}
+As it is a linearised system, the values of {\bf y},$\boldsymbol \tau$, ${\bf p}^{sat}$, $\boldsymbol \gamma$, ${\bf p}_{rec}$ and $\Delta t_{rec}$ will be updated per each iteration.
 \section{Relative positioning}\label{RelPos}
-Relative positions can be calculated through the difference in positions calculated as in section \ref{iterativeModel} above. In this section a relative estimate using a DD-method is presented. The idea is to create an estimate of the relative distance between two positions by using the shared information between two receivers. It is based on that for two unit vectors ${\bf u}^{(i)}_a$ and ${\bf u}^{(i)}_b$ both pointing from receivers $a$ and $b$ respectively at position ${\bf p}_a$ and ${\bf p}_b$, to the same satellite at position ${\bf p}^{(i)}$ are considered to be parallel, as the angle $\alpha$ between ${\bf u}^{(i)}_a$ and ${\bf u}^{(i)}_b$ is very small. The idea is presented in figure \ref{fig:relPos}. This is motivated by that the satellite distance is generally much larger than the distance between any two points on earth, e.g. an isosceles triangle where the two receivers at a distance of 1 km and the satellite at a distance of $2\cdot 10^7$ m result in $\alpha$ being smaller than 0.05$^o$. The threshold for two observations considered close is set to 10 ms. If the observations are separated by more than that the entire epoch is discarded. 
-\subsection{Differential technique observation model}
+Relative positions can be calculated through the difference in positions calculated as in section \ref{iterativeModel}. In this section a relative estimate using a DD-method is presented. The idea is to create an estimate of the relative distance between two positions by using the shared information between two receivers. It is based on the fact that for two unit vectors ${\bf u}^{(i)}_a$ and ${\bf u}^{(i)}_b$ both pointing from receivers $a$ and $b$ respectively at position ${\bf p}_a$ and ${\bf p}_b$, to the same satellite at position ${\bf p}^{(i)}$ are considered to be parallel, as the angle $\alpha$ between ${\bf u}^{(i)}_a$ and ${\bf u}^{(i)}_b$ is very small. The idea is presented in figure \ref{fig:relPos}. This is motivated by that the satellite distance is generally much larger than the distance between any two points on earth. For example, an isosceles triangle, a triangle where two sides are of equal length, where the two receivers are at a distance of 1 km and the satellite at a distance of $2\cdot 10^7$ m result in $\alpha$ being smaller than 0.05$^o$. The threshold for two observations considered close is set to 10 ms. If the observations are separated by more than that the entire epoch is discarded. 
+\subsection{Differential technique observation model}\label{diffObsModel}
 For the differential techniques presented below, the equation for a pseudorange measurement for the two receivers and a shared satellite $i$, at a given epoch will be:
 \begin{align}
 y^i_a&=\rho^{(i)}_a+c(\Delta t_a-\Delta t^{(i)})+\eta^i_a+\epsilon^i_a \label{Pa}\\
 y^i_b&=\rho^{(i)}_b+c(\Delta t_b -\Delta t^{(i)})+\eta^i_b+\epsilon^i_b\label{Pb}
 \end{align}
 where $\rho^{(i)}_a$ indicates the distance between a satellite $i$ and receiver $a$.
-\subsection{Single difference technique}\label{singleDifference}
-In single difference technique, illustrated in figure \ref{fig:relPos}, the difference between two receivers is calculated, based on their relative distance to a satellite $i$, shown below when subtracting equation (\ref{Pb}) from (\ref{Pa}):
+\subsection{Single difference estimator}\label{singleDifference}
+In single difference estimators, illustrated in figure \ref{fig:relPos}, the difference between two receivers is calculated, based on their relative distance to a satellite $i$, shown below when subtracting equation (\ref{Pb}) from (\ref{Pa}):
 \begin{align*}
 \Delta y^i_{ab}&=y^{(i)}_a-y^{(i)}_b\\
  		&=\rho^{(i)}_a+c(\Delta t_a-\Delta t^{(i)})+\eta^i_a+\epsilon^i_a\\
@@ -376,19 +420,19 @@ In single difference technique, illustrated in figure \ref{fig:relPos}, the diff
 		&=(\rho^{(i)}_a-\rho^{(i)}_b)+c(\Delta t_a-\Delta t_b)-(\eta^i_a-\eta^i_b)+(\epsilon^i_a-\epsilon^i_b)\\
 		&=\Delta \rho^{(i)}_{ab}+c\Delta t_{ab}+\Delta \eta^i_{ab}+\Delta \epsilon^i_{ab}
 \end{align*}
-As presented in \cite{blewitt1997basics}, with the same notation of $\Delta$ signifying a difference, this enables for the elimination of the satellite clock bias and orbit error, as well as atmospheric interference being effectively removed for receiver separations less than 30 km. Receiver clock bias should still be estimated.
-\subsection{Double difference technique}
+As presented in \cite{blewitt1997basics}, with the same notation of $\Delta$ signifying a difference, this eliminates the satellite clock bias and orbit error, as well as atmospheric interference being effectively removed for receiver separations less than 30 km. Receiver clock bias should still be estimated.
+\subsection{Double difference estimator}\label{ch:DD_estimator}
 In order to remove the receiver clock bias, double difference can be implemented, illustrated in figure \ref{fig:relPosDD}. This relies on the difference between two satellites, $i$ and $j$, common between the two receivers. Introducing the symbol $\nabla$ to signify double difference, the equations is set up as
 \begin{align}
 \nabla \Delta y^{ij}_{ab}	&=\Delta y^{(i)} _{ab}-\Delta y^{(j)} _{ab} \nonumber \\
 					&=\Delta \rho^{(i)}_{ab}+c\Delta t_{ab}+\Delta \epsilon^{(i)}_{ab}-\Delta \rho^{(j)}_{ab}-c\Delta t_{ab} -\Delta\epsilon^{(j)}_{ab} \nonumber\\
 					&=\Delta \rho^{(ij)}_{ab}+\Delta\epsilon^{(ij)}_{ab}.\label{eq:DD}
 \end{align}
-In equation (\ref{eq:DD}) the receivers clock bias is eliminated. The atmospheric noise has been omitted as explained in section \ref{singleDifference}. Further, the relation between the relative position of two receivers is the dot product along a unit vector ${\bf e}^i=[e_x, e_y, e_z]$ pointing to a satellite $i$:
+In equation (\ref{eq:DD}) the receiver clock bias is eliminated. The atmospheric noise has been omitted as explained in section \ref{singleDifference}. Further, the relation between the relative position of two receivers is the dot product along a unit vector ${\bf e}^i=[e_x, e_y, e_z]$ pointing to a satellite $i$:
 $$\Delta y^{(i)}_{ab}=\textbf{e}^i\cdot \textbf{r}_{ab}$$
 and similarly, with a reference satellite $j$, the double difference distance is given by
 $$\nabla \Delta y^{(ij)}_{ab}=(\textbf{e}^i-\textbf{e}^j)\cdot \textbf{r}_{ab}+\Delta\epsilon^{(ij)}_{ab}.$$
-Thus, given a set of $n+1$ unit vectors pointing towards as many different satellites, and their corresponding pseudorange measurements, a solution can be found utilising equation (\ref{eq:LS}). Using satellite $j$ as reference, with its corresponding direction unit vector and observation as reference gives the following vectors
+Thus, given a set of $n+1$ unit vectors pointing towards as many satellites, and their corresponding pseudorange measurements, a solution can be found utilising equation (\ref{eq:LS}). Using satellite $j$ as reference, with its corresponding direction unit vector and observation as reference gives the following vectors
 \begin{equation}\label{eq:DD-LS}
 H=\begin{bmatrix} \textbf{e}^1-\textbf{e}^j\\ \vdots\\ \textbf{e}^{n}-\textbf{e}^j\end{bmatrix}, \hspace{0.5 cm}
 \nabla \Delta \textbf{y}^{(j)}_{ab}=\begin{bmatrix}\Delta y^{1j}_{ab} \\ \vdots \\ \Delta y^{nj}_{ab} \end{bmatrix}.
@@ -396,20 +440,20 @@ H=\begin{bmatrix} \textbf{e}^1-\textbf{e}^j\\ \vdots\\ \textbf{e}^{n}-\textbf{e}
 Equation \ref{eq:DD-LS} may be solved using the same least square method of \ref{eq:LS} as the global position, but with the updated direction matrix. 
 
 \paragraph{Weighted least squares}
-In \cite{BLUE} it is also suggested to use a BLUE estimator with the CNR in dBHz, denoted $\psi$, as an estimate of the noise level. The CNR value is registered by the receivers individually and is assumed inversely proportional to the variance of the noise of the observation $\sigma^2$. A higher variance shall result in a lower weight, formulated as that the variance of the noise for an observation between satellite $i$ and receivers $a$ and $b$ is given by
+In \cite{BLUE} it is also suggested to use a BLUE estimator with the CNR in dBHz, denoted $\psi$, as an estimate of the noise level. The CNR value is registered by the receivers individually and is assumed inversely proportional to the variance of the noise of the observation $\sigma^2$. The assumed variance of the noise for an observation between satellite $i$ and receivers $a$ and $b$ is thus given by
 \begin{align*}
 (\sigma^{(i)})^2&=(\sigma^{(i)}_a)^2+(\sigma^{(i)}_b)^2\\
 		&\propto (\psi^{(i)}_a)^{-2}+(\psi^{(i)}_b)^{-2}.
 \end{align*} 
 The weight matrix $W$ is proposed as a diagonal weight matrix expressed as
-\begin{equation}
+\begin{equation}\label{DD_BLUE}
 W=\text{diag}\left(\frac{(\psi^1_a)^2\cdot(\psi^1_b)^2}{(\psi^1_a)^2+(\psi^1_b)^2},\dots,\frac{(\psi^n_b)^2\cdot \psi^n_b)^2}{(\psi^n_a)^2+(\psi^n_b)^2}\right)
 \end{equation}
 and the optimal solution is calculated as 
 \begin{align*}
 \hat{\boldsymbol \theta}_{BLUE}=\left((H^{(j)})^TWH^{(j)}\right)^{-1}(H^{(j)})^TW\nabla \Delta {\bf y}^{(j)}_{ab}
 \end{align*} 
-as proposed in equation (\ref{eq:WLS}), and $(H^{(j)})$ and $\nabla \Delta {\bf y}^{(j)}_{ab}$ are those presented in equation (\ref{eq:DD-LS}). Reference satellite $j$ is chosen to be the signal with the highest CNR value for each epoch. For these cases notable increase in accuracy is shown, compared to that of two global position estimates. 
+as proposed in equation (\ref{eq:WLS}), and $(H^{(j)})$ and $\nabla \Delta {\bf y}^{(j)}_{ab}$ are those presented in equation (\ref{eq:DD-LS}). Reference satellite $j$ is chosen to be the signal with the highest CNR value for each epoch. For these cases notable increase in accuracy is shown, both compared to that of two global position estimates as well as an unweighted DD estimator. 
 \begin{figure}
 \begin{minipage}[t]{0.48\textwidth}
 \includegraphics[width=\textwidth]{Background/relativePos}
@@ -435,7 +479,7 @@ One important aspect of the accuracy is in the spread of the satellites the rece
 \end{figure}
 and is an effect of that close-lying points on a plane perpendicular to the radius all are approximately at the same distance from the center. 
 \par 
-In relation to this, the dilution of precision (DOP) can be defined. This is a matrix quantifying the geometric distribution of the satellites in use. Defining the matrix $Q=(H^TH)^{-1}$, where $H$ is the Jacobian of the geometric matrix in (\ref{linearised}) gives an estimate of the uncertainty of the solution per direction based on the geometry of the observed satellites. $q_{ij}$ is used to describe element row and column, the following definitions are commonly observed:
+In relation to this, the dilution of precision (DOP) can be defined. This is a matrix quantifying the geometric distribution of the satellites in use. Defining the matrix $Q=(H^TH)^{-1}$, where $H$ is the Jacobian of the geometric matrix in (\ref{linearised}), gives an estimate of the uncertainty of the solution per direction based on the geometry of the observed satellites. $q_{ij}$ is used to describe element row and column, the following definitions are commonly observed:
 \begin{align}
 HDOP=q_H&=\sqrt{q_{11}^2+q_{22}^2}\label{eq:HDOP}\\ 
 VDOP=q_V&=q_{33}\label{eq:VDOP}\\ 
@@ -443,15 +487,16 @@ PDOP=q_P&=\sqrt{q_{11}^2+q_{22}^2+q_{33}^2}\label{eq:PDOP}\\
 TDOP=q_T&=q_{44}\label{eq:TDOP}\\ 
 GDOP=q_G&=\sqrt{q_{11}^2+q_{22}^2+q_{33}^2+q_{44}^2} \label{eq:GDOP}
 \end{align}
-Assuming that the geometric matrix is given in local NED coordinates, the HDOP, VDOP and PDOP respectively correspond to the horizontal, vertical and position uncertainty. TDOP is an estimate of the uncertainty in $\Delta t_{rec}$ and GDOP the geometric uncertainty. This gives an estimate of how noise in the observation maps to an error in the respective estimate. For this, the noise $\epsilon$ of each individual satellite should be assumed of equal magnitude \cite{tahsin2015analysis}. E.g. given a VDOP value of 3 and an error in the observations of 1 m, discussed in section \ref{signalAndError}, can be expected to result in a vertical error of 3m.
+Assuming that the geometric matrix is given in local NED coordinates, the HDOP, VDOP and PDOP respectively correspond to the horizontal, vertical and position uncertainty. TDOP is an estimate of the uncertainty in $\Delta t_{rec}$ and GDOP the geometric uncertainty. This relation gives an estimate of how noise in the observation maps to an error in the respective estimate purely based on the satellite geometry. For this, the noise $\epsilon$ of each individual satellite should be assumed of equal magnitude \cite{tahsin2015analysis}. 
 \par
-The relation between satellite geometry and actual position uncertainty is expressed as a product of the noise level times the corresponding DOP value. 
+The relation between satellite geometry and actual position uncertainty is expressed as a product of the noise level times the corresponding DOP value
 \begin{equation}\label{UERE}
-\sigma_X=\epsilon\cdot q_X
+\sigma_X=\epsilon\cdot q_X,
 \end{equation}
+from which it is clear that the DOP value acts only as a scalar. For example, given a VDOP value of 3 and a white noise $\epsilon$ in the observations with a standard deviation of 1 m, discussed in section \ref{signalAndError}, can be expected to result in a standard deviation of 3 m in the vertical position.
 The actual noise level in the observations, the sum of all error sources discussed in section \ref{signalAndError}, called the User Equivalent Range Error (UERE), is however usually not known to the receiver.
 \par
-The theoretically greatest achievable vertical spread is found with satellites under the receiver. This will not be achievable unless receiver is at a very high altitude since satellites below the horizon can't be observed. In practice an elevation threshold of at least 10$^o$ should be implemented since observations from low satellites have a higher noise level \cite{tatarnikov2014approaching}.
+The theoretically greatest achievable vertical spread is found with satellites under the receiver. This will not be achievable unless receiver is at a very high altitude since satellites below the horizon can't be observed. In practice an elevation threshold of at least 10$^o$ should be implemented since observations from low satellites have a higher noise level \cite{tatarnikov2014approaching}. All observations in this paper have implemented a threshold of 15$^o$, due to the treeline of surrounding forest at the site of observation being estimated to be in average at that angle from the horizon.
 \par
 This leads to that the horizontal spread is mostly much greater than the vertical and the HDOP-value can be expected to be smaller than the VDOP-value by a factor up to $\sim$2.5 \cite{langley1999dilution}. A GDOP value of 1 is considered ideal and should be considered good up to about 6 \cite{GDOPbelow6}.
 

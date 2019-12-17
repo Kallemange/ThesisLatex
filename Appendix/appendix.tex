@@ -61,4 +61,28 @@ The sampled data is saved in separate logs for each receiver for later processin
 e.g.\\
 \hspace{-2 cm}2,1562426103,0.391000,22,112,2,1,21772765.735608,41,76,0,1,20961030.484006,
 
+\section{Global position and onboard estimates}
+The position estimates from the onboard and global position estimator are shown together for the two sampling series in figure \ref{fig:onboardAndGlobal}.
+
+\begin{figure}[H]
+\begin{subfigure}{1.2\textwidth}
+\includegraphics[width=1\textwidth]{Appendix/GlobalPosAndGPSNorth}
+\subcaption{Position estimate in a NED-frame for separated by a 10 m baseline in a north direction.}
+\end{subfigure}
+\begin{subfigure}{1.2\textwidth}
+\includegraphics[width=1\textwidth]{Appendix/GlobalPosAndGPSEast}
+\subcaption{Position estimate in a NED-frame for separated by a 10 m baseline in an east direction.}
+\end{subfigure}
+\caption{\label{fig:onboardAndGlobal} Independent global position estimates for two receivers separated 10m N-direction (upper) and E-direction (lower), origin is set to true position. The onboard estimate is plotted together with the global position estimator.}
+\end{figure}
+
+\begin{figure}[!htb]
+\includegraphics[width=\textwidth]{Results/Nhist.eps}
+\caption{\label{fig:DDandInternalN} Histogram over difference in position over time with a North direction baseline of 10 m. Plots showing results of DD and onboard solution.}
+\end{figure}
+\begin{figure}[!htb]
+\includegraphics[width=\textwidth]{Results/Ehist.eps}
+\caption{\label{fig:DDandInternalE} Histogram over difference in position over time with an East direction baseline of 10 m. Plots showing results of DD and onboard solution.}
+\end{figure}
+
 \end{document}

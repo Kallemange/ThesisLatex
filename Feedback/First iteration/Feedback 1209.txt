@@ -1,0 +1,118 @@
+Sammanfattning: de viktigaste punkterna för dig att ha i åtanke när du skriver nästa version
+Tydlighet. Det är jätteviktigt att du är tydlig med varför du gör experiment, 
+vad bilder/tabeller visar, och hur dina resultat kan tolkas.
+
+Var tydlig med vilket experiment som avses (norr/öst), 
+vilken data som använts (IS/global/DD), vilken parameter som varierats (receiver clock bias, pseudorange noise)
+Slutsats. Det som står nu stämmer med största sannolikhet inte med tanke på all annan litteratur som publicerats.
+Reflektera över dina resultat mot vad som skrevs i början i "previous research".
+Kontakta u-blox och fråga om pseudorangemätningarna är filtrerad på ett sätt så att dessa algoritmer inte fungerar.
+Skriv om andra möjliga förklaringar till att du kan ha fått de resultat du har.
+Gör dina bilder läsbara: se utförliga kommentar nedan.
+
+Läs igenom texten med ett kritiskt öga, hitta fel och "svengelska" uttryck som inte låter bra på engelska.
+Mer utförliga kommentarer:
+Jag tycker att inledningen och bakgrunden ser mycket bättre ut nu.
+
+Det är lättläst och ger en bra förklaring och bakgrund inför problemet.
+Det finns lite smågrejer som jag markerat och annat som jag tror du kan se själv om du läser igenom med kritiska ögon.
+
+
+Dock så blir texten mer och mer "slarvig" ju längre man kommer.
+
+Försök skriva om även senare kaptiel men samma standard som början.
+
+OK: Det finns mycket slarvfel (abut), talspråk (doesn't), ord som saknas etc.
+
+OK: Jag har markerat några sådana som jag hittat i texten men det är ditt ansvar att läsa igenom noggrant och hitta fel.
+
+OK: Använd rättstavningsprogram. Detta måste fixas innan du kan publicera texten.
+
+
+Sektion 1.5 och 1.6 kan eventuellt skrivas samman på ett snyggt sätt.
+
+I alla artiklar som du refererar till, förutom att skriva resultat behöver du skriva vad 
+som är speciellt med artikeln eller förklaringar till varför resultaten är som de är.
+
+Referenserna ska endast behövas för fördjupning.     
+
+Till exempel
+
+"In [9], the performance of DGPS in evaluated as a function of the distance to
+the base station. The results show that the position with 95% probability is
+correct to within 0.5-1 m near the base station and grows with 0.2 m per 100 km separation"
+Har de verifierat detta i simulering eller experiment? Är detta något du förväntar dig uppnå?
+
+Reflektera över andras forskning med utgångspunkt från din egen forskningsfråga.
+
+Hur är det du gör annorlunda mot denna artikeln?
+
+
+Sektion 2.8 är otydlig, dels i texten (delar av texten kommer före stället där det förklarats), men också betydelsen av UERE.
+
+När du skriver att det är positionsosäkerhet, men vad är det den mäter? Maximala felet, medelvärdet, standardavvikelse på felet?
+
+Förtydliga så att det är lättare att förstå senare kapitel när du plottar DOP.
+
+
+OK: Kapitel 3 ser bra ut, vissa saker upprepas många gånger och kan tas bort.
+
+
+Kapitel 4 behöver arbetas om betydligt.
+
+Kapitel 4 är det viktigaste kapitlet för det innehåller dina resultat och den största delen av ditt arbete.
+
+Det är svårt för mig som till och med vet vad du gjort att läsa det här kapitlet.
+Tänk på att den tilltänkta läsaren inte kommer ha någon aning om vad du gjort för mätningar och varför.
+Det är därför viktigt att du motiverar de tester du gör med utgångspunkt från din frågeställning.
+
+Det är också viktigt att du är tydlig med vad bilderna/tabellerna visar och vad resultaten innebär.
+Ofta används otydliga ord, t.ex. "bias". Det finns många olika sorters bias som diskuteras i texten, om du menar receiver clock bias, skriv då det.
+
+Section 4.5 - Du plottar simuleringar och dina egna resultat men ingen riktig jämförelse eller reflektion över skillnaden finns.
+
+Tydliggör för läsaren vad det är den ser och varför detta är förväntat/konstigt/viktigt...
+
+Section 4.6 - Här plottar du DOP men ingen kommentar ges om vad skillnaderna är och om detta är förväntat, hur detta påverkar resultaten osv.
+
+Hjälp läsaren att förstå varför dina plottar är viktiga och vad man ska dra för slutsats från dem.
+
+Kapitel 5.  Du drar slutsatsen att DD är sämre än både globalpositionering och IS inbyggda skattare. Detta är tvärtemot vad din hypotes var och är förvånande med tanke på all tidigare litteratur. Har detta att göra med mottagarna eller är resultatet allmängiltigt?
+
+Har du kontaktat GPS-tillverkaren och frågat om pseudorange är filtrerad på något sätt som vi sa när vi träffades sist? Hur kan man annars förklara resultaten?
+
+Är det faktum att dina simuleringar beter sig som "förväntat" verkligen bevis på att algoritmerna funkar?
+
+
+Appendix Jag har ej läst appendix men noterar att varje appendix börjar med punkt istället för siffra?
+
+BILDER (VIKTIGT)
+Alla bilder måste göras om så att texten i bilden (på axlar, legends, titlar, osv.) är minst 10 pt (möjligtvis 9 om du har en bra anledning till det).
+
+Det är många bilder som jag inte kan  läsa eller se vad de ska visa.
+
+
+Vissa bilder behöver förtydliga varför de är där. Ta bort bilder som inte är viktiga för texten.
+
+Till exempel finns många bilder på satellitbanor och azimuth/elevation men behövs verkligen alla? Vad är skillnaden?
+
+
+Vissa bilder ser liknande ut, lägg till titel i bilden så att läsaren snabbt kan se vad det är den kollar på.
+
+T.ex. bild 4.8-4.9, skriv i titel om det är skillnad i norr/öst som spelats in.
+
+
+Du refererar i många bilder till figure a) b) .. osv, men du har inte märkt ut detta i bilderna.
+
+Använd paketet subcaptions
+
+https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions#Subfloats
+
+För att på ett korrekt sätt placera ut bilderna. Då kan du dessutom lägga in text under varje bild för att förtydliga ytterligare.
+
+
+Du måste vara tydlig i alla bilder vad det är som visas och vilket experiment det gäller.
+
+Skriv till exempel i bildtexten om det är dubbeldifferens, globalskattare, eller IS-processerade skattningen.
+
+Skriv också en förklaring för läsaren på vad den ser - är detta förväntade resultat eller inte.

@@ -21,44 +21,42 @@
 \BOOKMARK [1][-]{section.2.5}{Global positioning estimator model}{chapter.2}% 21
 \BOOKMARK [2][-]{subsection.2.5.1}{Weighted estimator}{section.2.5}% 22
 \BOOKMARK [2][-]{subsection.2.5.2}{Iterative steps of estimator}{section.2.5}% 23
-\BOOKMARK [1][-]{section.2.6}{Estimator pseudo-code}{chapter.2}% 24
+\BOOKMARK [1][-]{section.2.6}{Global position estimator pseudo-code}{chapter.2}% 24
 \BOOKMARK [1][-]{section.2.7}{Relative positioning}{chapter.2}% 25
 \BOOKMARK [2][-]{subsection.2.7.1}{Differential technique observation model}{section.2.7}% 26
-\BOOKMARK [2][-]{subsection.2.7.2}{Single difference technique}{section.2.7}% 27
-\BOOKMARK [2][-]{subsection.2.7.3}{Double difference technique}{section.2.7}% 28
+\BOOKMARK [2][-]{subsection.2.7.2}{Single difference estimator}{section.2.7}% 27
+\BOOKMARK [2][-]{subsection.2.7.3}{Double difference estimator}{section.2.7}% 28
 \BOOKMARK [1][-]{section.2.8}{Satellite Geometry}{chapter.2}% 29
 \BOOKMARK [0][-]{chapter.3}{Method}{}% 30
 \BOOKMARK [1][-]{section.3.1}{Simulation of data}{chapter.3}% 31
 \BOOKMARK [2][-]{subsection.3.1.1}{Testing different error sources impact on global position}{section.3.1}% 32
-\BOOKMARK [1][-]{section.3.2}{RMSE of relative position from global position and DD estimate }{chapter.3}% 33
-\BOOKMARK [1][-]{section.3.3}{GNSS positioning}{chapter.3}% 34
-\BOOKMARK [2][-]{subsection.3.3.1}{Estimating satellite position}{section.3.3}% 35
-\BOOKMARK [2][-]{subsection.3.3.2}{Data extraction from sensor}{section.3.3}% 36
-\BOOKMARK [2][-]{subsection.3.3.3}{Experimental setup}{section.3.3}% 37
-\BOOKMARK [2][-]{subsection.3.3.4}{Global and relative positions from onboard estimate}{section.3.3}% 38
-\BOOKMARK [2][-]{subsection.3.3.5}{Global and relative position estimates from raw data}{section.3.3}% 39
-\BOOKMARK [2][-]{subsection.3.3.6}{DD relative positioning}{section.3.3}% 40
-\BOOKMARK [0][-]{chapter.4}{Results}{}% 41
-\BOOKMARK [1][-]{section.4.1}{Error and convergence from simulated data}{chapter.4}% 42
-\BOOKMARK [2][-]{subsection.4.1.1}{Convergence of estimate for noise free measurements with different initial error}{section.4.1}% 43
-\BOOKMARK [2][-]{subsection.4.1.2}{Final estimate for added measurement noise of different magnitudes}{section.4.1}% 44
-\BOOKMARK [1][-]{section.4.2}{Calculating satellite position}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.3}{Position estimate using global positioning}{chapter.4}% 46
-\BOOKMARK [2][-]{subsection.4.3.1}{Position from onboard estimate}{section.4.3}% 47
-\BOOKMARK [2][-]{subsection.4.3.2}{Least square estimator from raw observation data}{section.4.3}% 48
-\BOOKMARK [1][-]{section.4.4}{Relative estimates}{chapter.4}% 49
-\BOOKMARK [2][-]{subsection.4.4.1}{Histograms of relative position and noise estimates}{section.4.4}% 50
-\BOOKMARK [1][-]{section.4.5}{RMSE of relative position from global positioning and DD estimate }{chapter.4}% 51
-\BOOKMARK [1][-]{section.4.6}{DOP values}{chapter.4}% 52
-\BOOKMARK [2][-]{subsection.4.6.1}{DOP values global estimates}{section.4.6}% 53
-\BOOKMARK [2][-]{subsection.4.6.2}{Double differenced DOP values}{section.4.6}% 54
-\BOOKMARK [0][-]{chapter.5}{Conclusions and further work}{}% 55
-\BOOKMARK [1][-]{section.5.1}{Results of simulations}{chapter.5}% 56
-\BOOKMARK [1][-]{section.5.2}{Precision of the estimates}{chapter.5}% 57
-\BOOKMARK [1][-]{section.5.3}{DOP values}{chapter.5}% 58
-\BOOKMARK [1][-]{section.5.4}{Further work}{chapter.5}% 59
-\BOOKMARK [0][-]{appendix.A}{}{}% 60
-\BOOKMARK [1][-]{section.A.1}{Least squares}{appendix.A}% 61
-\BOOKMARK [2][-]{subsection.A.1.1}{Weighted Least Squares}{section.A.1}% 62
-\BOOKMARK [1][-]{section.A.2}{Data structs and log format}{appendix.A}% 63
-\BOOKMARK [0][-]{appendix.A}{}{}% 64
+\BOOKMARK [2][-]{subsection.3.1.2}{RMSE of relative position from global position and DD estimate }{section.3.1}% 33
+\BOOKMARK [1][-]{section.3.2}{GNSS positioning from observation data}{chapter.3}% 34
+\BOOKMARK [2][-]{subsection.3.2.1}{Data extraction from sensor}{section.3.2}% 35
+\BOOKMARK [2][-]{subsection.3.2.2}{Experimental setup}{section.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.2.3}{Global and relative positions from onboard estimate}{section.3.2}% 37
+\BOOKMARK [2][-]{subsection.3.2.4}{Global and relative position estimates from raw data}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.5}{Double difference relative positioning}{section.3.2}% 39
+\BOOKMARK [0][-]{chapter.4}{Results}{}% 40
+\BOOKMARK [1][-]{section.4.1}{Error and convergence from simulated data}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.1.1}{Convergence of estimate for noise free measurements with different initial error}{section.4.1}% 42
+\BOOKMARK [2][-]{subsection.4.1.2}{Final estimate for added measurement noise of different magnitudes}{section.4.1}% 43
+\BOOKMARK [2][-]{subsection.4.1.3}{Comparison of RMSE of relative position from simulated data}{section.4.1}% 44
+\BOOKMARK [1][-]{section.4.2}{Individual and relative position estimate using global positioning}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.2.1}{Position from onboard estimate}{section.4.2}% 46
+\BOOKMARK [2][-]{subsection.4.2.2}{Global and relative position estimates from global position estimator}{section.4.2}% 47
+\BOOKMARK [1][-]{section.4.3}{Histograms of DD-relative position estimates}{chapter.4}% 48
+\BOOKMARK [1][-]{section.4.4}{RMSE of relative position from observation data}{chapter.4}% 49
+\BOOKMARK [1][-]{section.4.5}{DOP values}{chapter.4}% 50
+\BOOKMARK [2][-]{subsection.4.5.1}{Global position estimator DOP values}{section.4.5}% 51
+\BOOKMARK [2][-]{subsection.4.5.2}{Double difference estimator DOP values}{section.4.5}% 52
+\BOOKMARK [0][-]{chapter.5}{Conclusions and further work}{}% 53
+\BOOKMARK [1][-]{section.5.1}{Results of simulations}{chapter.5}% 54
+\BOOKMARK [1][-]{section.5.2}{Precision of the estimates}{chapter.5}% 55
+\BOOKMARK [1][-]{section.5.3}{DOP values}{chapter.5}% 56
+\BOOKMARK [1][-]{section.5.4}{Further work}{chapter.5}% 57
+\BOOKMARK [0][-]{appendix.A}{}{}% 58
+\BOOKMARK [1][-]{section.A.1}{Least squares}{appendix.A}% 59
+\BOOKMARK [2][-]{subsection.A.1.1}{Weighted Least Squares}{section.A.1}% 60
+\BOOKMARK [1][-]{section.A.2}{Data structs and log format}{appendix.A}% 61
+\BOOKMARK [1][-]{section.A.3}{Global position and onboard estimates}{appendix.A}% 62

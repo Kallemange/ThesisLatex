@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  9 DEC 2019 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.11)  17 DEC 2019 17:45
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -550,12 +550,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks30
 )
+(C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithms\algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks31
+\c@algorithm=\count143
+)
 (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/algorithms\algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count143
-\c@ALC@line=\count144
-\c@ALC@rem=\count145
-\c@ALC@depth=\count146
+\c@ALC@unique=\count144
+\c@ALC@line=\count145
+\c@ALC@rem=\count146
+\c@ALC@depth=\count147
 \ALC@tlm=\skip61
 \algorithmicindent=\skip62
 ) (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/csquotes\csquotes.sty
@@ -563,7 +569,7 @@ Package: csquotes 2019/05/10 v5.2e context-sensitive quotations (JAW)
 
 (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count147
+\etb@tempcnta=\count148
 
 
 Package etoolbox Warning: Patching '\begin' failed!
@@ -578,13 +584,13 @@ Package etoolbox Warning: Patching '\end' failed!
 (etoolbox)                '\AfterEndEnvironment' will not work.
 
 )
-\csq@reset=\count148
-\csq@gtype=\count149
-\csq@glevel=\count150
-\csq@qlevel=\count151
-\csq@maxlvl=\count152
-\csq@tshold=\count153
-\csq@ltx@everypar=\toks31
+\csq@reset=\count149
+\csq@gtype=\count150
+\csq@glevel=\count151
+\csq@qlevel=\count152
+\csq@maxlvl=\count153
+\csq@tshold=\count154
+\csq@ltx@everypar=\toks32
  (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/csquotes\csquotes.def
 File: csquotes.def 2019/05/10 v5.2e csquotes generic definitions (JAW)
 )
@@ -599,52 +605,52 @@ Package: biblatex 2019/08/31 v3.13a programmable bibliographies (PK/MW)
 
 (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count154
+\lrq@indent=\count155
 
 (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count155
-\c@listtotal=\count156
-\c@listcount=\count157
-\c@liststart=\count158
-\c@liststop=\count159
-\c@citecount=\count160
-\c@citetotal=\count161
-\c@multicitecount=\count162
-\c@multicitetotal=\count163
-\c@instcount=\count164
-\c@maxnames=\count165
-\c@minnames=\count166
-\c@maxitems=\count167
-\c@minitems=\count168
-\c@citecounter=\count169
-\c@maxcitecounter=\count170
-\c@savedcitecounter=\count171
-\c@uniquelist=\count172
-\c@uniquename=\count173
-\c@refsection=\count174
-\c@refsegment=\count175
-\c@maxextratitle=\count176
-\c@maxextratitleyear=\count177
-\c@maxextraname=\count178
-\c@maxextradate=\count179
-\c@maxextraalpha=\count180
-\c@abbrvpenalty=\count181
-\c@highnamepenalty=\count182
-\c@lownamepenalty=\count183
-\c@maxparens=\count184
-\c@parenlevel=\count185
-\blx@tempcnta=\count186
-\blx@tempcntb=\count187
-\blx@tempcntc=\count188
-\blx@maxsection=\count189
-\blx@maxsegment@0=\count190
-\blx@notetype=\count191
-\blx@parenlevel@text=\count192
-\blx@parenlevel@foot=\count193
-\blx@sectionciteorder@0=\count194
-\blx@entrysetcounter=\count195
+\c@tabx@nest=\count156
+\c@listtotal=\count157
+\c@listcount=\count158
+\c@liststart=\count159
+\c@liststop=\count160
+\c@citecount=\count161
+\c@citetotal=\count162
+\c@multicitecount=\count163
+\c@multicitetotal=\count164
+\c@instcount=\count165
+\c@maxnames=\count166
+\c@minnames=\count167
+\c@maxitems=\count168
+\c@minitems=\count169
+\c@citecounter=\count170
+\c@maxcitecounter=\count171
+\c@savedcitecounter=\count172
+\c@uniquelist=\count173
+\c@uniquename=\count174
+\c@refsection=\count175
+\c@refsegment=\count176
+\c@maxextratitle=\count177
+\c@maxextratitleyear=\count178
+\c@maxextraname=\count179
+\c@maxextradate=\count180
+\c@maxextraalpha=\count181
+\c@abbrvpenalty=\count182
+\c@highnamepenalty=\count183
+\c@lownamepenalty=\count184
+\c@maxparens=\count185
+\c@parenlevel=\count186
+\blx@tempcnta=\count187
+\blx@tempcntb=\count188
+\blx@tempcntc=\count189
+\blx@maxsection=\count190
+\blx@maxsegment@0=\count191
+\blx@notetype=\count192
+\blx@parenlevel@text=\count193
+\blx@parenlevel@foot=\count194
+\blx@sectionciteorder@0=\count195
+\blx@entrysetcounter=\count196
 \labelnumberwidth=\skip63
 \labelalphawidth=\skip64
 \biblabelsep=\skip65
@@ -656,9 +662,9 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language82
-\c@mincomprange=\count196
-\c@maxcomprange=\count197
-\c@mincompwidth=\count198
+\c@mincomprange=\count197
+\c@maxcomprange=\count198
+\c@mincompwidth=\count199
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -667,74 +673,74 @@ File: blx-dm.def 2019/08/31 v3.13a biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count199
-\c@savedafterword=\count266
-\c@annotator=\count267
-\c@savedannotator=\count268
-\c@author=\count269
-\c@savedauthor=\count270
-\c@bookauthor=\count271
-\c@savedbookauthor=\count272
-\c@commentator=\count273
-\c@savedcommentator=\count274
-\c@editor=\count275
-\c@savededitor=\count276
-\c@editora=\count277
-\c@savededitora=\count278
-\c@editorb=\count279
-\c@savededitorb=\count280
-\c@editorc=\count281
-\c@savededitorc=\count282
-\c@foreword=\count283
-\c@savedforeword=\count284
-\c@holder=\count285
-\c@savedholder=\count286
-\c@introduction=\count287
-\c@savedintroduction=\count288
-\c@namea=\count289
-\c@savednamea=\count290
-\c@nameb=\count291
-\c@savednameb=\count292
-\c@namec=\count293
-\c@savednamec=\count294
-\c@translator=\count295
-\c@savedtranslator=\count296
-\c@shortauthor=\count297
-\c@savedshortauthor=\count298
-\c@shorteditor=\count299
-\c@savedshorteditor=\count300
-\c@labelname=\count301
-\c@savedlabelname=\count302
-\c@institution=\count303
-\c@savedinstitution=\count304
-\c@lista=\count305
-\c@savedlista=\count306
-\c@listb=\count307
-\c@savedlistb=\count308
-\c@listc=\count309
-\c@savedlistc=\count310
-\c@listd=\count311
-\c@savedlistd=\count312
-\c@liste=\count313
-\c@savedliste=\count314
-\c@listf=\count315
-\c@savedlistf=\count316
-\c@location=\count317
-\c@savedlocation=\count318
-\c@organization=\count319
-\c@savedorganization=\count320
-\c@origlocation=\count321
-\c@savedoriglocation=\count322
-\c@origpublisher=\count323
-\c@savedorigpublisher=\count324
-\c@publisher=\count325
-\c@savedpublisher=\count326
-\c@language=\count327
-\c@savedlanguage=\count328
-\c@origlanguage=\count329
-\c@savedoriglanguage=\count330
-\c@pageref=\count331
-\c@savedpageref=\count332
+\c@afterword=\count266
+\c@savedafterword=\count267
+\c@annotator=\count268
+\c@savedannotator=\count269
+\c@author=\count270
+\c@savedauthor=\count271
+\c@bookauthor=\count272
+\c@savedbookauthor=\count273
+\c@commentator=\count274
+\c@savedcommentator=\count275
+\c@editor=\count276
+\c@savededitor=\count277
+\c@editora=\count278
+\c@savededitora=\count279
+\c@editorb=\count280
+\c@savededitorb=\count281
+\c@editorc=\count282
+\c@savededitorc=\count283
+\c@foreword=\count284
+\c@savedforeword=\count285
+\c@holder=\count286
+\c@savedholder=\count287
+\c@introduction=\count288
+\c@savedintroduction=\count289
+\c@namea=\count290
+\c@savednamea=\count291
+\c@nameb=\count292
+\c@savednameb=\count293
+\c@namec=\count294
+\c@savednamec=\count295
+\c@translator=\count296
+\c@savedtranslator=\count297
+\c@shortauthor=\count298
+\c@savedshortauthor=\count299
+\c@shorteditor=\count300
+\c@savedshorteditor=\count301
+\c@labelname=\count302
+\c@savedlabelname=\count303
+\c@institution=\count304
+\c@savedinstitution=\count305
+\c@lista=\count306
+\c@savedlista=\count307
+\c@listb=\count308
+\c@savedlistb=\count309
+\c@listc=\count310
+\c@savedlistc=\count311
+\c@listd=\count312
+\c@savedlistd=\count313
+\c@liste=\count314
+\c@savedliste=\count315
+\c@listf=\count316
+\c@savedlistf=\count317
+\c@location=\count318
+\c@savedlocation=\count319
+\c@organization=\count320
+\c@savedorganization=\count321
+\c@origlocation=\count322
+\c@savedoriglocation=\count323
+\c@origpublisher=\count324
+\c@savedorigpublisher=\count325
+\c@publisher=\count326
+\c@savedpublisher=\count327
+\c@language=\count328
+\c@savedlanguage=\count329
+\c@origlanguage=\count330
+\c@savedoriglanguage=\count331
+\c@pageref=\count332
+\c@savedpageref=\count333
 \shorthandwidth=\skip71
 \shortjournalwidth=\skip72
 \shortserieswidth=\skip73
@@ -760,19 +766,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2019/08/31 v3.13a biblatex compatibility (PK/MW)
-\c@textcitecount=\count333
-\c@textcitetotal=\count334
-\c@textcitemaxnames=\count335
-\c@biburlbigbreakpenalty=\count336
-\c@biburlbreakpenalty=\count337
-\c@biburlnumpenalty=\count338
-\c@biburlucpenalty=\count339
-\c@biburllcpenalty=\count340
+\c@textcitecount=\count334
+\c@textcitetotal=\count335
+\c@textcitemaxnames=\count336
+\c@biburlbigbreakpenalty=\count337
+\c@biburlbreakpenalty=\count338
+\c@biburlnumpenalty=\count339
+\c@biburlucpenalty=\count340
+\c@biburllcpenalty=\count341
 \biburlbigskip=\muskip12
 \biburlnumskip=\muskip13
 \biburlucskip=\muskip14
 \biburllcskip=\muskip15
-\c@smartand=\count341
+\c@smartand=\count342
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -784,8 +790,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/biblatex/bbx\standard.bbx
 File: standard.bbx 2019/08/31 v3.13a biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count342
-\c@bbx:relatedtotal=\count343
+\c@bbx:relatedcount=\count343
+\c@bbx:relatedtotal=\count344
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -827,85 +833,85 @@ File: swedish.lbx 2019/08/31 v3.13a biblatex localization (PK/MW)
 (Thesis.aux)
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Trying to load font information for T1+qtm on input line 39
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Trying to load font information for T1+qtm on input line 40
 .
 
 (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/tex-gyre\t1qtm.fd
@@ -948,17 +954,17 @@ File: t1qtm.fd 2009/09/25 v1.2 font definition file for T1/qtm
 \AtBeginShipoutBox=\box35
 (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/context/base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count344
+\scratchcounter=\count345
 \scratchdimen=\dimen143
 \scratchbox=\box36
-\nofMPsegments=\count345
-\nofMParguments=\count346
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count347
+\nofMPsegments=\count346
+\nofMParguments=\count347
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count348
 \MPscratchDim=\dimen144
-\MPnumerator=\count348
-\makeMPintoPDFobject=\count349
-\everyMPtoPDFconversion=\toks33
+\MPnumerator=\count349
+\makeMPintoPDFobject=\count350
+\everyMPtoPDFconversion=\toks34
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -980,7 +986,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 40.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -991,11 +997,11 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count350
+\c@section@level=\count351
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
 
 (Thesis.out) (Thesis.out)
 \@outlinefile=\write4
@@ -1012,8 +1018,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' found.
  (Thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 39.
-Package biblatex Info: Reference segment=0 on input line 39.
+Package biblatex Info: Reference section=0 on input line 40.
+Package biblatex Info: Reference segment=0 on input line 40.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1046,7 +1052,7 @@ Package biblatex Info: Reference segment=0 on input line 39.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for T1+qhv on input line 44
+LaTeX Font Info:    Trying to load font information for T1+qhv on input line 45
 .
 
 (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/tex-gyre\t1qhv.fd
@@ -1099,165 +1105,186 @@ File: c70gbsn.fdx 2015/04/18 4.8.4
 
 
 ]
-<Background/BasisGNSS2Sat.jpg, id=370, 241.90375pt x 178.6675pt>
+Package epstopdf Info: Source file: <Introduction/elAz.eps>
+(epstopdf)                    date: 2019-12-16 11:05:42
+(epstopdf)                    size: 70249 bytes
+(epstopdf)             Output file: <Introduction/elAz-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-12-16 11:06:20
+(epstopdf)                    size: 67604 bytes
+(epstopdf)             Command: <epstopdf --outfile=Introduction/elAz-eps-conve
+rted-to.pdf Introduction/elAz.eps>
+(epstopdf)             \includegraphics on input line 16.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Introduction/elAz-eps-converted-to.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Introduction/elAz-eps-converted-to.pdf, id=368, 422.57875pt x 317.185pt>
+File: Introduction/elAz-eps-converted-to.pdf Graphic file (type pdf)
+<use Introduction/elAz-eps-converted-to.pdf>
+Package pdftex.def Info: Introduction/elAz-eps-converted-to.pdf  used on input 
+line 16.
+(pdftex.def)             Requested size: 295.90979pt x 222.11508pt.
+Package epstopdf Info: Source file: <Introduction/elev.eps>
+(epstopdf)                    date: 2019-12-16 11:05:40
+(epstopdf)                    size: 799873 bytes
+(epstopdf)             Output file: <Introduction/elev-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-12-16 11:06:22
+(epstopdf)                    size: 292006 bytes
+(epstopdf)             Command: <epstopdf --outfile=Introduction/elev-eps-conve
+rted-to.pdf Introduction/elev.eps>
+(epstopdf)             \includegraphics on input line 20.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Introduction/elev-eps-converted-to.pdf): PDF i
+nclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Introduction/elev-eps-converted-to.pdf, id=369, 360.34625pt x 295.1025pt>
+File: Introduction/elev-eps-converted-to.pdf Graphic file (type pdf)
+<use Introduction/elev-eps-converted-to.pdf>
+Package pdftex.def Info: Introduction/elev-eps-converted-to.pdf  used on input 
+line 20.
+(pdftex.def)             Requested size: 295.90979pt x 242.33232pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Background/BasisGNSS2Sat.jpg, id=371, 241.90375pt x 178.6675pt>
 File: Background/BasisGNSS2Sat.jpg Graphic file (type jpg)
 <use Background/BasisGNSS2Sat.jpg>
-Package pdftex.def Info: Background/BasisGNSS2Sat.jpg  used on input line 16.
+Package pdftex.def Info: Background/BasisGNSS2Sat.jpg  used on input line 32.
 (pdftex.def)             Requested size: 110.96687pt x 81.95903pt.
-<Background/BasisGNSS3Sat.jpg, id=371, 963.6pt x 722.7pt>
+<Background/BasisGNSS3Sat.jpg, id=372, 963.6pt x 722.7pt>
 File: Background/BasisGNSS3Sat.jpg Graphic file (type jpg)
 <use Background/BasisGNSS3Sat.jpg>
-Package pdftex.def Info: Background/BasisGNSS3Sat.jpg  used on input line 19.
+Package pdftex.def Info: Background/BasisGNSS3Sat.jpg  used on input line 35.
 (pdftex.def)             Requested size: 110.96687pt x 83.22453pt.
-<Background/BasisGNSS4Sat.jpg, id=372, 963.6pt x 722.7pt>
+<Background/BasisGNSS4Sat.jpg, id=373, 963.6pt x 722.7pt>
 File: Background/BasisGNSS4Sat.jpg Graphic file (type jpg)
 <use Background/BasisGNSS4Sat.jpg>
-Package pdftex.def Info: Background/BasisGNSS4Sat.jpg  used on input line 22.
+Package pdftex.def Info: Background/BasisGNSS4Sat.jpg  used on input line 38.
 (pdftex.def)             Requested size: 110.96687pt x 83.22453pt.
- [2 <./Background/BasisGNSS2Sat.jpg> <./Background/BasisGNSS3Sat.jpg> <./Backgr
-ound/BasisGNSS4Sat.jpg>] [3] [4]
-LaTeX Font Info:    Trying to load font information for T1+qcr on input line 57
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2]
+
+LaTeX Warning: Text page 3 contains only floats.
+
+
+Overfull \vbox (6.45473pt too high) has occurred while \output is active []
+
+
+[3 <./Introduction/elAz-eps-converted-to.pdf> <./Introduction/elev-eps-converte
+d-to.pdf>] [4 <./Background/BasisGNSS2Sat.jpg> <./Background/BasisGNSS3Sat.jpg>
+ <./Background/BasisGNSS4Sat.jpg>] [5]
+LaTeX Font Info:    Trying to load font information for T1+qcr on input line 73
 .
 
 (C:\Users\kalle\AppData\Roaming\MiKTeX\2.9\tex/latex/tex-gyre\t1qcr.fd
 File: t1qcr.fd 2009/09/25 v1.2 font definition file for T1/qcr
 )
-[5]
-LaTeX Font Info:    Trying to load font information for OMS+qtm on input line 7
-0.
-LaTeX Font Info:    No file OMSqtm.fd. on input line 70.
+[6]
+LaTeX Font Info:    Trying to load font information for OMS+qtm on input line 8
+6.
+LaTeX Font Info:    No file OMSqtm.fd. on input line 86.
 
 
 LaTeX Font Warning: Font shape `OMS/qtm/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 70.
+(Font)              for symbol `textbullet' on input line 86.
 
-) (Background/background.tex [6]
+) (Background/background.tex [7]
 Chapter 2.
-[7
+[8
 
-]
-<Background/allCS.jpg, id=430, 963.6pt x 722.7pt>
+] [9]
+<Background/allCS.jpg, id=458, 963.6pt x 722.7pt>
 File: Background/allCS.jpg Graphic file (type jpg)
 <use Background/allCS.jpg>
-Package pdftex.def Info: Background/allCS.jpg  used on input line 63.
+Package pdftex.def Info: Background/allCS.jpg  used on input line 80.
 (pdftex.def)             Requested size: 295.90979pt x 221.92842pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] [9 <./Background/allCS.jpg>]
-Overfull \hbox (10.91954pt too wide) detected at line 95
+ [10 <./Background/allCS.jpg>]
+Overfull \hbox (10.91954pt too wide) detected at line 103
 []
  []
 
-[10] [11]
-Overfull \hbox (11.55255pt too wide) in paragraph at lines 134--134
+[11] [12]
+Overfull \hbox (11.55255pt too wide) in paragraph at lines 142--142
 |[]\T1/qhv/b/n/17.28 Satellite po-si-tion-ing us-ing ephemeris data| 
  []
 
-[12]
-<Background/eph_values.jpg, id=498, 127.22531pt x 426.09187pt>
-File: Background/eph_values.jpg Graphic file (type jpg)
-<use Background/eph_values.jpg>
-Package pdftex.def Info: Background/eph_values.jpg  used on input line 145.
-(pdftex.def)             Requested size: 127.22499pt x 426.09082pt.
+[13] [14] [15] [16] [17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 316--318
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[13] [14 <./Background/eph_values.jpg>] [15] [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 279--281
-
- []
-
-[18]
-Overfull \hbox (3.41736pt too wide) in paragraph at lines 312--313
-\T1/qtm/m/n/12 This is con-tin-ued un-til con-ver-gence for steps 2-7, where th
-e con-ver-gence thresh-
  []
 
 [19]
-Overfull \hbox (91.18214pt too wide) in paragraph at lines 325--326
-[]\T1/qtm/m/n/12 The func-tion "es-ti-mate_satellite_clock_bias" is that from e
-qua-tion ([]2.12[]). "get_satellite_position"
+Underfull \hbox (badness 10000) in paragraph at lines 331--333
+
  []
 
-
-Overfull \hbox (67.40225pt too wide) in paragraph at lines 327--329
-\T1/qtm/m/n/12 ephemeris data of the ac-tive satel-lites in each epoch.        
-                                              
- []
-
-[20] [21] [22]
-<Background/relativePos.jpg, id=660, 547.04375pt x 463.7325pt>
+[20]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 402.
+ [21] [22] [23] [24]
+<Background/relativePos.jpg, id=692, 547.04375pt x 463.7325pt>
 File: Background/relativePos.jpg Graphic file (type jpg)
 <use Background/relativePos.jpg>
-Package pdftex.def Info: Background/relativePos.jpg  used on input line 415.
+Package pdftex.def Info: Background/relativePos.jpg  used on input line 459.
 (pdftex.def)             Requested size: 177.54361pt x 150.50606pt.
-<Background/relativePosDoubleDiff.jpg, id=661, 547.04375pt x 463.7325pt>
+<Background/relativePosDoubleDiff.jpg, id=693, 547.04375pt x 463.7325pt>
 File: Background/relativePosDoubleDiff.jpg Graphic file (type jpg)
 <use Background/relativePosDoubleDiff.jpg>
 Package pdftex.def Info: Background/relativePosDoubleDiff.jpg  used on input li
-ne 420.
+ne 464.
 (pdftex.def)             Requested size: 177.54361pt x 150.50606pt.
-<Background/LowDOP.jpg, id=663, 469.755pt x 324.21124pt>
+<Background/LowDOP.jpg, id=695, 469.755pt x 324.21124pt>
 File: Background/LowDOP.jpg Graphic file (type jpg)
 <use Background/LowDOP.jpg>
-Package pdftex.def Info: Background/LowDOP.jpg  used on input line 429.
+Package pdftex.def Info: Background/LowDOP.jpg  used on input line 473.
 (pdftex.def)             Requested size: 184.94292pt x 127.63905pt.
-<Background/HighDOP.jpg, id=664, 241.90375pt x 236.885pt>
+<Background/HighDOP.jpg, id=696, 241.90375pt x 236.885pt>
 File: Background/HighDOP.jpg Graphic file (type jpg)
 <use Background/HighDOP.jpg>
-Package pdftex.def Info: Background/HighDOP.jpg  used on input line 432.
+Package pdftex.def Info: Background/HighDOP.jpg  used on input line 476.
 (pdftex.def)             Requested size: 140.55841pt x 137.64641pt.
- [23] [24 <./Background/relativePos.jpg> <./Background/relativePosDoubleDiff.jp
-g>] [25 <./Background/LowDOP.jpg> <./Background/HighDOP.jpg>])
-(Method/method.tex [26]
+ [25 <./Background/relativePos.jpg> <./Background/relativePosDoubleDiff.jpg>] [
+26 <./Background/LowDOP.jpg> <./Background/HighDOP.jpg>]) (Method/method.tex [2
+7] [28]
 Chapter 3.
+[29
 
-Overfull \hbox (0.5264pt too wide) in paragraph at lines 11--11
-|[]\T1/qhv/b/n/17.28 RMSE of rel-a-tive po-si-tion from global po-
- []
-
-[27
-
-] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+] [30]
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 [][][][]$\T1/qcr/m/n/10 https : / / docs . inertialsense . com / user-[]manual 
 / software /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--31
+Underfull \hbox (badness 10000) in paragraph at lines 45--45
 [][][][]$\T1/qcr/m/n/10 https : / / docs . inertialsense . com / user-[]manual 
 / software /
  []
 
-<Method/Uggleviken.png, id=729, 837.88031pt x 459.96844pt>
+[31]
+<Method/Uggleviken.png, id=768, 837.88031pt x 459.96844pt>
 File: Method/Uggleviken.png Graphic file (type png)
 <use Method/Uggleviken.png>
-Package pdftex.def Info: Method/Uggleviken.png  used on input line 35.
+Package pdftex.def Info: Method/Uggleviken.png  used on input line 49.
 (pdftex.def)             Requested size: 335.14618pt x 183.98412pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[29]
-Overfull \hbox (1.82614pt too wide) in paragraph at lines 51--52
+ [32 <./Method/Uggleviken.png>]
+Overfull \hbox (1.82614pt too wide) in paragraph at lines 68--69
 \T1/qtm/m/n/12 the same re-ceiver and only ob-ser-va-tion data that has a cor-r
 e-spond-ing ephemeris
  []
 
-[30 <./Method/Uggleviken.png>]) (Results/results.tex [31]
+[33]) (Results/results.tex [34]
 Chapter 4.
 
-Overfull \hbox (2.56944pt too wide) in paragraph at lines 17--17
+Overfull \hbox (2.56944pt too wide) in paragraph at lines 5--5
 |[]\T1/qhv/b/n/14.4 Convergence of es-ti-mate for noise free mea-sure-
  []
 
-[32
-
-]
 Package epstopdf Info: Source file: <Results/SimulationEstPos/noiseFreeConv.eps
 >
 (epstopdf)                    date: 2019-12-06 14:06:08
@@ -1268,45 +1295,48 @@ Package epstopdf Info: Source file: <Results/SimulationEstPos/noiseFreeConv.eps
 (epstopdf)                    size: 8209 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/SimulationEstPos/no
 iseFreeConv-eps-converted-to.pdf Results/SimulationEstPos/noiseFreeConv.eps>
-(epstopdf)             \includegraphics on input line 25.
+(epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/SimulationEstPos/noiseFreeConv-eps-con
 verted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
 5> allowed
-<Results/SimulationEstPos/noiseFreeConv-eps-converted-to.pdf, id=769, 381.425pt
+<Results/SimulationEstPos/noiseFreeConv-eps-converted-to.pdf, id=799, 381.425pt
  x 293.095pt>
 File: Results/SimulationEstPos/noiseFreeConv-eps-converted-to.pdf Graphic file 
 (type pdf)
 <use Results/SimulationEstPos/noiseFreeConv-eps-converted-to.pdf>
 Package pdftex.def Info: Results/SimulationEstPos/noiseFreeConv-eps-converted-t
-o.pdf  used on input line 25.
-(pdftex.def)             Requested size: 181.24608pt x 139.27075pt.
+o.pdf  used on input line 14.
+(pdftex.def)             Requested size: 295.90979pt x 227.39224pt.
 Package epstopdf Info: Source file: <Results/SimulationEstPos/clockBConv.eps>
-(epstopdf)                    date: 2019-12-06 14:06:09
+(epstopdf)                    date: 2019-12-13 09:10:18
 (epstopdf)                    size: 32187 bytes
 (epstopdf)             Output file: <Results/SimulationEstPos/clockBConv-eps-co
 nverted-to.pdf>
-(epstopdf)                    date: 2019-12-06 14:07:10
-(epstopdf)                    size: 9383 bytes
+(epstopdf)                    date: 2019-12-13 09:12:42
+(epstopdf)                    size: 9336 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/SimulationEstPos/cl
 ockBConv-eps-converted-to.pdf Results/SimulationEstPos/clockBConv.eps>
-(epstopdf)             \includegraphics on input line 29.
+(epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/SimulationEstPos/clockBConv-eps-conver
 ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
-<Results/SimulationEstPos/clockBConv-eps-converted-to.pdf, id=770, 370.38374pt 
+<Results/SimulationEstPos/clockBConv-eps-converted-to.pdf, id=800, 370.38374pt 
 x 288.07625pt>
 File: Results/SimulationEstPos/clockBConv-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use Results/SimulationEstPos/clockBConv-eps-converted-to.pdf>
 Package pdftex.def Info: Results/SimulationEstPos/clockBConv-eps-converted-to.p
-df  used on input line 29.
-(pdftex.def)             Requested size: 181.24608pt x 140.96957pt.
+df  used on input line 18.
+(pdftex.def)             Requested size: 295.90979pt x 230.1536pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package epstopdf Info: Source file: <Results/SimulationEstPos/satPosConv.eps>
 (epstopdf)                    date: 2019-12-06 14:06:10
 (epstopdf)                    size: 29663 bytes
@@ -1316,21 +1346,21 @@ nverted-to.pdf>
 (epstopdf)                    size: 8289 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/SimulationEstPos/sa
 tPosConv-eps-converted-to.pdf Results/SimulationEstPos/satPosConv.eps>
-(epstopdf)             \includegraphics on input line 33.
+(epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/SimulationEstPos/satPosConv-eps-conver
 ted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> 
 allowed
-<Results/SimulationEstPos/satPosConv-eps-converted-to.pdf, id=771, 371.3875pt x
+<Results/SimulationEstPos/satPosConv-eps-converted-to.pdf, id=801, 371.3875pt x
  293.095pt>
 File: Results/SimulationEstPos/satPosConv-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use Results/SimulationEstPos/satPosConv-eps-converted-to.pdf>
 Package pdftex.def Info: Results/SimulationEstPos/satPosConv-eps-converted-to.p
-df  used on input line 33.
-(pdftex.def)             Requested size: 181.24608pt x 143.04088pt.
+df  used on input line 24.
+(pdftex.def)             Requested size: 295.90979pt x 233.53265pt.
 Package epstopdf Info: Source file: <Results/SimulationEstPos/GaussianConv.eps>
 
 (epstopdf)                    date: 2019-12-06 14:06:12
@@ -1341,297 +1371,288 @@ converted-to.pdf>
 (epstopdf)                    size: 8304 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/SimulationEstPos/Ga
 ussianConv-eps-converted-to.pdf Results/SimulationEstPos/GaussianConv.eps>
-(epstopdf)             \includegraphics on input line 37.
+(epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/SimulationEstPos/GaussianConv-eps-conv
 erted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<Results/SimulationEstPos/GaussianConv-eps-converted-to.pdf, id=772, 371.3875pt
+<Results/SimulationEstPos/GaussianConv-eps-converted-to.pdf, id=802, 371.3875pt
  x 293.095pt>
 File: Results/SimulationEstPos/GaussianConv-eps-converted-to.pdf Graphic file (
 type pdf)
 <use Results/SimulationEstPos/GaussianConv-eps-converted-to.pdf>
 Package pdftex.def Info: Results/SimulationEstPos/GaussianConv-eps-converted-to
-.pdf  used on input line 37.
-(pdftex.def)             Requested size: 181.24608pt x 143.04088pt.
+.pdf  used on input line 28.
+(pdftex.def)             Requested size: 295.90979pt x 233.53265pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 23--31
+[]$[]$
+ []
+
+
+LaTeX Warning: Float too large for page by 10.57771pt on input line 33.
 
 Package epstopdf Info: Source file: <Results/SimulationEstPos/mixedNoiseConv.ep
 s>
-(epstopdf)                    date: 2019-12-06 14:06:13
-(epstopdf)                    size: 49093 bytes
+(epstopdf)                    date: 2019-12-13 10:55:00
+(epstopdf)                    size: 36409 bytes
 (epstopdf)             Output file: <Results/SimulationEstPos/mixedNoiseConv-ep
 s-converted-to.pdf>
-(epstopdf)                    date: 2019-12-06 14:07:14
-(epstopdf)                    size: 18001 bytes
+(epstopdf)                    date: 2019-12-13 10:55:30
+(epstopdf)                    size: 11383 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/SimulationEstPos/mi
 xedNoiseConv-eps-converted-to.pdf Results/SimulationEstPos/mixedNoiseConv.eps>
-(epstopdf)             \includegraphics on input line 46.
+(epstopdf)             \includegraphics on input line 63.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/SimulationEstPos/mixedNoiseConv-eps-co
 nverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1
 .5> allowed
-<Results/SimulationEstPos/mixedNoiseConv-eps-converted-to.pdf, id=774, 371.3875
+<Results/SimulationEstPos/mixedNoiseConv-eps-converted-to.pdf, id=804, 371.3875
 pt x 288.07625pt>
 File: Results/SimulationEstPos/mixedNoiseConv-eps-converted-to.pdf Graphic file
  (type pdf)
 <use Results/SimulationEstPos/mixedNoiseConv-eps-converted-to.pdf>
 Package pdftex.def Info: Results/SimulationEstPos/mixedNoiseConv-eps-converted-
-to.pdf  used on input line 46.
+to.pdf  used on input line 63.
 (pdftex.def)             Requested size: 295.90979pt x 229.53381pt.
 Package epstopdf Info: Source file: <Results/SimulationEstPos/noiseFree.eps>
-(epstopdf)                    date: 2019-12-06 14:06:03
-(epstopdf)                    size: 53049 bytes
+(epstopdf)                    date: 2019-12-13 17:22:57
+(epstopdf)                    size: 84278 bytes
 (epstopdf)             Output file: <Results/SimulationEstPos/noiseFree-eps-con
 verted-to.pdf>
-(epstopdf)                    date: 2019-12-06 14:07:15
-(epstopdf)                    size: 9114 bytes
+(epstopdf)                    date: 2019-12-13 17:23:49
+(epstopdf)                    size: 34488 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/SimulationEstPos/no
 iseFree-eps-converted-to.pdf Results/SimulationEstPos/noiseFree.eps>
-(epstopdf)             \includegraphics on input line 55.
+(epstopdf)             \includegraphics on input line 73.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/SimulationEstPos/noiseFree-eps-convert
 ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
 llowed
-<Results/SimulationEstPos/noiseFree-eps-converted-to.pdf, id=778, 374.39874pt x
- 299.1175pt>
+<Results/SimulationEstPos/noiseFree-eps-converted-to.pdf, id=806, 372.39125pt x
+ 287.0725pt>
 File: Results/SimulationEstPos/noiseFree-eps-converted-to.pdf Graphic file (typ
 e pdf)
 <use Results/SimulationEstPos/noiseFree-eps-converted-to.pdf>
 Package pdftex.def Info: Results/SimulationEstPos/noiseFree-eps-converted-to.pd
-f  used on input line 55.
-(pdftex.def)             Requested size: 181.24608pt x 144.80252pt.
+f  used on input line 73.
+(pdftex.def)             Requested size: 295.90979pt x 228.12079pt.
 Package epstopdf Info: Source file: <Results/SimulationEstPos/clockB.eps>
-(epstopdf)                    date: 2019-12-06 14:06:04
-(epstopdf)                    size: 60493 bytes
+(epstopdf)                    date: 2019-12-13 17:14:57
+(epstopdf)                    size: 58670 bytes
 (epstopdf)             Output file: <Results/SimulationEstPos/clockB-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2019-12-06 14:07:17
-(epstopdf)                    size: 24242 bytes
+(epstopdf)                    date: 2019-12-13 17:16:38
+(epstopdf)                    size: 22098 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/SimulationEstPos/cl
 ockB-eps-converted-to.pdf Results/SimulationEstPos/clockB.eps>
-(epstopdf)             \includegraphics on input line 59.
+(epstopdf)             \includegraphics on input line 77.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/SimulationEstPos/clockB-eps-converted-
 to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<Results/SimulationEstPos/clockB-eps-converted-to.pdf, id=779, 374.39874pt x 28
-5.065pt>
+<Results/SimulationEstPos/clockB-eps-converted-to.pdf, id=807, 374.39874pt x 29
+0.08376pt>
 File: Results/SimulationEstPos/clockB-eps-converted-to.pdf Graphic file (type p
 df)
 <use Results/SimulationEstPos/clockB-eps-converted-to.pdf>
 Package pdftex.def Info: Results/SimulationEstPos/clockB-eps-converted-to.pdf  
-used on input line 59.
-(pdftex.def)             Requested size: 181.24608pt x 137.99971pt.
+used on input line 77.
+(pdftex.def)             Requested size: 295.90979pt x 229.28316pt.
 Package epstopdf Info: Source file: <Results/SimulationEstPos/satPos.eps>
-(epstopdf)                    date: 2019-12-06 14:06:05
-(epstopdf)                    size: 55334 bytes
+(epstopdf)                    date: 2019-12-13 17:14:58
+(epstopdf)                    size: 51378 bytes
 (epstopdf)             Output file: <Results/SimulationEstPos/satPos-eps-conver
 ted-to.pdf>
-(epstopdf)                    date: 2019-12-06 14:07:18
-(epstopdf)                    size: 23310 bytes
+(epstopdf)                    date: 2019-12-13 17:16:40
+(epstopdf)                    size: 20644 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/SimulationEstPos/sa
 tPos-eps-converted-to.pdf Results/SimulationEstPos/satPos.eps>
-(epstopdf)             \includegraphics on input line 63.
+(epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/SimulationEstPos/satPos-eps-converted-
 to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<Results/SimulationEstPos/satPos-eps-converted-to.pdf, id=780, 376.40625pt x 28
-6.06876pt>
+<Results/SimulationEstPos/satPos-eps-converted-to.pdf, id=808, 381.425pt x 286.
+06876pt>
 File: Results/SimulationEstPos/satPos-eps-converted-to.pdf Graphic file (type p
 df)
 <use Results/SimulationEstPos/satPos-eps-converted-to.pdf>
 Package pdftex.def Info: Results/SimulationEstPos/satPos-eps-converted-to.pdf  
-used on input line 63.
-(pdftex.def)             Requested size: 181.24608pt x 137.7523pt.
+used on input line 83.
+(pdftex.def)             Requested size: 295.90979pt x 221.94107pt.
 Package epstopdf Info: Source file: <Results/SimulationEstPos/Gaussian.eps>
-(epstopdf)                    date: 2019-12-06 14:06:07
-(epstopdf)                    size: 56234 bytes
+(epstopdf)                    date: 2019-12-13 17:15:01
+(epstopdf)                    size: 52748 bytes
 (epstopdf)             Output file: <Results/SimulationEstPos/Gaussian-eps-conv
 erted-to.pdf>
-(epstopdf)                    date: 2019-12-06 14:07:20
-(epstopdf)                    size: 22600 bytes
+(epstopdf)                    date: 2019-12-13 17:16:41
+(epstopdf)                    size: 20296 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/SimulationEstPos/Ga
 ussian-eps-converted-to.pdf Results/SimulationEstPos/Gaussian.eps>
-(epstopdf)             \includegraphics on input line 67.
+(epstopdf)             \includegraphics on input line 87.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/SimulationEstPos/Gaussian-eps-converte
 d-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
-<Results/SimulationEstPos/Gaussian-eps-converted-to.pdf, id=781, 382.42876pt x 
-286.06876pt>
+<Results/SimulationEstPos/Gaussian-eps-converted-to.pdf, id=809, 382.42876pt x 
+290.08376pt>
 File: Results/SimulationEstPos/Gaussian-eps-converted-to.pdf Graphic file (type
  pdf)
 <use Results/SimulationEstPos/Gaussian-eps-converted-to.pdf>
 Package pdftex.def Info: Results/SimulationEstPos/Gaussian-eps-converted-to.pdf
-  used on input line 67.
-(pdftex.def)             Requested size: 181.24608pt x 135.5785pt.
+  used on input line 87.
+(pdftex.def)             Requested size: 295.90979pt x 224.46733pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--90
+[]$[]$
+ []
+
+
+LaTeX Warning: Float too large for page by 20.37088pt on input line 92.
+
+[35
+
+] [36 <./Results/SimulationEstPos/noiseFreeConv-eps-converted-to.pdf> <./Result
+s/SimulationEstPos/clockBConv-eps-converted-to.pdf>] [37 <./Results/SimulationE
+stPos/satPosConv-eps-converted-to.pdf> <./Results/SimulationEstPos/GaussianConv
+-eps-converted-to.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[33]
-Underfull \hbox (badness 1348) in paragraph at lines 78--78
-[][][]\T1/qtm/m/n/10 link to re-con-struct plot: []$\T1/qcr/m/n/10 https : / / 
-www . gnssplanning . com / # / embedded ?
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\T1/qcr/m/n/10 satellites = 1 ,[] 2 ,[] 3 ,[] 5 ,[] 6 ,[] 7 ,[] 8 ,[] 9 ,[] 10 
-,[] 11 ,[] 12 ,[] 13 ,[] 14 ,[] 15 ,[] 16 ,[] 17 ,[] 18 ,[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\T1/qcr/m/n/10 19 ,[] 20 ,[] 21 ,[] 22 ,[] 23 ,[] 24 ,[] 25 ,[] 26 ,[] 27 ,[] 2
-8 ,[] 29 ,[] 30 ,[] 31 ,[] 32 & satSystems = GPS &
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\T1/qcr/m/n/10 restoreSats = 0 & target = settings & cutoffDeg = 0 & durationHo
-urs =
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-\T1/qcr/m/n/10 6 & utcTime = 2019-[]04-[]11T12 : 00 : 00 & hgt = 10 & lonDeg = 
-18 . 0687918056 &
- []
-
-Package epstopdf Info: Source file: <Results/satsInSky.eps>
-(epstopdf)                    date: 2019-08-12 14:43:50
-(epstopdf)                    size: 592557 bytes
-(epstopdf)             Output file: <Results/satsInSky-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-08-12 14:45:21
-(epstopdf)                    size: 143105 bytes
-(epstopdf)             Command: <epstopdf --outfile=Results/satsInSky-eps-conve
-rted-to.pdf Results/satsInSky.eps>
-(epstopdf)             \includegraphics on input line 81.
+[38 <./Results/SimulationEstPos/mixedNoiseConv-eps-converted-to.pdf>] [39 <./Re
+sults/SimulationEstPos/noiseFree-eps-converted-to.pdf> <./Results/SimulationEst
+Pos/clockB-eps-converted-to.pdf>] [40 <./Results/SimulationEstPos/satPos-eps-co
+nverted-to.pdf> <./Results/SimulationEstPos/Gaussian-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Results/MSEplots/Esim1.eps>
+(epstopdf)                    date: 2019-12-17 14:31:12
+(epstopdf)                    size: 92273 bytes
+(epstopdf)             Output file: <Results/MSEplots/Esim1-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2019-12-17 14:33:12
+(epstopdf)                    size: 22819 bytes
+(epstopdf)             Command: <epstopdf --outfile=Results/MSEplots/Esim1-eps-
+converted-to.pdf Results/MSEplots/Esim1.eps>
+(epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./Results/satsInSky-eps-converted-to.pdf): PDF i
-nclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/satsInSky-eps-converted-to.pdf, id=793, 505.89pt x 489.83pt>
-File: Results/satsInSky-eps-converted-to.pdf Graphic file (type pdf)
-<use Results/satsInSky-eps-converted-to.pdf>
-Package pdftex.def Info: Results/satsInSky-eps-converted-to.pdf  used on input 
-line 81.
-(pdftex.def)             Requested size: 181.24608pt x 175.49408pt.
-<Results/skyplot190411-1230.png, id=794, 1003.75pt x 1003.75pt>
-File: Results/skyplot190411-1230.png Graphic file (type png)
-<use Results/skyplot190411-1230.png>
-Package pdftex.def Info: Results/skyplot190411-1230.png  used on input line 86.
-
-(pdftex.def)             Requested size: 181.24608pt x 181.23389pt.
-
-Underfull \hbox (badness 2181) in paragraph at lines 87--87
-\T1/qtm/m/n/12 GPS-satellites at UTC 2019-04-11,
- []
-
-[34 <./Results/SimulationEstPos/noiseFreeConv-eps-converted-to.pdf> <./Results/
-SimulationEstPos/clockBConv-eps-converted-to.pdf> <./Results/SimulationEstPos/s
-atPosConv-eps-converted-to.pdf> <./Results/SimulationEstPos/GaussianConv-eps-co
-nverted-to.pdf>]
-Package epstopdf Info: Source file: <Results/elev6H.eps>
-(epstopdf)                    date: 2019-10-25 09:35:52
-(epstopdf)                    size: 204960 bytes
-(epstopdf)             Output file: <Results/elev6H-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-10-25 09:36:08
-(epstopdf)                    size: 155660 bytes
-(epstopdf)             Command: <epstopdf --outfile=Results/elev6H-eps-converte
-d-to.pdf Results/elev6H.eps>
-(epstopdf)             \includegraphics on input line 94.
+pdfTeX warning: pdflatex (file ./Results/MSEplots/Esim1-eps-converted-to.pdf): 
+PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Results/MSEplots/Esim1-eps-converted-to.pdf, id=888, 347.2975pt x 293.095pt>
+File: Results/MSEplots/Esim1-eps-converted-to.pdf Graphic file (type pdf)
+<use Results/MSEplots/Esim1-eps-converted-to.pdf>
+Package pdftex.def Info: Results/MSEplots/Esim1-eps-converted-to.pdf  used on i
+nput line 103.
+(pdftex.def)             Requested size: 369.88583pt x 312.16847pt.
+Package epstopdf Info: Source file: <Results/MSEplots/Esim10.eps>
+(epstopdf)                    date: 2019-12-17 14:31:42
+(epstopdf)                    size: 92152 bytes
+(epstopdf)             Output file: <Results/MSEplots/Esim10-eps-converted-to.p
+df>
+(epstopdf)                    date: 2019-12-17 14:33:13
+(epstopdf)                    size: 22759 bytes
+(epstopdf)             Command: <epstopdf --outfile=Results/MSEplots/Esim10-eps
+-converted-to.pdf Results/MSEplots/Esim10.eps>
+(epstopdf)             \includegraphics on input line 108.
 Package epstopdf Info: Output file is already uptodate.
 
 
-pdfTeX warning: pdflatex (file ./Results/elev6H-eps-converted-to.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/elev6H-eps-converted-to.pdf, id=828, 1204.5pt x 589.20125pt>
-File: Results/elev6H-eps-converted-to.pdf Graphic file (type pdf)
-<use Results/elev6H-eps-converted-to.pdf>
-Package pdftex.def Info: Results/elev6H-eps-converted-to.pdf  used on input lin
-e 94.
-(pdftex.def)             Requested size: 369.88583pt x 180.9333pt.
-<Results/elevGNSSPlanning.jpg, id=829, 650.43pt x 561.59813pt>
-File: Results/elevGNSSPlanning.jpg Graphic file (type jpg)
-<use Results/elevGNSSPlanning.jpg>
-Package pdftex.def Info: Results/elevGNSSPlanning.jpg  used on input line 99.
-(pdftex.def)             Requested size: 258.91895pt x 223.5641pt.
+pdfTeX warning: pdflatex (file ./Results/MSEplots/Esim10-eps-converted-to.pdf):
+ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Results/MSEplots/Esim10-eps-converted-to.pdf, id=889, 348.30125pt x 293.095pt>
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+File: Results/MSEplots/Esim10-eps-converted-to.pdf Graphic file (type pdf)
+<use Results/MSEplots/Esim10-eps-converted-to.pdf>
+Package pdftex.def Info: Results/MSEplots/Esim10-eps-converted-to.pdf  used on 
+input line 108.
+(pdftex.def)             Requested size: 369.88583pt x 311.27402pt.
 
-[35 <./Results/SimulationEstPos/mixedNoiseConv-eps-converted-to.pdf>]
+LaTeX Warning: Float too large for page by 67.49467pt on input line 112.
+
+Package epstopdf Info: Source file: <Results/MSEplots/Esim20.eps>
+(epstopdf)                    date: 2019-12-17 14:32:45
+(epstopdf)                    size: 92253 bytes
+(epstopdf)             Output file: <Results/MSEplots/Esim20-eps-converted-to.p
+df>
+(epstopdf)                    date: 2019-12-17 14:33:14
+(epstopdf)                    size: 22394 bytes
+(epstopdf)             Command: <epstopdf --outfile=Results/MSEplots/Esim20-eps
+-converted-to.pdf Results/MSEplots/Esim20.eps>
+(epstopdf)             \includegraphics on input line 115.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Results/MSEplots/Esim20-eps-converted-to.pdf):
+ PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Results/MSEplots/Esim20-eps-converted-to.pdf, id=890, 348.30125pt x 293.095pt>
+
+File: Results/MSEplots/Esim20-eps-converted-to.pdf Graphic file (type pdf)
+<use Results/MSEplots/Esim20-eps-converted-to.pdf>
+Package pdftex.def Info: Results/MSEplots/Esim20-eps-converted-to.pdf  used on 
+input line 115.
+(pdftex.def)             Requested size: 369.88583pt x 311.27402pt.
 Package epstopdf Info: Source file: <Results/GPShist10mN.eps>
-(epstopdf)                    date: 2019-12-06 14:52:15
-(epstopdf)                    size: 45240 bytes
+(epstopdf)                    date: 2019-12-16 11:52:45
+(epstopdf)                    size: 46145 bytes
 (epstopdf)             Output file: <Results/GPShist10mN-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-12-06 14:53:36
-(epstopdf)                    size: 14032 bytes
+(epstopdf)                    date: 2019-12-16 11:53:06
+(epstopdf)                    size: 13971 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/GPShist10mN-eps-con
 verted-to.pdf Results/GPShist10mN.eps>
-(epstopdf)             \includegraphics on input line 109.
+(epstopdf)             \includegraphics on input line 166.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/GPShist10mN-eps-converted-to.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/GPShist10mN-eps-converted-to.pdf, id=853, 421.575pt x 316.18124pt>
+<Results/GPShist10mN-eps-converted-to.pdf, id=893, 585.18625pt x 447.6725pt>
 File: Results/GPShist10mN-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/GPShist10mN-eps-converted-to.pdf>
 Package pdftex.def Info: Results/GPShist10mN-eps-converted-to.pdf  used on inpu
-t line 109.
-(pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
+t line 166.
+(pdftex.def)             Requested size: 369.88583pt x 282.97783pt.
 Package epstopdf Info: Source file: <Results/GPShist10mE.eps>
-(epstopdf)                    date: 2019-12-06 14:53:13
-(epstopdf)                    size: 44474 bytes
+(epstopdf)                    date: 2019-12-16 11:51:47
+(epstopdf)                    size: 45066 bytes
 (epstopdf)             Output file: <Results/GPShist10mE-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-12-06 14:53:38
-(epstopdf)                    size: 13868 bytes
+(epstopdf)                    date: 2019-12-16 11:53:07
+(epstopdf)                    size: 13809 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/GPShist10mE-eps-con
 verted-to.pdf Results/GPShist10mE.eps>
-(epstopdf)             \includegraphics on input line 114.
+(epstopdf)             \includegraphics on input line 172.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/GPShist10mE-eps-converted-to.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/GPShist10mE-eps-converted-to.pdf, id=854, 421.575pt x 316.18124pt>
+<Results/GPShist10mE-eps-converted-to.pdf, id=894, 585.18625pt x 447.6725pt>
 File: Results/GPShist10mE-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/GPShist10mE-eps-converted-to.pdf>
 Package pdftex.def Info: Results/GPShist10mE-eps-converted-to.pdf  used on inpu
-t line 114.
-(pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
-[36 <./Results/SimulationEstPos/noiseFree-eps-converted-to.pdf> <./Results/Simu
-lationEstPos/clockB-eps-converted-to.pdf> <./Results/SimulationEstPos/satPos-ep
-s-converted-to.pdf> <./Results/SimulationEstPos/Gaussian-eps-converted-to.pdf>]
-[37 <./Results/satsInSky-eps-converted-to.pdf> <./Results/skyplot190411-1230.pn
-g> <./Results/elev6H-eps-converted-to.pdf>]
+t line 172.
+(pdftex.def)             Requested size: 369.88583pt x 282.97783pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: Float too large for page by 96.13301pt on input line 177.
 
-
-Overfull \hbox (10.3454pt too wide) in paragraph at lines 140--140
-|[]\T1/qhv/b/n/14.4 Least square es-ti-ma-tor from raw ob-ser-va-tion data| 
+[41]
+Overfull \hbox (9.98544pt too wide) in paragraph at lines 201--201
+|[]\T1/qhv/b/n/14.4 Global and rel-a-tive po-si-tion es-ti-mates from global
  []
 
-[38 <./Results/elevGNSSPlanning.jpg>] [39 <./Results/GPShist10mN-eps-converted-
-to.pdf>] [40 <./Results/GPShist10mE-eps-converted-to.pdf>]
+[42]
 Package epstopdf Info: Source file: <Results/DistNED30MinNAllSat.eps>
 (epstopdf)                    date: 2019-12-06 14:58:14
 (epstopdf)                    size: 207971 bytes
@@ -1641,18 +1662,18 @@ to.pdf>
 (epstopdf)                    size: 75498 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/DistNED30MinNAllSat
 -eps-converted-to.pdf Results/DistNED30MinNAllSat.eps>
-(epstopdf)             \includegraphics on input line 149.
+(epstopdf)             \includegraphics on input line 221.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/DistNED30MinNAllSat-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/DistNED30MinNAllSat-eps-converted-to.pdf, id=929, 421.575pt x 316.1812
+<Results/DistNED30MinNAllSat-eps-converted-to.pdf, id=924, 421.575pt x 316.1812
 4pt>
 File: Results/DistNED30MinNAllSat-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/DistNED30MinNAllSat-eps-converted-to.pdf>
 Package pdftex.def Info: Results/DistNED30MinNAllSat-eps-converted-to.pdf  used
- on input line 149.
+ on input line 221.
 (pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
 Package epstopdf Info: Source file: <Results/DistNED30MinEAllSat.eps>
 (epstopdf)                    date: 2019-12-06 14:56:19
@@ -1663,24 +1684,34 @@ to.pdf>
 (epstopdf)                    size: 310158 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/DistNED30MinEAllSat
 -eps-converted-to.pdf Results/DistNED30MinEAllSat.eps>
-(epstopdf)             \includegraphics on input line 150.
+(epstopdf)             \includegraphics on input line 225.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/DistNED30MinEAllSat-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/DistNED30MinEAllSat-eps-converted-to.pdf, id=930, 421.575pt x 316.1812
+<Results/DistNED30MinEAllSat-eps-converted-to.pdf, id=925, 421.575pt x 316.1812
 4pt>
 File: Results/DistNED30MinEAllSat-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/DistNED30MinEAllSat-eps-converted-to.pdf>
 Package pdftex.def Info: Results/DistNED30MinEAllSat-eps-converted-to.pdf  used
- on input line 150.
+ on input line 225.
 (pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
-[41]
-Overfull \vbox (29.23262pt too high) has occurred while \output is active []
+
+Overfull \hbox (2.7693pt too wide) in paragraph at lines 233--247
+ [] 
+ []
 
 
-[42 <./Results/DistNED30MinNAllSat-eps-converted-to.pdf> <./Results/DistNED30Mi
+Overfull \hbox (2.7693pt too wide) in paragraph at lines 253--267
+ [] 
+ []
+
+[43]
+Overfull \vbox (98.35277pt too high) has occurred while \output is active []
+
+
+[44 <./Results/DistNED30MinNAllSat-eps-converted-to.pdf> <./Results/DistNED30Mi
 nEAllSat-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Results/DistNED30MinNSharedSat.eps>
 (epstopdf)                    date: 2019-12-06 14:59:00
@@ -1691,20 +1722,20 @@ ed-to.pdf>
 (epstopdf)                    size: 75577 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/DistNED30MinNShared
 Sat-eps-converted-to.pdf Results/DistNED30MinNSharedSat.eps>
-(epstopdf)             \includegraphics on input line 195.
+(epstopdf)             \includegraphics on input line 275.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/DistNED30MinNSharedSat-eps-converted-t
 o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<Results/DistNED30MinNSharedSat-eps-converted-to.pdf, id=958, 421.575pt x 316.1
+<Results/DistNED30MinNSharedSat-eps-converted-to.pdf, id=952, 421.575pt x 316.1
 8124pt>
 File: Results/DistNED30MinNSharedSat-eps-converted-to.pdf Graphic file (type pd
 f)
 <use Results/DistNED30MinNSharedSat-eps-converted-to.pdf>
 Package pdftex.def Info: Results/DistNED30MinNSharedSat-eps-converted-to.pdf  u
-sed on input line 195.
+sed on input line 275.
 (pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
 Package epstopdf Info: Source file: <Results/DistNED30MinESharedSats.eps>
 (epstopdf)                    date: 2019-12-06 14:57:28
@@ -1715,180 +1746,80 @@ ted-to.pdf>
 (epstopdf)                    size: 307188 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/DistNED30MinEShared
 Sats-eps-converted-to.pdf Results/DistNED30MinESharedSats.eps>
-(epstopdf)             \includegraphics on input line 196.
+(epstopdf)             \includegraphics on input line 279.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/DistNED30MinESharedSats-eps-converted-
 to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<Results/DistNED30MinESharedSats-eps-converted-to.pdf, id=959, 421.575pt x 316.
+<Results/DistNED30MinESharedSats-eps-converted-to.pdf, id=953, 421.575pt x 316.
 18124pt>
 File: Results/DistNED30MinESharedSats-eps-converted-to.pdf Graphic file (type p
 df)
 <use Results/DistNED30MinESharedSats-eps-converted-to.pdf>
 Package pdftex.def Info: Results/DistNED30MinESharedSats-eps-converted-to.pdf  
-used on input line 196.
+used on input line 279.
 (pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
-[43]
-Overfull \vbox (14.00758pt too high) has occurred while \output is active []
+[45]
+Overfull \vbox (83.12773pt too high) has occurred while \output is active []
 
 
-[44 <./Results/DistNED30MinNSharedSat-eps-converted-to.pdf> <./Results/DistNED3
+[46 <./Results/DistNED30MinNSharedSat-eps-converted-to.pdf> <./Results/DistNED3
 0MinESharedSats-eps-converted-to.pdf>]
+Overfull \hbox (1.53818pt too wide) in paragraph at lines 286--287
+\T1/qtm/m/n/12 The DD-relative po-si-tion es-ti-mates are cal-cu-lated us-ing t
+he es-ti-ma-tor de-scribed
+ []
+
 Package epstopdf Info: Source file: <Results/histRel30MinN.eps>
-(epstopdf)                    date: 2019-11-07 12:42:13
-(epstopdf)                    size: 22873 bytes
+(epstopdf)                    date: 2019-12-16 16:45:40
+(epstopdf)                    size: 22887 bytes
 (epstopdf)             Output file: <Results/histRel30MinN-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2019-11-07 12:43:24
-(epstopdf)                    size: 5428 bytes
+(epstopdf)                    date: 2019-12-16 16:48:05
+(epstopdf)                    size: 9068 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/histRel30MinN-eps-c
 onverted-to.pdf Results/histRel30MinN.eps>
-(epstopdf)             \includegraphics on input line 203.
+(epstopdf)             \includegraphics on input line 294.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/histRel30MinN-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/histRel30MinN-eps-converted-to.pdf, id=982, 421.575pt x 316.18124pt>
+<Results/histRel30MinN-eps-converted-to.pdf, id=983, 421.575pt x 316.18124pt>
 File: Results/histRel30MinN-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/histRel30MinN-eps-converted-to.pdf>
 Package pdftex.def Info: Results/histRel30MinN-eps-converted-to.pdf  used on in
-put line 203.
+put line 294.
 (pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
 Package epstopdf Info: Source file: <Results/histRel30MinE.eps>
-(epstopdf)                    date: 2019-11-07 12:40:26
-(epstopdf)                    size: 23447 bytes
+(epstopdf)                    date: 2019-12-16 16:47:34
+(epstopdf)                    size: 20369 bytes
 (epstopdf)             Output file: <Results/histRel30MinE-eps-converted-to.pdf
 >
-(epstopdf)                    date: 2019-11-07 12:43:24
-(epstopdf)                    size: 5621 bytes
+(epstopdf)                    date: 2019-12-16 16:48:06
+(epstopdf)                    size: 8497 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/histRel30MinE-eps-c
 onverted-to.pdf Results/histRel30MinE.eps>
-(epstopdf)             \includegraphics on input line 208.
+(epstopdf)             \includegraphics on input line 299.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/histRel30MinE-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/histRel30MinE-eps-converted-to.pdf, id=983, 421.575pt x 316.18124pt>
+<Results/histRel30MinE-eps-converted-to.pdf, id=984, 421.575pt x 316.18124pt>
 File: Results/histRel30MinE-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/histRel30MinE-eps-converted-to.pdf>
 Package pdftex.def Info: Results/histRel30MinE-eps-converted-to.pdf  used on in
-put line 208.
+put line 299.
 (pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
-Package epstopdf Info: Source file: <Results/Nhist.eps>
-(epstopdf)                    date: 2019-12-06 19:03:19
-(epstopdf)                    size: 33825 bytes
-(epstopdf)             Output file: <Results/Nhist-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-12-06 19:06:05
-(epstopdf)                    size: 8697 bytes
-(epstopdf)             Command: <epstopdf --outfile=Results/Nhist-eps-converted
--to.pdf Results/Nhist.eps>
-(epstopdf)             \includegraphics on input line 231.
-Package epstopdf Info: Output file is already uptodate.
+[47]
+Overfull \vbox (39.3426pt too high) has occurred while \output is active []
 
 
-pdfTeX warning: pdflatex (file ./Results/Nhist-eps-converted-to.pdf): PDF inclu
-sion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/Nhist-eps-converted-to.pdf, id=993, 350.30875pt x 275.0275pt>
-File: Results/Nhist-eps-converted-to.pdf Graphic file (type pdf)
-<use Results/Nhist-eps-converted-to.pdf>
-Package pdftex.def Info: Results/Nhist-eps-converted-to.pdf  used on input line
- 231.
-(pdftex.def)             Requested size: 369.88583pt x 290.41566pt.
-Package epstopdf Info: Source file: <Results/Ehist.eps>
-(epstopdf)                    date: 2019-12-06 19:04:42
-(epstopdf)                    size: 30535 bytes
-(epstopdf)             Output file: <Results/Ehist-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-12-06 19:06:07
-(epstopdf)                    size: 8549 bytes
-(epstopdf)             Command: <epstopdf --outfile=Results/Ehist-eps-converted
--to.pdf Results/Ehist.eps>
-(epstopdf)             \includegraphics on input line 235.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./Results/Ehist-eps-converted-to.pdf): PDF inclu
-sion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/Ehist-eps-converted-to.pdf, id=994, 342.27875pt x 275.0275pt>
-File: Results/Ehist-eps-converted-to.pdf Graphic file (type pdf)
-<use Results/Ehist-eps-converted-to.pdf>
-Package pdftex.def Info: Results/Ehist-eps-converted-to.pdf  used on input line
- 235.
-(pdftex.def)             Requested size: 369.88583pt x 297.2309pt.
-
-Overfull \hbox (0.5264pt too wide) in paragraph at lines 239--239
-|[]\T1/qhv/b/n/17.28 RMSE of rel-a-tive po-si-tion from global po-
- []
-
-Package epstopdf Info: Source file: <Results/MSEplots/Nsim1.eps>
-(epstopdf)                    date: 2019-11-25 10:05:34
-(epstopdf)                    size: 92036 bytes
-(epstopdf)             Output file: <Results/MSEplots/Nsim1-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2019-11-25 10:18:40
-(epstopdf)                    size: 23479 bytes
-(epstopdf)             Command: <epstopdf --outfile=Results/MSEplots/Nsim1-eps-
-converted-to.pdf Results/MSEplots/Nsim1.eps>
-(epstopdf)             \includegraphics on input line 242.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./Results/MSEplots/Nsim1-eps-converted-to.pdf): 
-PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/MSEplots/Nsim1-eps-converted-to.pdf, id=998, 485.815pt x 298.11375pt>
-File: Results/MSEplots/Nsim1-eps-converted-to.pdf Graphic file (type pdf)
-<use Results/MSEplots/Nsim1-eps-converted-to.pdf>
-Package pdftex.def Info: Results/MSEplots/Nsim1-eps-converted-to.pdf  used on i
-nput line 242.
-(pdftex.def)             Requested size: 369.88583pt x 226.97365pt.
-Package epstopdf Info: Source file: <Results/MSEplots/Nsim10.eps>
-(epstopdf)                    date: 2019-11-25 10:07:05
-(epstopdf)                    size: 92060 bytes
-(epstopdf)             Output file: <Results/MSEplots/Nsim10-eps-converted-to.p
-df>
-(epstopdf)                    date: 2019-11-25 10:18:42
-(epstopdf)                    size: 23672 bytes
-(epstopdf)             Command: <epstopdf --outfile=Results/MSEplots/Nsim10-eps
--converted-to.pdf Results/MSEplots/Nsim10.eps>
-(epstopdf)             \includegraphics on input line 247.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./Results/MSEplots/Nsim10-eps-converted-to.pdf):
- PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/MSEplots/Nsim10-eps-converted-to.pdf, id=999, 497.86pt x 298.11375pt>
-File: Results/MSEplots/Nsim10-eps-converted-to.pdf Graphic file (type pdf)
-<use Results/MSEplots/Nsim10-eps-converted-to.pdf>
-Package pdftex.def Info: Results/MSEplots/Nsim10-eps-converted-to.pdf  used on 
-input line 247.
-(pdftex.def)             Requested size: 369.88583pt x 221.48775pt.
-Package epstopdf Info: Source file: <Results/MSEplots/Nsim20.eps>
-(epstopdf)                    date: 2019-11-25 10:09:30
-(epstopdf)                    size: 92062 bytes
-(epstopdf)             Output file: <Results/MSEplots/Nsim20-eps-converted-to.p
-df>
-(epstopdf)                    date: 2019-11-25 10:18:43
-(epstopdf)                    size: 23496 bytes
-(epstopdf)             Command: <epstopdf --outfile=Results/MSEplots/Nsim20-eps
--converted-to.pdf Results/MSEplots/Nsim20.eps>
-(epstopdf)             \includegraphics on input line 252.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./Results/MSEplots/Nsim20-eps-converted-to.pdf):
- PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/MSEplots/Nsim20-eps-converted-to.pdf, id=1000, 497.86pt x 298.11375pt>
-
-File: Results/MSEplots/Nsim20-eps-converted-to.pdf Graphic file (type pdf)
-<use Results/MSEplots/Nsim20-eps-converted-to.pdf>
-Package pdftex.def Info: Results/MSEplots/Nsim20-eps-converted-to.pdf  used on 
-input line 252.
-(pdftex.def)             Requested size: 369.88583pt x 221.48775pt.
-[45 <./Results/histRel30MinN-eps-converted-to.pdf>] [46 <./Results/histRel30Min
-E-eps-converted-to.pdf>] [47 <./Results/Nhist-eps-converted-to.pdf>]
+[48 <./Results/histRel30MinN-eps-converted-to.pdf> <./Results/histRel30MinE-eps
+-converted-to.pdf>]
 Package epstopdf Info: Source file: <Results/MSEplots/Nobs.eps>
 (epstopdf)                    date: 2019-12-06 11:02:03
 (epstopdf)                    size: 594975 bytes
@@ -1898,17 +1829,17 @@ Package epstopdf Info: Source file: <Results/MSEplots/Nobs.eps>
 (epstopdf)                    size: 114188 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/MSEplots/Nobs-eps-c
 onverted-to.pdf Results/MSEplots/Nobs.eps>
-(epstopdf)             \includegraphics on input line 260.
+(epstopdf)             \includegraphics on input line 330.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/MSEplots/Nobs-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/MSEplots/Nobs-eps-converted-to.pdf, id=1032, 421.575pt x 316.18124pt>
+<Results/MSEplots/Nobs-eps-converted-to.pdf, id=1017, 421.575pt x 316.18124pt>
 File: Results/MSEplots/Nobs-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/MSEplots/Nobs-eps-converted-to.pdf>
 Package pdftex.def Info: Results/MSEplots/Nobs-eps-converted-to.pdf  used on in
-put line 260.
+put line 330.
 (pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
 Package epstopdf Info: Source file: <Results/MSEplots/Eobs.eps>
 (epstopdf)                    date: 2019-12-06 11:02:16
@@ -1919,20 +1850,21 @@ Package epstopdf Info: Source file: <Results/MSEplots/Eobs.eps>
 (epstopdf)                    size: 114999 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/MSEplots/Eobs-eps-c
 onverted-to.pdf Results/MSEplots/Eobs.eps>
-(epstopdf)             \includegraphics on input line 265.
+(epstopdf)             \includegraphics on input line 334.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/MSEplots/Eobs-eps-converted-to.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/MSEplots/Eobs-eps-converted-to.pdf, id=1033, 421.575pt x 316.18124pt>
+<Results/MSEplots/Eobs-eps-converted-to.pdf, id=1018, 421.575pt x 316.18124pt>
 File: Results/MSEplots/Eobs-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/MSEplots/Eobs-eps-converted-to.pdf>
 Package pdftex.def Info: Results/MSEplots/Eobs-eps-converted-to.pdf  used on in
-put line 265.
+put line 334.
 (pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
-[48 <./Results/Ehist-eps-converted-to.pdf>] [49 <./Results/MSEplots/Nsim1-eps-c
-onverted-to.pdf> <./Results/MSEplots/Nsim10-eps-converted-to.pdf>]
+
+LaTeX Warning: Float too large for page by 54.56764pt on input line 338.
+
 Package epstopdf Info: Source file: <Results/DOP_N.eps>
 (epstopdf)                    date: 2019-12-06 11:41:09
 (epstopdf)                    size: 1222217 bytes
@@ -1941,18 +1873,18 @@ Package epstopdf Info: Source file: <Results/DOP_N.eps>
 (epstopdf)                    size: 353814 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/DOP_N-eps-converted
 -to.pdf Results/DOP_N.eps>
-(epstopdf)             \includegraphics on input line 320.
+(epstopdf)             \includegraphics on input line 393.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/DOP_N-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/DOP_N-eps-converted-to.pdf, id=1072, 346.29375pt x 288.07625pt>
+<Results/DOP_N-eps-converted-to.pdf, id=1026, 346.29375pt x 288.07625pt>
 File: Results/DOP_N-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/DOP_N-eps-converted-to.pdf>
 Package pdftex.def Info: Results/DOP_N-eps-converted-to.pdf  used on input line
- 320.
-(pdftex.def)             Requested size: 369.88583pt x 307.71104pt.
+ 393.
+(pdftex.def)             Requested size: 295.90979pt x 246.16707pt.
 Package epstopdf Info: Source file: <Results/DOP_E.eps>
 (epstopdf)                    date: 2019-12-06 11:26:04
 (epstopdf)                    size: 1227556 bytes
@@ -1961,19 +1893,25 @@ Package epstopdf Info: Source file: <Results/DOP_E.eps>
 (epstopdf)                    size: 283547 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/DOP_E-eps-converted
 -to.pdf Results/DOP_E.eps>
-(epstopdf)             \includegraphics on input line 324.
+(epstopdf)             \includegraphics on input line 397.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/DOP_E-eps-converted-to.pdf): PDF inclu
 sion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/DOP_E-eps-converted-to.pdf, id=1073, 421.575pt x 316.18124pt>
+<Results/DOP_E-eps-converted-to.pdf, id=1027, 421.575pt x 316.18124pt>
 File: Results/DOP_E-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/DOP_E-eps-converted-to.pdf>
 Package pdftex.def Info: Results/DOP_E-eps-converted-to.pdf  used on input line
- 324.
+ 397.
 (pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
-[50 <./Results/MSEplots/Nsim20-eps-converted-to.pdf>]
+
+LaTeX Warning: Float too large for page by 37.59457pt on input line 401.
+
+[49]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 Package epstopdf Info: Source file: <Results/DDDOPN.eps>
 (epstopdf)                    date: 2019-12-06 11:05:34
 (epstopdf)                    size: 470864 bytes
@@ -1982,18 +1920,18 @@ Package epstopdf Info: Source file: <Results/DDDOPN.eps>
 (epstopdf)                    size: 138163 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/DDDOPN-eps-converte
 d-to.pdf Results/DDDOPN.eps>
-(epstopdf)             \includegraphics on input line 331.
+(epstopdf)             \includegraphics on input line 408.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/DDDOPN-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/DDDOPN-eps-converted-to.pdf, id=1091, 421.575pt x 316.18124pt>
+<Results/DDDOPN-eps-converted-to.pdf, id=1038, 421.575pt x 316.18124pt>
 File: Results/DDDOPN-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/DDDOPN-eps-converted-to.pdf>
 Package pdftex.def Info: Results/DDDOPN-eps-converted-to.pdf  used on input lin
-e 331.
-(pdftex.def)             Requested size: 295.90979pt x 221.93806pt.
+e 408.
+(pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
 Package epstopdf Info: Source file: <Results/DDDOPE.eps>
 (epstopdf)                    date: 2019-12-06 11:05:16
 (epstopdf)                    size: 472178 bytes
@@ -2002,24 +1940,40 @@ Package epstopdf Info: Source file: <Results/DDDOPE.eps>
 (epstopdf)                    size: 135488 bytes
 (epstopdf)             Command: <epstopdf --outfile=Results/DDDOPE-eps-converte
 d-to.pdf Results/DDDOPE.eps>
-(epstopdf)             \includegraphics on input line 335.
+(epstopdf)             \includegraphics on input line 412.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./Results/DDDOPE-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<Results/DDDOPE-eps-converted-to.pdf, id=1092, 421.575pt x 316.18124pt>
+<Results/DDDOPE-eps-converted-to.pdf, id=1039, 421.575pt x 316.18124pt>
 File: Results/DDDOPE-eps-converted-to.pdf Graphic file (type pdf)
 <use Results/DDDOPE-eps-converted-to.pdf>
 Package pdftex.def Info: Results/DDDOPE-eps-converted-to.pdf  used on input lin
-e 335.
-(pdftex.def)             Requested size: 295.90979pt x 221.93806pt.
-) (Discussion/discussion.tex [51 <./Results/MSEplots/Nobs-eps-converted-to.pdf>
-] [52 <./Results/MSEplots/Eobs-eps-converted-to.pdf>] [53 <./Results/DOP_N-eps-
-converted-to.pdf>] [54 <./Results/DOP_E-eps-converted-to.pdf> <./Results/DDDOPN
--eps-converted-to.pdf>] [55 <./Results/DDDOPE-eps-converted-to.pdf>]
+e 412.
+(pdftex.def)             Requested size: 369.88583pt x 277.42018pt.
+
+LaTeX Warning: Float too large for page by 54.56764pt on input line 416.
+
+
+Overfull \hbox (3.53816pt too wide) in paragraph at lines 404--417
+\T1/qtm/m/n/12 equally. The cal-cu-lated DOP-values are shown fig-ures []4.11a[
+]-[]4.11b[]. The HDOP
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (Discussion/discussion.tex [50] [51 <./Results/MSEplots/Esim1-eps-converted-t
+o.pdf> <./Results/MSEplots/Esim10-eps-converted-to.pdf>] [52 <./Results/MSEplot
+s/Esim20-eps-converted-to.pdf>] [53 <./Results/GPShist10mN-eps-converted-to.pdf
+> <./Results/GPShist10mE-eps-converted-to.pdf>] [54 <./Results/MSEplots/Nobs-ep
+s-converted-to.pdf> <./Results/MSEplots/Eobs-eps-converted-to.pdf>] [55 <./Resu
+lts/DOP_N-eps-converted-to.pdf> <./Results/DOP_E-eps-converted-to.pdf>]
+[56 <./Results/DDDOPN-eps-converted-to.pdf> <./Results/DDDOPE-eps-converted-to.
+pdf>]
 Chapter 5.
-[56
+[57
 
 ]
 Overfull \hbox (7.97739pt too wide) in paragraph at lines 18--19
@@ -2027,9 +1981,9 @@ Overfull \hbox (7.97739pt too wide) in paragraph at lines 18--19
 e post-processing
  []
 
-) (Appendix/appendix.tex [57]
+) (Appendix/appendix.tex [58]
 Appendix A.
-[58
+[59
 
 pdfTeX warning (ext4): destination with the same identifier (name{equation.A.1.
 1}) has been already used, duplicate ignored
@@ -2037,7 +1991,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.A.1.
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.31 \begin{align}
-                  		] [59]
+                  		] [60]
 Overfull \hbox (0.69203pt too wide) in paragraph at lines 57--58
 []\T1/qcr/m/n/12 eph_t \T1/qtm/m/n/12 - Satel-lite ephemeris data, con-tains in
 -for-ma-tion on satel-lite num-
@@ -2054,45 +2008,138 @@ Overfull \hbox (32.11417pt too wide) in paragraph at lines 59--63
 030.484006, 
  []
 
-) (Appendix/appendixB.tex [60]pdfTeX warning (ext4): destination with the same 
-identifier (name{appendix.A}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2 \chapter{}
-              
-Appendix A.
+Package epstopdf Info: Source file: <Appendix/GlobalPosAndGPSNorth.eps>
+(epstopdf)                    date: 2019-12-16 17:30:30
+(epstopdf)                    size: 146291 bytes
+(epstopdf)             Output file: <Appendix/GlobalPosAndGPSNorth-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2019-12-16 17:31:49
+(epstopdf)                    size: 153367 bytes
+(epstopdf)             Command: <epstopdf --outfile=Appendix/GlobalPosAndGPSNor
+th-eps-converted-to.pdf Appendix/GlobalPosAndGPSNorth.eps>
+(epstopdf)             \includegraphics on input line 69.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Appendix/GlobalPosAndGPSNorth-eps-converted-to
+.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
+d
+<Appendix/GlobalPosAndGPSNorth-eps-converted-to.pdf, id=1190, 544.0325pt x 351.
+3125pt>
+File: Appendix/GlobalPosAndGPSNorth-eps-converted-to.pdf Graphic file (type pdf
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
- [61
+<use Appendix/GlobalPosAndGPSNorth-eps-converted-to.pdf>
+Package pdftex.def Info: Appendix/GlobalPosAndGPSNorth-eps-converted-to.pdf  us
+ed on input line 69.
+(pdftex.def)             Requested size: 443.86186pt x 286.64146pt.
+Package epstopdf Info: Source file: <Appendix/GlobalPosAndGPSEast.eps>
+(epstopdf)                    date: 2019-12-16 17:31:25
+(epstopdf)                    size: 149967 bytes
+(epstopdf)             Output file: <Appendix/GlobalPosAndGPSEast-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2019-12-16 17:31:51
+(epstopdf)                    size: 220193 bytes
+(epstopdf)             Command: <epstopdf --outfile=Appendix/GlobalPosAndGPSEas
+t-eps-converted-to.pdf Appendix/GlobalPosAndGPSEast.eps>
+(epstopdf)             \includegraphics on input line 73.
+Package epstopdf Info: Output file is already uptodate.
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+
+pdfTeX warning: pdflatex (file ./Appendix/GlobalPosAndGPSEast-eps-converted-to.
+pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+<Appendix/GlobalPosAndGPSEast-eps-converted-to.pdf, id=1191, 544.0325pt x 351.3
+125pt>
+File: Appendix/GlobalPosAndGPSEast-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Appendix/GlobalPosAndGPSEast-eps-converted-to.pdf>
+Package pdftex.def Info: Appendix/GlobalPosAndGPSEast-eps-converted-to.pdf  use
+d on input line 73.
+(pdftex.def)             Requested size: 443.86186pt x 286.64146pt.
+
+Overfull \hbox (73.97603pt too wide) in paragraph at lines 68--76
+[]$[]$
+ []
+
+
+Overfull \hbox (73.97603pt too wide) in paragraph at lines 68--76
+[]$ 
+ []
+
+[61]
+Overfull \vbox (73.01021pt too high) has occurred while \output is active []
+
+
+[62 <./Appendix/GlobalPosAndGPSNorth-eps-converted-to.pdf> <./Appendix/GlobalPo
+sAndGPSEast-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Results/Nhist.eps>
+(epstopdf)                    date: 2019-12-06 19:03:19
+(epstopdf)                    size: 33825 bytes
+(epstopdf)             Output file: <Results/Nhist-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-12-06 19:06:05
+(epstopdf)                    size: 8697 bytes
+(epstopdf)             Command: <epstopdf --outfile=Results/Nhist-eps-converted
+-to.pdf Results/Nhist.eps>
+(epstopdf)             \includegraphics on input line 80.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Results/Nhist-eps-converted-to.pdf): PDF inclu
+sion: found PDF version <1.7>, but at most version <1.5> allowed
+<Results/Nhist-eps-converted-to.pdf, id=1212, 350.30875pt x 275.0275pt>
+File: Results/Nhist-eps-converted-to.pdf Graphic file (type pdf)
+<use Results/Nhist-eps-converted-to.pdf>
+Package pdftex.def Info: Results/Nhist-eps-converted-to.pdf  used on input line
+ 80.
+(pdftex.def)             Requested size: 369.88583pt x 290.41566pt.
+Package epstopdf Info: Source file: <Results/Ehist.eps>
+(epstopdf)                    date: 2019-12-06 19:04:42
+(epstopdf)                    size: 30535 bytes
+(epstopdf)             Output file: <Results/Ehist-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-12-06 19:06:07
+(epstopdf)                    size: 8549 bytes
+(epstopdf)             Command: <epstopdf --outfile=Results/Ehist-eps-converted
+-to.pdf Results/Ehist.eps>
+(epstopdf)             \includegraphics on input line 84.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./Results/Ehist-eps-converted-to.pdf): PDF inclu
+sion: found PDF version <1.7>, but at most version <1.5> allowed
+<Results/Ehist-eps-converted-to.pdf, id=1213, 342.27875pt x 275.0275pt>
+File: Results/Ehist-eps-converted-to.pdf Graphic file (type pdf)
+<use Results/Ehist-eps-converted-to.pdf>
+Package pdftex.def Info: Results/Ehist-eps-converted-to.pdf  used on input line
+ 84.
+(pdftex.def)             Requested size: 369.88583pt x 297.2309pt.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
+ [63 <./Results/Nhist-eps-converted-to.pdf>] [64 <./Results/Ehist-eps-converted
+-to.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
  (Thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 3FC200E09CCD7BE093AE29558EC4276F;4979.
 
-
-Package rerunfilecheck Warning: File `Thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: 868DE73442CBA35B1EB5136EC5C9E426;4883
-(rerunfilecheck)             After:  FD74082A12BC8B25BF36EF75F1C37162;4953.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 67.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 20101 strings out of 492450
- 340788 string characters out of 3129748
- 853293 words of memory out of 3000000
- 23708 multiletter control sequences out of 15000+200000
- 65484 words of font info for 63 fonts, out of 3000000 for 9000
+ 20222 strings out of 492450
+ 343442 string characters out of 3129748
+ 857686 words of memory out of 3000000
+ 23826 multiletter control sequences out of 15000+200000
+ 68336 words of font info for 64 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,19n,49p,1903b,3577s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{cite.0@moser1996linear} has been referenced but d
@@ -2177,17 +2224,18 @@ b8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/kalle/AppData/Roaming/MiKTeX/
-2.9/fonts/type1/arphic/gbsnu/gbsnu53.pfb><C:/Users/kalle/AppData/Roaming/MiKTeX
-/2.9/fonts/type1/arphic/gbsnu/gbsnu65.pfb><C:/Users/kalle/AppData/Roaming/MiKTe
-X/2.9/fonts/type1/public/tex-gyre/qcrr.pfb><C:/Users/kalle/AppData/Roaming/MiKT
-eX/2.9/fonts/type1/public/tex-gyre/qhvb.pfb><C:/Users/kalle/AppData/Roaming/MiK
-TeX/2.9/fonts/type1/public/tex-gyre/qhvr.pfb><C:/Users/kalle/AppData/Roaming/Mi
-KTeX/2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/kalle/AppData/Roaming/M
-iKTeX/2.9/fonts/type1/public/tex-gyre/qtmr.pfb>
-Output written on Thesis.pdf (69 pages, 4870518 bytes).
+onts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb><C:/Users/kalle/AppData/Roaming/MiKTeX/2.9/fonts
+/type1/arphic/gbsnu/gbsnu53.pfb><C:/Users/kalle/AppData/Roaming/MiKTeX/2.9/font
+s/type1/arphic/gbsnu/gbsnu65.pfb><C:/Users/kalle/AppData/Roaming/MiKTeX/2.9/fon
+ts/type1/public/tex-gyre/qcrr.pfb><C:/Users/kalle/AppData/Roaming/MiKTeX/2.9/fo
+nts/type1/public/tex-gyre/qhvb.pfb><C:/Users/kalle/AppData/Roaming/MiKTeX/2.9/f
+onts/type1/public/tex-gyre/qhvr.pfb><C:/Users/kalle/AppData/Roaming/MiKTeX/2.9/
+fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/kalle/AppData/Roaming/MiKTeX/2.9
+/fonts/type1/public/tex-gyre/qtmr.pfb>
+Output written on Thesis.pdf (72 pages, 5100151 bytes).
 PDF statistics:
- 1340 PDF objects out of 1440 (max. 8388607)
+ 1367 PDF objects out of 1440 (max. 8388607)
  297 named destinations out of 1000 (max. 500000)
- 715 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 702 words of extra memory for PDF output out of 10000 (max. 10000000)
 
